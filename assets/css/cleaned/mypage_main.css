@@ -1,0 +1,1017 @@
+
+
+/*------------------------------------------------------------------
+[Body of mypage_*]
+---------------------------------------------------------
+|	---------	-------------------------------------	|
+|	|		|	|									|	|
+|	|		|	|									|	|
+|	|		|	|									|	|
+|	|		|	|									|	|
+|	|		|	|									|	|
+|	|		|	|									|	|
+|	|sidebar|	|			 menubar				|	|
+|	|		|	|									|	|
+|	|		|	|									|	|
+|	|		|	|									|	|
+|	|		|	|									|	|
+|	|		|	|									|	|
+|	|		|	|									|	|
+|	|		|	|									|	|
+|	---------	------------------------------------|	|
+---------------------------------------------------------
+
+-------------------------------------------------------------------*/
+
+
+
+/*---------------------
+mypage_sidebar
+-----------------------*/
+.mypage_sidebar {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 30px;
+	margin-bottom: 35px;
+	background-color: #ffffffb4;
+	border-radius: 10px;
+	border: 2px solid #42424275;
+	
+	
+}
+
+.mypage_sidebar h4 {
+	color: #1c1c1c;
+	font-weight: 700;
+	margin-bottom: 25px;
+	
+}
+
+.mypage_sidebar ul li {
+	list-style: none;
+}
+
+.mypage_sidebar ul li.active a {
+	font-size: 16px;
+	color: #c54f00;
+	line-height: 39px;
+	display: block;
+	font-weight: 700;
+	
+}
+
+.mypage_sidebar ul li a {
+	font-size: 16px;
+	color: #1c1c1c;
+	line-height: 39px;
+	display: block;
+}
+
+
+/*---------------------
+mypage_menubar
+-----------------------*/
+
+
+.w-btn-outline {
+    position: relative;
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-family: "paybooc-Light", sans-serif;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;
+	
+}
+
+.w-btn-skin-outline {
+    border: 3px solid #f8e6e0;
+    color: #6e6e6e;
+	margin-bottom: 40px;
+}
+
+.w-btn-skin-outline:hover {
+    background-color: #f8e6e0;
+    color: #6e6e6e;
+}
+
+.w-btn-outline:hover {
+    
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.w-btn-outline:active {
+    transform: scale(1.1);
+}
+
+.mypage_menubar_text {
+	padding-top: 25px;
+}
+
+.mypage_menubar_text h5 {
+	margin-bottom: 12px;
+}
+
+.mypage_menubar_text h5 a {
+	font-size: 25px;
+	color: #1c1c1c;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.mypage_menubar_text p {
+	color: #4c00c5;
+	margin-bottom: 25px;
+	font-size: 20px;
+	text-decoration: underline;	
+}
+/*--------------------currentorder------------------ */
+.menubar_currentOrder{
+	border: 2px solid #130250;
+	border-radius: 20px 20px 20px 20px;
+	padding: 15px 15px 15px 15px;
+	background-color: #010046ad;
+
+}
+
+.menubar_currentOrder_text {
+	padding-top: 25px;
+}
+
+.menubar_currentOrder_text h4 {
+	
+	margin-bottom: 12px;
+}
+.menubar_currentOrder_text h4 a:hover {
+	color: rgb(247, 83, 8) !important;
+}
+
+
+.menubar_currentOrder_text h4 a {
+	font-size: 30px;
+	color: rgb(253, 253, 253) ;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.menubar_currentOrder_text h5 a {
+	font-size: 20px;
+	color: rgb(253, 253, 253) ;
+	font-weight: 800;
+	text-decoration: none;
+}
+.menubar_currentOrder_text h5 {
+	font-size: 20px;
+	color: rgb(253, 253, 253) ;
+	font-weight: 300;
+	text-decoration: none;
+	margin-bottom: 7px;
+	text-align: left !important;
+}
+
+
+.menubar_currentOrder_text p {
+	color: rgb(253, 253, 253);
+	margin-bottom: 25px;
+	font-size: 20px;
+	text-decoration: underline;
+	
+}
+.menubar_currentOrder_text .menubar_btn:hover {
+	font-weight: 600;
+	background-color: rgb(247, 83, 8);
+	color: rgb(253, 253, 253);
+}
+
+.menubar_currentOrder_text .menubar_btn {
+	display: inline-block;
+	font-weight: 600;
+	font-size: 20px;
+	color: rgb(19, 17, 17);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 14px 20px 12px;
+	border-radius: 20px;
+	text-decoration: none;
+	background-color: rgb(253, 253, 253);
+}
+
+.menubar_currentOrder_text .menubar_btn span {
+	position: relative;
+	top: 1px;
+
+
+}
+.menubar_currentOrder_text  h3 {
+	font-size: 20px;
+	color: rgb(253, 253, 253) ;
+	font-weight: 300;
+	float: right;
+	margin-top: 25px;
+	margin-right: 30px;
+}
+
+
+.menubar_currentOrder_text h3 a {
+	
+	font-size: 60px;
+	color: rgb(247, 83, 8) !important ;
+	font-weight: 800;
+	margin-right: 30px;
+
+}
+
+.menubar_currentOrder_text  h2 {
+	font-size: 20px;
+	color: rgb(247, 83, 8) ;
+	font-weight: 600;
+	float: right;
+	margin-top: 10px;
+	margin-right: 70px;
+}
+
+.menubar_currentOrder_text  h1 {
+	font-size: 20px;
+	color: rgb(247, 83, 8) ;
+	font-weight: 300;
+	margin-left: 10px;
+	float: left;
+
+}
+.menubar_currentOrder_text  h6 {
+	font-size: 20px;
+	color: rgb(253, 253, 253) ;
+	font-weight: 500;
+}
+
+.sidebar_line {
+	margin-bottom: 0px;
+	margin-top: 20px;
+	text-align: left;
+}
+
+.sidebar_line a {
+	color: #FFB300;
+	font-weight: 500;
+	position: relative;
+}
+
+.sidebar_line a:after {
+	position: absolute;
+	left: 0;
+	top: -10px;
+	right: 0;
+	height: 1px;
+	width: 250px;
+	background: #FFB300;
+	content: "";
+	
+}
+
+.menubar_currentOrder_line {
+	margin-bottom: 20px;
+	margin-top: 40px;
+	text-align: left;
+}
+
+.menubar_currentOrder_line a {
+	color: rgb(253, 253, 253);
+	font-weight: 500;
+	position: relative;
+}
+
+.menubar_currentOrder_line a:after {
+	position: absolute;
+	left: 0;
+	top: -20px;
+	right: 0;
+	height: 1px;
+	width: 700px;
+	background: rgb(253, 253, 253);
+	content: "";
+	
+}
+
+/*---------------mypage_mycoupon----------------*/
+.mypage_mycoupon {
+	margin-bottom: 50px;
+}
+.mypage_mycoupon a{
+	font-size: 25px;
+	float: right;
+	margin-right: 100px;
+}
+
+.mypage_mycoupon h1{
+	font-size: 50px;
+	
+	margin-left: 30px;
+}
+
+.mypage_mycoupon h2{
+	font-size: 25px;
+	
+	margin-left: 30px;
+}
+
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none
+}
+
+.coupon_link {
+    display: block;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out
+}
+
+@media (prefers-reduced-motion:reduce) {
+    .nav-link {
+        transition: none
+    }
+}
+
+.coupon_link.disabled {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: default
+}
+
+
+.coupon_tab {
+    border-bottom: 1px solid #dee2e6
+}
+
+.coupon_tab .coupon_link {
+    margin-bottom: -1px;
+    background: 0 0;
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem
+}
+
+.coupon_tab .coupon_link:focus,
+.coupon_tab .coupon_link:hover {
+    border-color: #e9ecef #e9ecef #dee2e6;
+    isolation: isolate
+}
+
+.coupon_tab .coupon_link.disabled {
+    color: #6c757d;
+    background-color: transparent;
+    border-color: transparent
+}
+
+.coupon_tab .coupon_item.show .coupon_link,
+.coupon_tab .coupon_link.active {
+    color: #495057;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff
+}
+
+.coupon_tab .dropdown-menu {
+    margin-top: -1px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0
+}
+
+
+.coupon_card {
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+	margin-top: 25px;
+
+
+}
+
+
+.coupon_card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+	margin-top: 30px;
+	
+}
+
+.coupon_card-body a {
+	color: #000;
+	font-weight: 600;
+	font-size: 20px;
+    margin-bottom: .5rem
+}
+
+.coupon_card-body a:hover {
+	color: rgb(252, 113, 0);
+}
+
+.coupon_card-text1 {
+	font-size: 17px;
+	font-weight: 800;
+	color: #dd5e14;
+}
+
+.coupon_card-text2 {
+	font-size: 15px;
+}
+
+
+.coupon_card-text:last-child {
+    margin-bottom: 0
+}
+
+.coupon_usedcard {
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+	margin-top: 25px;
+	pointer-events: none;
+	opacity: 0.65;
+
+}
+
+/*-----------------My point------------------------------------------------------------*/
+
+
+.mypage_mypoint_top {
+	position: relative;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .30rem;
+    
+    background-color: #d3d3d49c;
+    border-color: #d3d3d49c;
+}
+
+.mypage_mypoint_top h5{
+	color: #010046ad;
+ 	font-size: 25px;
+} 
+.mypage_mypoint_top h2{
+	color: #141619;
+	font-size: 20px;
+	float: right;
+	margin-right: 20px;
+}
+
+.mypage_mypoint_top span {
+	display: inline-block;
+    padding: .35em .65em;
+    font-size: .75em;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+	border-radius: 50%;
+	background-color: #010046ad !important;
+	margin-right: 10px;
+
+}
+
+.mypage_mypoint_middle1 h5{
+	margin-top: 10px;
+	text-align: center;
+}
+
+
+
+
+.mypage_mypoint_middle1 .dateSelect {
+    display: block;
+    width: 100%;
+    padding: .375rem 2.25rem .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right .75rem center;
+    background-size: 16px 12px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+}
+
+.mypage_mypoint_middle1 .dateSelect:focus {
+    border-color: #dd5e14ad;
+    outline: 1px;
+    box-shadow: 0 0 0 .25rem #dd5e1433;
+}
+
+.mypage_mypoint_middle1 .dateSelect[multiple],
+.mypage_mypoint_middle1 .dateSelect[size]:not([size="1"]) {
+    padding-right: .75rem;
+    background-image: none
+}
+
+.mypage_mypoint_middle2 td{
+	padding: 20px !important;
+}
+.mypage_mypoint_middle2 h3{
+	font-size: 20px;
+	color:rgb(247, 83, 8);
+}
+.mypage_mypoint_middle2 .plus {
+	color:rgb(247, 83, 8);
+	margin-left: 15%;
+}
+
+
+
+
+.mypage_mypoint_middle2 h2 {
+	font-size: 20px;
+	color:rgb(112, 8, 247);
+	
+}
+
+.mypage_mypoint_middle2 .minus {
+	color:rgb(112, 8, 247);
+	margin-left: 15%;
+}
+	
+
+/*----------------------------------orderList----------------------------------------------*/
+
+.menubar_lastOrder{
+	border: 2px solid rgb(61, 43, 95);
+	border-radius: 20px 20px 20px 20px;
+	padding: 15px 15px 15px 15px;
+	background-color: rgba(253, 253, 253, 0.589);
+
+}
+
+.menubar_lastOrder_text {
+	padding-top: 25px;
+}
+
+.menubar_lastOrder_text h4 {
+	
+	margin-bottom: 12px;
+}
+.menubar_lastOrder_text h4 a:hover {
+	color: #341f80 !important;
+}
+
+
+.menubar_lastOrder_text h4 a {
+	font-size: 30px;
+	color: #341f80 ;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.menubar_lastOrder_text h5 a {
+	font-size: 20px;
+	color: #341f80;
+	font-weight: 800;
+	text-decoration: none;
+	
+}
+.menubar_lastOrder_text  h5 {
+	font-size: 20px;
+	color: #341f80 ;
+	font-weight: 300;
+	text-decoration: none;
+	margin-bottom: 7px;
+	text-align: left;
+}
+
+
+.menubar_lastOrder_text p {
+	color: rgb(0, 0, 0);
+	margin-bottom: 25px;
+	font-size: 20px;
+	text-decoration: underline;
+	
+}
+.menubar_lastOrder_text .menubar_btn:hover {
+	font-weight: 600;
+	background-color: #341f802c;
+	color: #26165c;
+}
+
+.menubar_lastOrder_text .menubar_btn {
+	display: inline-block;
+	font-weight: 600;
+	font-size: 20px;
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 14px 20px 12px;
+	border-radius: 20px;
+	text-decoration: none;
+	background-color: #26165cd3;
+}
+
+.menubar_lastOrder_text .menubar_btn span {
+	position: relative;
+	top: 1px;
+
+
+}
+.menubar_lastOrder_text  h3 {
+	font-size: 20px;
+	color: rgb(0, 0, 0) ;
+	font-weight: 300;
+	float: right;
+	margin-top: 25px;
+	margin-right: 30px;
+}
+
+
+.menubar_lastOrder_text h3 a {
+	
+	font-size: 60px;
+	color: #130250 !important ;
+	font-weight: 800;
+	margin-right: 30px;
+
+}
+
+.menubar_lastOrder_text  h2 {
+	font-size: 20px;
+	color: #130250 ;
+	font-weight: 600;
+	float: right;
+	margin-top: 10px;
+	margin-right: 70px;
+}
+
+.menubar_lastOrder_text  h1 {
+	font-size: 20px;
+	color: rgb(247, 83, 8);
+	font-weight: 300;
+	margin-left: 10px;
+	float: left;
+
+}
+.menubar_lastOrder_text  h6 {
+	font-size: 20px;
+	color: rgb(0, 0, 0) ;
+	font-weight: 500;
+}
+
+
+.menubar_lastOrder_line {
+	margin-bottom: 20px;
+	margin-top: 40px;
+	text-align: left;
+}
+
+.menubar_lastOrder_line a {
+	color: rgb(0, 0, 0);
+	font-weight: 500;
+	position: relative;
+}
+
+.menubar_lastOrder_line a:after {
+	position: absolute;
+	left: 0;
+	top: -20px;
+	right: 0;
+	height: 1px;
+	width: 700px;
+	background: rgb(0, 0, 0);
+	content: "";
+	
+}
+
+
+.orderList_disable {
+    
+    
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    
+    
+	pointer-events: none;
+	opacity: 0.65;
+
+}
+
+/*--------------------------myreview----------------------------------------------------*/
+.mypage_myreview h3{
+	font-size: 30px;
+}
+
+.mypage_myreview a{
+	margin-top: 5px;
+	font-size: 15px;
+	color: #5e5d63dc;
+	
+}
+
+.mypage_myreview_middle a{
+	font-size: 25px;
+	font-weight: 800;
+	color: #000;
+}
+
+.mypage_myreview_middle h1{
+	font-size: 15px;
+	color: #000000a6;
+}
+
+
+.mypage_myreview_middle_storename>a:hover{
+	font-size: 25px;
+	font-weight: 800;
+	color: rgb(247, 83, 8);
+}
+
+
+.mypage_myreview_middle .menubar_btn:hover {
+	font-weight: 700;
+	background-color: rgba(247, 143, 8, 0.568);
+	border: 1px solid rgba(247, 143, 8, 0.788);
+	color: #000;
+}
+
+.mypage_myreview_middle .menubar_btn {
+	display: inline-block;
+	font-size: 15px;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border: 1px solid #fa0000;
+	background-color: #fa000091;
+	border-radius: 25px;
+	padding: 7px 20px 7px 20px;
+	margin-top: 0;
+	margin-bottom: 10px;
+	margin-right: 20px;
+}
+
+.orderedMenu_btn {
+	display: inline-block;
+	font-size: 5px;
+	color: #000000;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border: 1px solid #5e595969;
+	background-color: #5e595969;
+	border-radius: 25px;
+	padding: 5px;
+	margin-top: 0;
+	margin-bottom: 10px;
+	margin-right: 20px;
+}
+
+.orderedMenu h3{
+	color: #1c1c1c;
+} 
+
+.myreview_content {
+	border:1px solid #63615d91;
+	background-color: #ffffff5e;
+}
+
+
+/* -------------------writingReview----------------------------------------*/
+
+.review_title h1{
+	text-align: center;
+	font-size: 40px;
+	margin: 15px;
+	color: #2e2c2cbd;
+}
+
+.review_context textarea {
+	width: 100%;
+	height: 200px;
+	margin: 10px;
+	border: rgba(247, 143, 8, 0.568) solid 3px ;
+	border-radius: 10px;
+	resize: none;
+	font-size: 20px;
+	
+}
+
+.review_submitBtn {
+	font-size: 15px;
+	padding: 10px;
+	margin: 10px;
+	background-color: rgba(252, 185, 0, 0.541);
+	border-color: rgba(252, 185, 0, 0.541);
+	border-radius: 10px;
+}
+
+.review_submitBtn:hover {
+	font-size: 15px;
+	padding: 10px;
+	margin: 10px;
+	background-color: rgb(252, 185, 0);
+	border-color: rgb(252, 185, 0);
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+}
+
+.review_star {
+	text-align: center;
+	
+}
+.review_star label{
+	font-size: 20px;
+	
+}
+
+#myform fieldset{
+    display: inline-block; /* 하위 별점 이미지들이 있는 영역만 자리를 차지함.*/
+    direction: rtl;
+	border: 0; /* 필드셋 테두리 제거 */
+}
+#myform input[type=radio] {
+	display: none;
+}
+
+#myform input[type=radio]:checked ~ label{
+    text-shadow: 0 0 0 rgb(255, 208, 0); /* 마우스 클릭 체크 */
+}
+#myform label{
+    font-size: 3em; /* 이모지 크기 */
+    color: transparent; /* 기존 이모지 컬러 제거 */
+    text-shadow: 0 0 0 #f0f0f0; /* 새 이모지 색상 부여 */
+}
+
+#myform fieldset legend{
+    text-align: left;
+}
+
+
+
+
+
+
+/*--------------------------------- Responsive Media Quaries -----------------------------*/
+
+@media only screen and (min-width: 1200px) {
+	.container {
+		max-width: 1170px;
+	}
+}
+
+
+
+/* Medium Device = 1200px */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.header__menu ul li {
+		margin-right: 45px;
+	}
+	.hero__search__form {
+		width: 490px;
+	}
+	.hero__categories__all {
+		padding: 10px 25px 10px 20px;
+	}
+	.hero__categories ul {
+		padding-left: 20px;
+	}
+	.latest-product__slider.owl-carousel .owl-nav {
+		right: 0;
+	}
+	.product__details__tab .nav-tabs:before {
+		width: 265px;
+	}
+	.product__details__tab .nav-tabs:after {
+		width: 265px;
+	}
+	.shoping__discount form input {
+		width: 240px;
+	}
+}
+
+/* Tablet Device = 768px */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.hero__categories {
+		margin-bottom: 30px;
+	}
+	.hero__search__form {
+		width: 485px;
+	}
+	.categories__slider.owl-carousel .owl-nav button {
+		left: -20px;
+	}
+	.categories__slider.owl-carousel .owl-nav button.owl-next {
+		right: -20px;
+	}
+	.filter__sort .nice-select {
+		padding-left: 5px;
+		padding-right: 28px;
+	}
+	.product__details__quantity {
+		margin-bottom: 10px;
+	}
+	.product__details__text .primary-btn {
+		margin-bottom: 10px;
+	}
+	.product__details__tab .nav-tabs:before {
+		width: 150px;
+	}
+	.product__details__tab .nav-tabs:after {
+		width: 150px;
+	}
+	.blog__details__author {
+		overflow: hidden;
+		margin-bottom: 25px;
+	}
+	.humberger__open {
+		display: block;
+		font-size: 22px;
+		color: #1c1c1c;
+		height: 35px;
+		width: 35px;
+		line-height: 33px;
+		text-align: center;
+		border: 1px solid #1c1c1c;
+		cursor: pointer;
+		position: absolute;
+		right: 15px;
+		top: 22px;
+	}
+	
+}
+
+/* Wide Mobile = 480px */
+
+@media only screen and (max-width: 767px) {
+	
+}
+
+/* Small Device = 320px */
+
+@media only screen and (max-width: 479px) {
+	.hero__search__form form .hero__search__categories {
+		display: none;
+	}
+	.featured__controls ul li {
+		margin-bottom: 10px;
+	}
+	.product__details__text ul li b {
+		width: 100px;
+	}
+	.product__details__tab .nav-tabs li {
+		margin-right: 20px;
+	}
+	.shoping__cart__btns {
+		text-align: center;
+	}
+	.primary-btn.cart-btn.cart-btn-right {
+		float: none;
+		margin-top: 10px;
+	}
+	.shoping__checkout .primary-btn {
+		display: block;
+		text-align: center;
+		padding: 10px 15px 10px;
+	}
+	.map .map-inside {
+		-webkit-transform: translateX(-125px);
+		-ms-transform: translateX(-125px);
+		transform: translateX(-125px);
+	}
+	.map .map-inside .inside-widget {
+		width: 250px;
+	}
+	.product__details__tab .nav-tabs li {
+		margin-right: 15px;
+	}
+	.shoping__discount form input {
+		width: 100%;
+	}
+	.checkout__order {
+		padding: 20px;
+	}
+	.blog__details__hero__text h2 {
+		font-size: 24px;
+	}
+}
