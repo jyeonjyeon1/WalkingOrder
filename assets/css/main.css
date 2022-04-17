@@ -5573,7 +5573,7 @@ mypage_menubar
   text-decoration: none;
   font-weight: 600;
   transition: 0.25s;
-
+  background-color: #ffffff;
 }
 
 .w-btn-skin-outline {
@@ -5583,14 +5583,25 @@ mypage_menubar
 }
 
 .w-btn-skin-outline:hover {
-  background-color: #f8e6e0;
+  background-color: #2c2c54ce;
   color: #6e6e6e;
+  border: 3px solid #2c2c54ce;
 }
 
 .w-btn-outline:hover {
-
   transform: scale(1.05);
   cursor: pointer;
+  
+}
+
+.w-btn-outline:hover a{
+  color: #edf0f1;
+  
+}
+
+.w-btn-outline:hover p{
+  color: #ffcccc;
+  
 }
 
 .w-btn-outline:active {
@@ -5600,6 +5611,8 @@ mypage_menubar
 .mypage_menubar_text {
   padding-top: 25px;
 }
+
+
 
 .mypage_menubar_text h5 {
   margin-bottom: 12px;
@@ -5750,7 +5763,7 @@ mypage_menubar
 }
 
 .sidebar_line a {
-  color: #FFB300;
+  color: #2c2c5465;
   font-weight: 500;
   position: relative;
 }
@@ -5762,7 +5775,7 @@ mypage_menubar
   right: 0;
   height: 1px;
   width: 90%;
-  background: #FFB300;
+  background: #2c2c5465;
   content: "";
 
 }
