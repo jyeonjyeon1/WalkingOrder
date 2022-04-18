@@ -10,7 +10,35 @@
     <link href="../assets/images/logo/logo_only.png" rel="icon"/>
 
     <!-- ========================= CSS here ========================= -->
+    <style>
+        .product_numberBtn {     
+            width:20px;
+            height:20px;
+            border-radius: 20px;
+            text-align: center;
+        }
 
+    </style>
+    <!-- ========================= js here ========================= -->
+   <script>
+       function count(type)  {
+    // 결과를 표시할 element
+    const resultElement = document.getElementById('result');
+    
+    // 현재 화면에 표시된 값
+    let number = resultElement.innerText;
+    
+    // 더하기/빼기
+    if(type === 'plus') {
+        number = parseInt(number) + 1;
+    }else if(type === 'minus')  {
+        number = parseInt(number) - 1;
+    }
+    
+    // 결과 출력
+    resultElement.innerText = number;
+    }
+    </script>
 </head>
 
 <body>
@@ -36,26 +64,7 @@
    <!-- 헤더 import -->
    <div id="headers"></div>
 
-    <!-- Start Breadcrumbs -->
-    <div class="breadcrumbs">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-md-6 col-12">
-                    <div class="breadcrumbs-content">
-                        <h1 class="page-title">Single Product</h1>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-12">
-                    <ul class="breadcrumb-nav">
-                        <li><a href="index.html"><i class="lni lni-home"></i> Home</a></li>
-                        <li><a href="index.html">Shop</a></li>
-                        <li>Single Product</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Breadcrumbs -->
+
 
     <!-- Start Item Details -->
     <section class="item-details section">
@@ -73,6 +82,14 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12 col-12">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 col-12">
+                            <!--수량 버튼-->
+                            <input class='product_numberBtn' type='button' onclick='count("plus")' value="+" />  <div id='result'>0</div>
+                            <input class='product_numberBtn' type='button' onclick='count("minus")' value="-"/>
+                            </div>
+                        </div>
+
                         <div class="product-info">
                             <h2 class="title">GoPro Karma Camera Drone</h2>
                             <p class="category"><i class="lni lni-tag"></i> Drones:<a href="javascript:void(0)">Action
