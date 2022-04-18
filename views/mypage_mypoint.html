@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html class="no-js" lang="kor">
+ 
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Walking Order</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../assets/images/logo/logo_only.png" rel="icon"/>
+
+    <!-- ========================= CSS here ========================= -->
+    <!-- Css Styles 추가 -->
+
+     <!-- ========================= JS here ========================= -->
+     <script src="../assets/js/jquery-3.6.0.js"></script> 
+     <script src="../assets/js/main.js"></script>
+     <script type="text/javascript">
+          jQuery(document).ready(function () {
+             $('#headers').load("header.html");
+             $('#footers').load("footer.html");  
+         });
+         //========= Hero Slider 
+     </script>
+    
+</head>
+
+<body>
+<!-- header import -->
+<div id="headers"></div>
+
+<!--mypage_main_jihyeon body 시작-->
+<section class="product spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-5">
+                    <div class="mypage_sidebar">
+                        <h4>My Page</h4>
+                        <ul>
+                            <li><a class="mypage_side_hover" href="mypage_mycoupon.html"><i class="lni lni-ticket"> My쿠폰</i></a></li>
+                            <li class="active"><a class="mypage_side_hover" href="mypage_mypoint.html"><i class="lni lni-database"> My포인트</i></a></li>
+                            <li><a class="mypage_side_hover" href="mypage_myreview.html"><i class="lni lni-pencil-alt"> My리뷰</i></a></li>
+                            <div class="sidebar_line">
+                            <li><a class="mypage_side_hover" href="mypage_orderlist.html"><i class="lni lni-radio-button"> 주문내역</i></a></li>
+                            </div>
+                            <li><a class="mypage_side_hover" href="mypage_myWishList.html"><i class="lni lni-heart"> 위시리스트</i></a></li>
+                            <li><a class="mypage_side_hover" href="mypage_myBasket.html"><i class="lni lni-cart"> 장바구니</i></a></li>
+                            <div class="sidebar_line">
+                            <li><a class="mypage_side_hover" href="#"><i class="lni lni-user"> 회원정보변경/탈퇴</i></a></li>
+                            </div>
+                            <li><a class="mypage_side_hover" href="#"><i class="lni lni-headphone-alt"> 고객센터 문의하기</i></a></li>
+                            <li><a class="mypage_side_hover" href="mypage_currentOrder.html"><i class="lni lni-ticket-alt"> 현재주문 확인하기</i></a></li>
+                            
+                        </ul>
+                    </div>
+            </div>
+            
+            <div class="col-lg-9 col-md-7">
+                <div class="mypage_mypoint_top" role="alert">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-7">
+                        <h5>My 포인트</h5>
+                    </div>
+                    <div class="col-lg-6 col-md-7">
+                        <h2>
+                            
+                            <span class="point_icon">P</span> 1,430</h2>
+                    </div>
+
+                </div>
+                  </div>
+                  <div class="mypage_mypoint_middle1">
+                  
+                    <div class="row">
+                        <div class="col-lg-2 col-md-7">
+                            
+                                <h5>날짜선택 :</h5>
+                        
+                        </div>
+                        <div class="col-lg-2 col-md-7">
+                            <select class="dateSelect" id="specificSizeSelect" >
+                                <!--오늘날짜로 selected 하기-->
+                                <option selected>2021년</option>
+                                <option value="2019">2010년</option>
+                                <option value="2020">2020년</option>
+                                <option value="2021">2021년</option>
+                              </select>
+                        </div>
+                        <div class="col-lg-2 col-md-7">
+                            <select class="dateSelect" id="specificSizeSelect">
+                                <option selected>4월</option>
+                                <option value="1">1월</option>
+                                <option value="2">2월</option>
+                                <option value="3">3월</option>
+                                <option value="4">4월</option>
+                                <option value="5">5월</option>
+                                <option value="6">6월</option>
+                                <option value="7">7월</option>
+                                <option value="8">8월</option>
+                                <option value="9">9월</option>
+                                <option value="10">10월</option>
+                                <option value="11">11월</option>
+                                <option value="12">12월</option>
+                              </select>
+                        </div>
+                        <div class="col-lg-2 col-md-7">
+                            <select class="dateSelect" id="specificSizeSelect">
+                                <option selected>7일</option>
+                                <option value="1">1일</option>
+                                <option value="2">2일</option>
+                                <option value="3">3일</option>
+                              </select>
+                        </div>
+
+                    </div>
+
+                    
+        
+
+
+
+                  </div>
+                  <div class="mypage_mypoint_middle2">
+
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            
+                            <td colspan="3"><h4>메머드커피(종로3가점)</h4>
+                                <p>2021.03.23 (2022.03.23 만료)</p>
+                            </td>   
+                            <td>
+                                <h3>+200</h3>
+                                <p class="plus">적립</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            
+                            <td colspan="3"><h4>커피온리(종각점)</h4>
+                                <p>2021.03.24 (2022.03.24 만료)</p>
+                            </td>   
+                            <td>
+                                <h3>+230</h3>
+                                <p class="plus">적립</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            
+                            <td colspan="3"><h4>컴포즈커피(강남점)</h4>
+                                <p>2021.03.26 (2022.03.26 만료)</p>
+                            </td>   
+                            <td>
+                                <h3>+120</h3>
+                                <p class="plus">적립</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            
+                            <td colspan="3"><h4>메머드커피(종로3가점)</h4>
+                                <p>2021.04.01 (2022.04.01 만료)</p>
+                            </td>   
+                            <td>
+                                <h2>-310</h2>
+                                <p class="minus">사용</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            
+                            <td colspan="3"><h4>더리터카페(위례점)</h4>
+                                <p>2021.03.29 (2022.03.29 만료)</p>
+                            </td>   
+                            <td>
+                                <h3>+310</h3>
+                                <p class="plus">적립</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            
+                            <td colspan="3"><h4>메머드커피(위례점)</h4>
+                                <p>2021.03.29 (2022.03.29 만료)</p>
+                            </td>   
+                            <td>
+                                <h3>+310</h3>
+                                <p class="plus">적립</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            
+                            <td colspan="3"><h4>메머드커피(종로3가점)</h4>
+                                <p>2021.03.29 (2022.03.29 만료)</p>
+                            </td>   
+                            <td>
+                                <h3>+310</h3>
+                                <p class="plus">적립</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--mypage_main body 끝-->
+<!-- footer import -->
+<div id="footers"></div>
+
+</body>
+</html>
