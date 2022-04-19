@@ -3,12 +3,12 @@
  
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Walking Order</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="../assets/images/logo/logo_only.png" rel="icon"/>
+    <link href="resources/assets/images/logo/logo_only.svg" rel="icon"/>
 
     
     <!-- ========================= CSS here ========================= -->
@@ -19,8 +19,8 @@
 
 
      <!-- ========================= JS here ========================= -->
-     <script src="../assets/js/jquery-3.6.0.js"></script> 
-     <script src="../assets/js/main.js"></script>
+     <script src="resources/assets/js/jquery-3.6.0.js"></script> 
+     <script src="resources/assets/js/main.js"></script>
      <script type="text/javascript">
           jQuery(document).ready(function () {
              $('#headers').load("header.html");
@@ -33,7 +33,7 @@
 
 <body>
 <!-- header import -->
-<div id="headers"></div>
+<%@ include file="header.jsp" %>
 
 <!--mypage_main_jihyeon body 시작-->
 <section class="product spad">
@@ -135,7 +135,7 @@
 
 <!--mypage_main body 끝-->
 <!-- footer import -->
-<div id="footers"></div>
+<%@ include file="footer.jsp" %>
 
 </body>
 </html>

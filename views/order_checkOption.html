@@ -2,12 +2,12 @@
 <html class="no-js" lang="zxx">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Single Product - ShopGrids Bootstrap 5 eCommerce HTML Template.</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="../assets/images/logo/logo_only.png" rel="icon"/>
+    <link href="resources/assets/images/logo/logo_only.svg" rel="icon"/>
 
     <!-- ========================= CSS here ========================= -->
     <style>
@@ -62,7 +62,7 @@
     <!-- /End Preloader -->
 
    <!-- 헤더 import -->
-   <div id="headers"></div>
+   <%@ include file="header.jsp" %>
 
 
 
@@ -75,7 +75,7 @@
                         <div class="product-images">
                             <main id="gallery">
                                 <div class="main-img">
-                                    <img src="../assets/images/product-details/01.jpg" id="current" alt="#">
+                                    <img src="resources/assets/images/product-details/01.jpg" id="current" alt="#">
                                 </div>
                                 
                             </main>
@@ -271,7 +271,7 @@
 
    
     <!-- footer import -->
-    <div id="footers"></div>
+    <%@ include file="footer.jsp" %>
 
     <!-- ========================= scroll-top ========================= -->
     <a href="#" class="scroll-top">
@@ -279,11 +279,11 @@
     </a>
 
     <!-- ========================= JS here ========================= -->
-    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="resources/assets/js/bootstrap.min.js"></script>
     
-    <script src="../assets/js/glightbox.min.js"></script>
-    <script src="../assets/js/jquery-3.6.0.js"></script>
-    <script src="../assets/js/main.js"></script>
+    <script src="resources/assets/js/glightbox.min.js"></script>
+    <script src="resources/assets/js/jquery-3.6.0.js"></script>
+    <script src="resources/assets/js/main.js"></script>
     <script type="text/javascript">
          jQuery(document).ready(function () {
             $('#headers').load("header.html");

@@ -8,12 +8,12 @@
 <head>
 
 
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <title>Walking Order</title>
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="../assets/images/logo/logo_only.png" rel="icon" />
+  <link href="resources/assets/images/logo/logo_only.svg" rel="icon" />
 
 
   <!-- ========================= CSS here ========================= -->
@@ -25,7 +25,7 @@
 
 
   <!-- ========================= JS here ========================= -->
-  <script src="../assets/js/jquery-3.6.0.js"></script>
+  <script src="resources/assets/js/jquery-3.6.0.js"></script>
   <script type="text/javascript">
     jQuery(document).ready(function () {
       $('#headers').load("header.html");
@@ -42,7 +42,7 @@
 
 
   <!-- header import -->
-  <div id="headers"></div>
+  <%@ include file="header.jsp" %>
 
   <!--mypage_main_jihyeon body 시작-->
   <section class="product spad">
@@ -119,7 +119,7 @@
                   <div class="coupon_card mb-3" style="max-width: 540px;">
                     <div class="row g-0">
                       <div class="col-md-4 col-sm-12">
-                        <img src="../assets/images/categories/cat-1.jpg" class="img-fluid rounded-start" alt="...">
+                        <img src="resources/assets/images/categories/cat-1.jpg" class="img-fluid rounded-start" alt="...">
                       </div>
                       <div class="col-md-8">
                         <div class="coupon_card-body">
@@ -133,7 +133,7 @@
                   <div class="coupon_card mb-3" style="max-width: 540px;">
                     <div class="row g-0">
                       <div class="col-md-4">
-                        <img src="../assets/images/categories/cat-2.jpg" class="img-fluid rounded-start" alt="...">
+                        <img src="resources/assets/images/categories/cat-2.jpg" class="img-fluid rounded-start" alt="...">
                       </div>
                       <div class="col-md-8">
                         <div class="coupon_card-body">
@@ -151,7 +151,7 @@
                   <div class="coupon_usedcard mb-3" style="max-width: 540px;">
                     <div class="row g-0">
                       <div class="col-md-4">
-                        <img src="../assets/images/categories/cat-3.jpg" class="img-fluid rounded-start" alt="...">
+                        <img src="resources/assets/images/categories/cat-3.jpg" class="img-fluid rounded-start" alt="...">
                       </div>
                       <div class="col-md-8">
                         <div class="coupon_card-body">
@@ -180,7 +180,7 @@
 
   <!--mypage_main body 끝-->
   <!-- footer import -->
-  <div id="footers"></div>
+  <%@ include file="footer.jsp" %>
 
 </body>
 

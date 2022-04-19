@@ -3,19 +3,19 @@
  
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Walking Order</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="../assets/images/logo/logo_only.png" rel="icon"/>
+    <link href="resources/assets/images/logo/logo_only.svg" rel="icon"/>
 
     
     <!-- ========================= CSS here ========================= -->
     <!-- Css Styles 추가 -->
 
      <!-- ========================= JS here ========================= -->
-     <script src="../assets/js/jquery-3.6.0.js"></script> 
+     <script src="resources/assets/js/jquery-3.6.0.js"></script> 
      <script type="text/javascript">
           jQuery(document).ready(function () {
              $('#headers').load("header.html");
@@ -28,7 +28,7 @@
 
 <body>
 <!-- header import -->
-<div id="headers"></div>
+<%@ include file="header.jsp" %>
 
 <!--mypage_main_jihyeon body 시작-->
 <section class="product spad">
@@ -89,7 +89,7 @@
                 </div>
                 <div class="row" >
                     <div class="col-lg-4 col-md-6" style="margin: 10px;"> 
-                        <img src="../assets/images/blog/blog-6.jpg" style="border-radius: 20px;">
+                        <img src="resources/assets/images/blog/blog-6.jpg" style="border-radius: 20px;">
 
                     </div>
                     <div class="col-lg-6 col-md-6" style="margin: 15px;">
@@ -125,7 +125,7 @@
                     </div>
                     <div class="row" >
                         <div class="col-lg-4 col-md-6" style="margin: 10px;"> 
-                            <img src="../assets/images/blog/blog-6.jpg" style="border-radius: 20px;">
+                            <img src="resources/assets/images/blog/blog-6.jpg" style="border-radius: 20px;">
     
                         </div>
                         <div class="col-lg-6 col-md-6" style="margin: 15px;">
@@ -161,7 +161,7 @@
                         </div>
                         <div class="row" >
                             <div class="col-lg-4 col-md-6" style="margin:0 10px 10px 10px"> 
-                                <img src="../assets/images/blog/blog-6.jpg" style="border-radius: 20px;">
+                                <img src="resources/assets/images/blog/blog-6.jpg" style="border-radius: 20px;">
         
                             </div>
                             <div class="col-lg-6 col-md-6" style="margin: 15px;">
@@ -191,7 +191,7 @@
 
 <!--mypage_main body 끝-->
 <!-- footer import -->
-<div id="footers"></div>
+<%@ include file="footer.jsp" %>
 
 </body>
 </html>

@@ -2,18 +2,18 @@
 <html class="no-js" lang="kor">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Walking Order</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="../assets/images/logo/logo_only.png" rel="icon"/>
+    <link href="resources/assets/images/logo/logo_only.svg" rel="icon"/>
 
 
     <!-- ========================= CSS here ========================= -->
 
      <!-- ========================= JS here ========================= -->
-     <script src="../assets/js/jquery-3.6.0.js"></script>
+     <script src="resources/assets/js/jquery-3.6.0.js"></script>
      <script type="text/javascript">
           jQuery(document).ready(function () {
              $('#headers').load("header.html");
@@ -47,7 +47,7 @@
 
 <body>
 <!-- header import -->
-<div id="headers"></div>
+<%@ include file="header.jsp" %>
 
 <div class="container" style="max-width: 1000px;">
 
@@ -57,7 +57,7 @@
 
 <div class="row" >
     <div class="writingReview_image" style="text-align: center; margin-top: 15px;">
-    <img src="../assets/images/categories/cat-1.jpg" class="img-fluid rounded-start" style=" width: 300px; height: 300px;" alt="...">
+    <img src="resources/assets/images/categories/cat-1.jpg" class="img-fluid rounded-start" style=" width: 300px; height: 300px;" alt="...">
     </div>
 </div>
 <div class="row">
@@ -104,6 +104,6 @@
 
 </div>
 <!-- footer import -->
-<div id="footers"></div>
+<%@ include file="footer.jsp" %>
 </body>
 </html>

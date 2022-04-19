@@ -2,12 +2,12 @@
 <html class="no-js" lang="kor">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Walking Order</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="../assets/images/logo/logo_only.png" rel="icon"/>
+    <link href="resources/assets/images/logo/logo_only.svg" rel="icon"/>
 
 
     <!-- ========================= CSS here ========================= -->
@@ -19,8 +19,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css    ">
 
     
-        <script src="../assets/js/jquery-3.6.0.js"></script>
-        <script src="../assets/js/jquery.slicknav.js"></script>    
+        <script src="resources/assets/js/jquery-3.6.0.js"></script>
+        <script src="resources/assets/js/jquery.slicknav.js"></script>    
 
           <style>
             /*======================================
@@ -176,7 +176,7 @@
 
     <!-- ========================= JS here ========================= -->
     
-    <script src="../assets/js/main_1.js"></script>
+    <script src="resources/assets/js/main_1.js"></script>
     <script type="text/javascript">
         jQuery(document).ready(function () {
             $('#headers').load("header.html");
@@ -189,7 +189,7 @@
 
 <body>
     <!-- header import -->
-    <div id="headers"></div>
+    <%@ include file="header.jsp" %>
 
 
     <!-- 상담원 로고 -->
@@ -672,13 +672,13 @@
 
 
     <!-- footer import -->
-    <div id="footers"></div>
+    <%@ include file="footer.jsp" %>
 
     <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/assets/js/bootstrap.min.js"></script> -->
     <!-- Js Plugins -->
-    <script src="../assets/js/cleaned/jquery-3.3.1.min.js"></script>
-    <script src="../assets/js/cleaned/bootstrap.min.js"></script>
+    <script src="resources/assets/js/cleaned/jquery-3.3.1.min.js"></script>
+    <script src="resources/assets/js/cleaned/bootstrap.min.js"></script>
     
 </body>
 

@@ -50,8 +50,8 @@ header에 있는 js 및 css 상속받음
 jw4  (수량 조정을 위한 애들..) 
 첫줄로 바꾸면 아래 js 다 없애도됨..
 기존 오빠것보단 좀 못생겼지만 아래 js 쓰는 것보단 나을듯
-<script src="../assets/js/jquery.nice-select.min.js"></script>
-    <script src="../assets/js/jquery-ui.min.js"></script>
-    <script src="../assets/js/jquery.slicknav.js"></script>
-    <script src="../assets/js/owl.carousel.min.js"></script>
-    <script src="../assets/js/main_1.js"></script>
+<script src="resources/assets/js/jquery.nice-select.min.js"></script>
+    <script src="resources/assets/js/jquery-ui.min.js"></script>
+    <script src="resources/assets/js/jquery.slicknav.js"></script>
+    <script src="resources/assets/js/owl.carousel.min.js"></script>
+    <script src="resources/assets/js/main_1.js"></script>
