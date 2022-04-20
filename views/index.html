@@ -2,17 +2,17 @@
 <html class="no-js" lang="kor">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Walking Order</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="../assets/images/logo/logo_only.png" rel="icon" />
+    <link href="resources/assets/images/logo/logo_only.svg" rel="icon" />
 
 
     <!-- ========================= CSS here ========================= -->
-    <link rel="stylesheet" href="../assets/css/main.css" />
-    <link rel="stylesheet" href="../assets/owlcarousel/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="resources/assets/css/main.css" />
+    <link rel="stylesheet" href="resources/assets/owlcarousel/assets/owl.carousel.min.css" />
 </head>
 
 <body>
@@ -22,7 +22,7 @@
     <!-- /End Preloader -->
 
     <!-- 헤더 import -->
-    <div id="headers"></div>
+    <%@ include file="/WEB-INF/views/user/inc/header.jsp" %>
 
     <!-- Start Hero Area -->
     <section class="hero-area">
@@ -34,7 +34,7 @@
                         <div class="hero-slider">
                             <!-- Start Single Slider -->
                             <div class="single-slider"
-                                style="background-image: url(../assets/images/hero/slider-bg1.jpg);border-radius: 20px 20px 20px 20px ;">
+                                style="background-image: url(resources/assets/images/hero/slider-bg1.jpg);border-radius: 20px 20px 20px 20px ;">
                                 <div class="content">
 
                                     <div class="button">
@@ -45,7 +45,7 @@
                             <!-- End Single Slider -->
                             <!-- Start Single Slider -->
                             <div class="single-slider"
-                                style="background-image: url(../assets/images/hero/slider-bg2.jpg);border-radius: 20px 20px 20px 20px ;">
+                                style="background-image: url(resources/assets/images/hero/slider-bg2.jpg);border-radius: 20px 20px 20px 20px ;">
                                 <div class="content">
 
                                     <div class="button">
@@ -63,7 +63,7 @@
                         <div class="col-lg-12 col-md-6 col-12 md-custom-padding">
                             <!-- Start Small Banner -->
                             <div class="hero-small-banner"
-                                style="margin-top:20px;background-image: url('../assets/images/hero/slider-bnr.jpg'); border-radius: 20px 20px 20px 20px ;">
+                                style="margin-top:20px;background-image: url('resources/assets/images/hero/slider-bnr.jpg'); border-radius: 20px 20px 20px 20px ;">
                             </div>
                             <!-- End Small Banner -->
                         </div>
@@ -103,7 +103,7 @@
                     <div class="card">
                         <div class="single-product">
                             <div class="product-image">
-                                <img src="../assets/images/cafe/1.jpg" alt="#">
+                                <img src="resources/assets/images/cafe/1.jpg" alt="#">
                                 <div class="button">
                                     <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> 주문하기</a>
                                 </div>
@@ -135,7 +135,7 @@
                     <div class="card">
                         <div class="single-product">
                             <div class="product-image">
-                                <img src="../assets/images/cafe/2.jpg" alt="#">
+                                <img src="resources/assets/images/cafe/2.jpg" alt="#">
                                 <span class="sale-tag">-5%</span>
                                 <div class="button">
                                     <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> 주문하기</a>
@@ -169,7 +169,7 @@
                         <!-- Start Single Product -->
                         <div class="single-product">
                             <div class="product-image">
-                                <img src="../assets/images/cafe/3.jpg" alt="#">
+                                <img src="resources/assets/images/cafe/3.jpg" alt="#">
                                 <div class="button">
                                     <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> 주문하기</a>
                                 </div>
@@ -203,7 +203,7 @@
                         <!-- Start Single Product -->
                         <div class="single-product">
                             <div class="product-image">
-                                <img src="../assets/images/cafe/4.jpg" alt="#">
+                                <img src="resources/assets/images/cafe/4.jpg" alt="#">
                                 <span class="new-tag">New</span>
                                 <div class="button">
                                     <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> 주문하기</a>
@@ -237,7 +237,7 @@
                     <div class="card">
                         <div class="single-product">
                             <div class="product-image">
-                                <img src="../assets/images/cafe/1.jpg" alt="#">
+                                <img src="resources/assets/images/cafe/1.jpg" alt="#">
                                 <div class="button">
                                     <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> 주문하기</a>
                                 </div>
@@ -269,7 +269,7 @@
                     <div class="card">
                         <div class="single-product">
                             <div class="product-image">
-                                <img src="../assets/images/cafe/2.jpg" alt="#">
+                                <img src="resources/assets/images/cafe/2.jpg" alt="#">
                                 <span class="sale-tag">-5%</span>
                                 <div class="button">
                                     <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> 주문하기</a>
@@ -303,7 +303,7 @@
                         <!-- Start Single Product -->
                         <div class="single-product">
                             <div class="product-image">
-                                <img src="../assets/images/cafe/3.jpg" alt="#">
+                                <img src="resources/assets/images/cafe/3.jpg" alt="#">
                                 <div class="button">
                                     <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> 주문하기</a>
                                 </div>
@@ -337,7 +337,7 @@
                         <!-- Start Single Product -->
                         <div class="single-product">
                             <div class="product-image">
-                                <img src="../assets/images/cafe/4.jpg" alt="#">
+                                <img src="resources/assets/images/cafe/4.jpg" alt="#">
                                 <span class="new-tag">New</span>
                                 <div class="button">
                                     <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> 주문하기</a>
@@ -388,7 +388,7 @@
                         <!-- Start Single Product -->
                         <div class="single-product">
                             <div class="product-image">
-                                <img src="../assets/images/cafe/5.jpg" alt="#">
+                                <img src="resources/assets/images/cafe/5.jpg" alt="#">
                                 <div class="button">
                                     <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> 주문하기</a>
                                 </div>
@@ -422,7 +422,7 @@
                         <!-- Start Single Product -->
                         <div class="single-product">
                             <div class="product-image">
-                                <img src="../assets/images/cafe/6.jpg" alt="#">
+                                <img src="resources/assets/images/cafe/6.jpg" alt="#">
                                 <span class="sale-tag">-20%</span>
                                 <div class="button">
                                     <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> 주문하기</a>
@@ -457,7 +457,7 @@
                         <!-- Start Single Product -->
                         <div class="single-product">
                             <div class="product-image">
-                                <img src="../assets/images/cafe/7.jpg" alt="#">
+                                <img src="resources/assets/images/cafe/7.jpg" alt="#">
                                 <div class="button">
                                     <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> 주문하기</a>
                                 </div>
@@ -491,7 +491,7 @@
                         <!-- Start Single Product -->
                         <div class="single-product">
                             <div class="product-image">
-                                <img src="../assets/images/cafe/8.jpg" alt="#">
+                                <img src="resources/assets/images/cafe/8.jpg" alt="#">
                                 <div class="button">
                                     <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> 주문하기</a>
                                 </div>
@@ -525,7 +525,7 @@
                         <!-- Start Single Product -->
                         <div class="single-product">
                             <div class="product-image">
-                                <img src="../assets/images/cafe/5.jpg" alt="#">
+                                <img src="resources/assets/images/cafe/5.jpg" alt="#">
                                 <div class="button">
                                     <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> 주문하기</a>
                                 </div>
@@ -559,7 +559,7 @@
                         <!-- Start Single Product -->
                         <div class="single-product">
                             <div class="product-image">
-                                <img src="../assets/images/cafe/6.jpg" alt="#">
+                                <img src="resources/assets/images/cafe/6.jpg" alt="#">
                                 <span class="sale-tag">-20%</span>
                                 <div class="button">
                                     <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> 주문하기</a>
@@ -594,7 +594,7 @@
                         <!-- Start Single Product -->
                         <div class="single-product">
                             <div class="product-image">
-                                <img src="../assets/images/cafe/7.jpg" alt="#">
+                                <img src="resources/assets/images/cafe/7.jpg" alt="#">
                                 <div class="button">
                                     <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> 주문하기</a>
                                 </div>
@@ -628,7 +628,7 @@
                         <!-- Start Single Product -->
                         <div class="single-product">
                             <div class="product-image">
-                                <img src="../assets/images/cafe/8.jpg" alt="#">
+                                <img src="resources/assets/images/cafe/8.jpg" alt="#">
                                 <div class="button">
                                     <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> 주문하기</a>
                                 </div>
@@ -679,7 +679,7 @@
                         <!-- Start Single Product -->
                         <div class="single-product">
                             <div class="product-image">
-                                <img src="../assets/images/cafe/9.jpg" alt="#">
+                                <img src="resources/assets/images/cafe/9.jpg" alt="#">
                                 <span class="new-tag">New</span>
                                 <div class="button">
                                     <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> 주문하기</a>
@@ -714,7 +714,7 @@
                         <!-- Start Single Product -->
                         <div class="single-product">
                             <div class="product-image">
-                                <img src="../assets/images/cafe/10.jpg" alt="#">
+                                <img src="resources/assets/images/cafe/10.jpg" alt="#">
                                 <span class="new-tag">New</span>
                                 <div class="button">
                                     <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> 주문하기</a>
@@ -749,7 +749,7 @@
                         <!-- Start Single Product -->
                         <div class="single-product">
                             <div class="product-image">
-                                <img src="../assets/images/cafe/11.jpg" alt="#">
+                                <img src="resources/assets/images/cafe/11.jpg" alt="#">
                                 <span class="new-tag">New</span>
                                 <div class="button">
                                     <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> 주문하기</a>
@@ -784,7 +784,7 @@
                         <!-- Start Single Product -->
                         <div class="single-product">
                             <div class="product-image">
-                                <img src="../assets/images/cafe/12.jpg" alt="#">
+                                <img src="resources/assets/images/cafe/12.jpg" alt="#">
                                 <span class="new-tag">New</span>
                                 <div class="button">
                                     <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> 주문하기</a>
@@ -819,7 +819,7 @@
                         <!-- Start Single Product -->
                         <div class="single-product">
                             <div class="product-image">
-                                <img src="../assets/images/cafe/9.jpg" alt="#">
+                                <img src="resources/assets/images/cafe/9.jpg" alt="#">
                                 <span class="new-tag">New</span>
                                 <div class="button">
                                     <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> 주문하기</a>
@@ -854,7 +854,7 @@
                         <!-- Start Single Product -->
                         <div class="single-product">
                             <div class="product-image">
-                                <img src="../assets/images/cafe/10.jpg" alt="#">
+                                <img src="resources/assets/images/cafe/10.jpg" alt="#">
                                 <span class="new-tag">New</span>
                                 <div class="button">
                                     <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> 주문하기</a>
@@ -889,7 +889,7 @@
                         <!-- Start Single Product -->
                         <div class="single-product">
                             <div class="product-image">
-                                <img src="../assets/images/cafe/11.jpg" alt="#">
+                                <img src="resources/assets/images/cafe/11.jpg" alt="#">
                                 <span class="new-tag">New</span>
                                 <div class="button">
                                     <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> 주문하기</a>
@@ -924,7 +924,7 @@
                         <!-- Start Single Product -->
                         <div class="single-product">
                             <div class="product-image">
-                                <img src="../assets/images/cafe/12.jpg" alt="#">
+                                <img src="resources/assets/images/cafe/12.jpg" alt="#">
                                 <span class="new-tag">New</span>
                                 <div class="button">
                                     <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> 주문하기</a>
@@ -978,7 +978,7 @@
                     <!-- Start Single Product -->
                     <div class="single-product">
                         <div class="product-image">
-                            <img src="../assets/images/cafe/1.jpg" alt="#">
+                            <img src="resources/assets/images/cafe/1.jpg" alt="#">
                             <div class="button">
                                 <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> 주문하기</a>
                             </div>
@@ -1010,7 +1010,7 @@
                     <!-- Start Single Product -->
                     <div class="single-product">
                         <div class="product-image">
-                            <img src="../assets/images/cafe/2.jpg" alt="#">
+                            <img src="resources/assets/images/cafe/2.jpg" alt="#">
                             <span class="sale-tag">-5%</span>
                             <div class="button">
                                 <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> 주문하기</a>
@@ -1043,7 +1043,7 @@
                     <!-- Start Single Product -->
                     <div class="single-product">
                         <div class="product-image">
-                            <img src="../assets/images/cafe/3.jpg" alt="#">
+                            <img src="resources/assets/images/cafe/3.jpg" alt="#">
                             <div class="button">
                                 <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> 주문하기</a>
                             </div>
@@ -1075,7 +1075,7 @@
                     <!-- Start Single Product -->
                     <div class="single-product">
                         <div class="product-image">
-                            <img src="../assets/images/cafe/4.jpg" alt="#">
+                            <img src="resources/assets/images/cafe/4.jpg" alt="#">
                             <span class="new-tag">New</span>
                             <div class="button">
                                 <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> 주문하기</a>
@@ -1125,7 +1125,7 @@
                     <!-- Start Single Product -->
                     <div class="single-product">
                         <div class="product-image">
-                            <img src="../assets/images/cafe/5.jpg" alt="#">
+                            <img src="resources/assets/images/cafe/5.jpg" alt="#">
                             <div class="button">
                                 <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> 주문하기</a>
                             </div>
@@ -1157,7 +1157,7 @@
                     <!-- Start Single Product -->
                     <div class="single-product">
                         <div class="product-image">
-                            <img src="../assets/images/cafe/6.jpg" alt="#">
+                            <img src="resources/assets/images/cafe/6.jpg" alt="#">
                             <span class="sale-tag">-20%</span>
                             <div class="button">
                                 <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> 주문하기</a>
@@ -1190,7 +1190,7 @@
                     <!-- Start Single Product -->
                     <div class="single-product">
                         <div class="product-image">
-                            <img src="../assets/images/cafe/7.jpg" alt="#">
+                            <img src="resources/assets/images/cafe/7.jpg" alt="#">
                             <div class="button">
                                 <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> 주문하기</a>
                             </div>
@@ -1222,7 +1222,7 @@
                     <!-- Start Single Product -->
                     <div class="single-product">
                         <div class="product-image">
-                            <img src="../assets/images/cafe/8.jpg" alt="#">
+                            <img src="resources/assets/images/cafe/8.jpg" alt="#">
                             <div class="button">
                                 <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> 주문하기</a>
                             </div>
@@ -1271,7 +1271,7 @@
                     <!-- Start Single Product -->
                     <div class="single-product">
                         <div class="product-image">
-                            <img src="../assets/images/cafe/9.jpg" alt="#">
+                            <img src="resources/assets/images/cafe/9.jpg" alt="#">
                             <span class="new-tag">New</span>
                             <div class="button">
                                 <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> 주문하기</a>
@@ -1304,7 +1304,7 @@
                     <!-- Start Single Product -->
                     <div class="single-product">
                         <div class="product-image">
-                            <img src="../assets/images/cafe/10.jpg" alt="#">
+                            <img src="resources/assets/images/cafe/10.jpg" alt="#">
                             <span class="new-tag">New</span>
                             <div class="button">
                                 <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> 주문하기</a>
@@ -1337,7 +1337,7 @@
                     <!-- Start Single Product -->
                     <div class="single-product">
                         <div class="product-image">
-                            <img src="../assets/images/cafe/11.jpg" alt="#">
+                            <img src="resources/assets/images/cafe/11.jpg" alt="#">
                             <span class="new-tag">New</span>
                             <div class="button">
                                 <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> 주문하기</a>
@@ -1370,7 +1370,7 @@
                     <!-- Start Single Product -->
                     <div class="single-product">
                         <div class="product-image">
-                            <img src="../assets/images/cafe/12.jpg" alt="#">
+                            <img src="resources/assets/images/cafe/12.jpg" alt="#">
                             <span class="new-tag">New</span>
                             <div class="button">
                                 <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> 주문하기</a>
@@ -1409,7 +1409,7 @@
 
 
     <!-- footer import -->
-    <div id="footers"></div>
+    <%@ include file="/WEB-INF/views/user/inc/footer.jsp" %>
 
     <!-- ========================= scroll-top ========================= -->
     <a href="#" class="scroll-top">
@@ -1417,10 +1417,10 @@
     </a>
 
     <!-- ========================= JS here ========================= -->
-    <script src="../assets/js/tiny-slider.js"></script>
-    <script src="../assets/js/jquery-3.6.0.js"></script>
-    <script src="../assets/js/main.js"></script>
-    <script src="../assets/owlcarousel/owl.carousel.min.js"></script>
+    <script src="resources/assets/js/tiny-slider.js"></script>
+    <script src="resources/assets/js/jquery-3.6.0.js"></script>
+    <script src="resources/assets/js/main.js"></script>
+    <script src="resources/assets/owlcarousel/owl.carousel.min.js"></script>
     <script type="text/javascript">
         jQuery(document).ready(function () {
             $('#headers').load("header.html");

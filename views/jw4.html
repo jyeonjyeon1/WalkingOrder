@@ -2,19 +2,19 @@
 <html class="no-js" lang="kor">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Walking Order</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="../assets/images/logo/logo_only.png" rel="icon" />
+    <link href="resources/assets/images/logo/logo_only.svg" rel="icon" />
 
 
     <!-- ========================= CSS here ========================= -->
     <!-- 아이콘은 font-awesome으로 대체 -->
     <!-- <link rel="stylesheet" href="css/elegant-icons.css" type="text/css"> -->
     <!-- ========================= JS here ========================= -->
-    <script src="../assets/js/jquery-3.6.0.js"></script>
+    <script src="resources/assets/js/jquery-3.6.0.js"></script>
 
     <script type="text/javascript">
         jQuery(document).ready(function () {
@@ -29,7 +29,7 @@
 
 <body>
     <!-- header import -->
-    <div id="headers"></div>
+    <%@ include file="/WEB-INF/views/user/inc/header.jsp" %>
 
     <!-- Shoping Cart Section Begin -->
     <section class="shoping-cart spad" style="padding:0;">
@@ -56,7 +56,7 @@
                                 <tr>
                                     <td class="shoping__cart__item">
                                         <img class="d-lg-inline-block d-md-inline-block d-none"
-                                            src="../assets/images/jaewoo/latte.jpg" alt="">
+                                            src="resources/assets/images/jaewoo/latte.jpg" alt="">
                                         <label>아이스아메리카노</label>
 
                                     </td>
@@ -87,7 +87,7 @@
                                 </tr>
                                 <tr>
                                     <td class="shoping__cart__item">
-                                        <img src="../assets/images/jaewoo/latte.jpg" alt="">
+                                        <img src="resources/assets/images/jaewoo/latte.jpg" alt="">
                                         <h5>라떼는말야</h5>
                                     </td>
                                     <td class="shoping__cart__price">
@@ -112,7 +112,7 @@
                                 </tr>
                                 <tr>
                                     <td class="shoping__cart__item">
-                                        <img src="../assets/images/jaewoo/latte.jpg" alt="">
+                                        <img src="resources/assets/images/jaewoo/latte.jpg" alt="">
                                         <h5>이렇게하면바나나</h5>
                                     </td>
                                     <td class="shoping__cart__price">
@@ -171,13 +171,13 @@
 
 
     <!-- footer import -->
-    <div id="footers"></div>
+    <%@ include file="/WEB-INF/views/user/inc/footer.jsp" %>
     <!-- Js Plugins -->
-    <script src="../assets/js/jquery.nice-select.min.js"></script>
-    <script src="../assets/js/jquery-ui.min.js"></script>
-    <script src="../assets/js/jquery.slicknav.js"></script>
-    <script src="../assets/js/owl.carousel.min.js"></script>
-    <script src="../assets/js/main_1.js"></script>
+    <script src="resources/assets/js/jquery.nice-select.min.js"></script>
+    <script src="resources/assets/js/jquery-ui.min.js"></script>
+    <script src="resources/assets/js/jquery.slicknav.js"></script>
+    <script src="resources/assets/js/owl.carousel.min.js"></script>
+    <script src="resources/assets/js/main_1.js"></script>
 </body>
 
 </html>
