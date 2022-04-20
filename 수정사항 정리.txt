@@ -8,16 +8,16 @@
 (몇줄 안돼서 상관없을듯,..)
 
 
-jw1.html
+order_storeList.html
 -제일 윗줄 제외하고 기존 템플 남겼음
 - 클릭 효과 및 hover 효과 남겼음. 수정해도됨
 -반응형 대충 적용했지만 제일 큰때랑 sm 보다 작은 경우만 적용
 -세세한 반응형은 신경 써주시면 ㄳ하겠음
 -이미지는 처음에 말한데로 가로세로 비율 유지하는 방향으로 수정햇음
 
-jw2.html - 뭔지몰라서 안건드렸음
+order_menuList.html - 뭔지몰라서 안건드렸음
 
-jw3.html
+order_menuList.html
 -매장 이미지 bg는 눈에 띄라고 임시로 설정햇음.
 body와 맞추든 다른 색을 하든 자유( kio_img_bg )
 - 신메뉴 시즌메뉴 등 선택 부분 마무리 지어주시면 ㄳ
@@ -30,7 +30,7 @@ body와 맞추든 다른 색을 하든 자유( kio_img_bg )
 다른 매장의 음료가 장바구니에 있는 상태에서 다른 매장의 음료를 담을 때 등의
 알림/modal 도 다지인 등 필요
 
-jw4.html
+order_myOrderList.html
 -마찬가지로 첫줄만 빼고 그대로 뒀음.
 - 작은 화면 했을 경우 이미지 출력되지 않게했음 (칸 부족)
 - 옵션 추가햇음
@@ -47,7 +47,7 @@ jw4.html
 웬만한 페이지는
 header에 있는 js 및 css 상속받음
 예외)
-jw4  (수량 조정을 위한 애들..) 
+order_myOrderList  (수량 조정을 위한 애들..) 
 첫줄로 바꾸면 아래 js 다 없애도됨..
 기존 오빠것보단 좀 못생겼지만 아래 js 쓰는 것보단 나을듯
 <script src="resources/assets/js/jquery.nice-select.min.js"></script>

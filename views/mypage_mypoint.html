@@ -28,7 +28,8 @@
 
 <body>
 <!-- header import -->
-<%@ include file="/WEB-INF/views/user/inc/header.jsp" %>
+<!-- <%@ include file="/WEB-INF/views/user/inc/header.jsp" %> -->
+      <div id="headers"></div>
 
 <!--mypage_main_jihyeon body 시작-->
 <section class="product spad">
@@ -38,14 +39,14 @@
                     <div class="mypage_sidebar">
                         <h4>My Page</h4>
                         <ul>
-                            <li><a class="mypage_side_hover" href="mypage_mycoupon.html"><i class="lni lni-ticket"> My쿠폰</i></a></li>
+                            <li><a class="mypage_side_hover" href="mypage_myCoupon.html"><i class="lni lni-ticket"> My쿠폰</i></a></li>
                             <li class="active"><a class="mypage_side_hover" href="mypage_mypoint.html"><i class="lni lni-database"> My포인트</i></a></li>
-                            <li><a class="mypage_side_hover" href="mypage_myreview.html"><i class="lni lni-pencil-alt"> My리뷰</i></a></li>
+                            <li><a class="mypage_side_hover" href="mypage_myReviewList.html"><i class="lni lni-pencil-alt"> My리뷰</i></a></li>
                             <div class="sidebar_line">
-                            <li><a class="mypage_side_hover" href="mypage_orderlist.html"><i class="lni lni-radio-button"> 주문내역</i></a></li>
+                            <li><a class="mypage_side_hover" href="order_myOrderList.html"><i class="lni lni-radio-button"> 주문내역</i></a></li>
                             </div>
                             <li><a class="mypage_side_hover" href="mypage_myWishList.html"><i class="lni lni-heart"> 위시리스트</i></a></li>
-                            <li><a class="mypage_side_hover" href="mypage_myBasket.html"><i class="lni lni-cart"> 장바구니</i></a></li>
+                            <li><a class="mypage_side_hover" href="order_myCart.html"><i class="lni lni-cart"> 장바구니</i></a></li>
                             <div class="sidebar_line">
                             <li><a class="mypage_side_hover" href="#"><i class="lni lni-user"> 회원정보변경/탈퇴</i></a></li>
                             </div>
@@ -216,7 +217,8 @@
 
 <!--mypage_main body 끝-->
 <!-- footer import -->
-<%@ include file="/WEB-INF/views/user/inc/footer.jsp" %>
+<!-- <%@ include file="/WEB-INF/views/user/inc/footer.jsp" %> -->
+      <div id="footers"></div>
 
 </body>
 </html>
