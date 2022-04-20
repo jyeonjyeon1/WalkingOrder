@@ -148,7 +148,130 @@
                             <h5>쿠폰</h5>
                             <form action="#">
                                 <input type="text" placeholder="쿠폰번호를 입력해주세요.">
-                                <button type="submit" class="site-btn">쿠폰검색</button>
+                                <!-- <button type="submit" class="site-btn">쿠폰검색</button> -->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">쿠폰검색</button>
+                                
+                                    <!-- Modal -->
+                                    <div class="modal fade coupon_modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="min-width: 800px;" >
+                                        <div class="modal-content" >
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="staticBackdropLabel" style="text-align: center;">사용 가능한 쿠폰</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <!-- <div>
+                                                    쿠폰이름
+                                                    쿠폰 발행일 ~ 쿠폰마감일
+                                                    할인율
+                                                    할인금액
+                                                    사용 가능여부
+
+                                                </div> -->
+                                                    <!-- 사용가능한 쿠폰 -->
+                                                    
+                                                    <div class="coupon-check">
+                                                        
+                                                        <div class="coupon-box" >
+                                                            <div class="row" >
+                                                              <div class="col-md-3" style="margin-top: 80px;">
+                                                            <input class="coupon-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                            </div> 
+                                                            <div class="col-md-9">
+                                                            <label class="coupon-check-label" for="defaultCheck1" >
+                                                                <div class="coupon_card mb-3" style="max-width: 540px;">
+                                                                    <div class="row g-0">
+                                                                    <div class="col-md-4 col-sm-12">
+                                                                        <img src="../assets/images/categories/cat-1.jpg" class="img-fluid rounded-start" alt="...">
+                                                                    </div>
+                                                                    <div class="col-md-8">
+                                                                        <div class="coupon_card-body">
+                                                                        <a class="coupon_card-title">[친구초대] 공짜리카노쿠폰</a>
+                                                                        <p class="coupon_card-text1">1500원 할인</p>
+                                                                        <p class="coupon_card-text2"><small class="text-muted">~2022.05.08 까지</small></p>
+                                                                        </div>
+                                                                    </div>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                            </div>
+                                                        </div>    
+                                                    </div>
+                                                     <!-- 사용가능한 쿠폰 -->
+                                                    
+                                                     <div class="coupon-check">
+                                                        
+                                                        <div class="coupon-box" >
+                                                            <div class="row" >
+                                                              <div class="col-md-3" style="margin-top: 80px;">
+                                                            <input class="coupon-check-input" type="checkbox" value="" id="defaultCheck2">
+                                                            </div> 
+                                                            <div class="col-md-9">
+                                                            <label class="coupon-check-label" for="defaultCheck2" >
+                                                                <div class="coupon_card mb-3" style="max-width: 540px;">
+                                                                    <div class="row g-0">
+                                                                    <div class="col-md-4 col-sm-12">
+                                                                        <img src="../assets/images/categories/cat-2.jpg" class="img-fluid rounded-start" alt="...">                                                                    </div>
+                                                                    <div class="col-md-8">
+                                                                        <div class="coupon_card-body">
+                                                                        <a class="coupon_card-title">[첫주문할인] 100원 쿠폰</a>
+                                                                        <p class="coupon_card-text1">아메리카노 100원</p>
+                                                                        <p class="coupon_card-text2"><small class="text-muted">~2022.05.08 까지</small></p>
+                                                                        </div>
+                                                                    </div>
+                                                                    </div>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                            </div>
+                                                        </div>    
+                                                    </div>
+
+                                                   <!-- 사용가능한 쿠폰 -->
+                                                    
+                                                   <div class="coupon-check">
+                                                        
+                                                    <div class="coupon-box" >
+                                                        <div class="row" >
+                                                          <div class="col-md-3" style="margin-top: 80px;">
+                                                        <input class="coupon-check-input" type="checkbox" value="" id="defaultCheck3" disabled>
+                                                            </div> 
+                                                        <div class="col-md-9">
+                                                        <label class="coupon-check-label" for="defaultCheck3" >
+                                                            <div class="coupon_card mb-3" style="max-width: 540px;">
+                                                                <div class="row g-0">
+                                                                    <div class="col-md-4 col-sm-12">
+                                                                        <img src="../assets/images/categories/cat-3.jpg" class="img-fluid rounded-start" alt="...">                                                                </div>
+                                                                    <div class="col-md-8">
+                                                                        <div class="coupon_card-body">
+                                                                        <a class="coupon_card-title">[민초단할인] 30%할인쿠폰</a>
+                                                                        <p class="coupon_card-text1">제주말차프라푸치노 30% 할인</p>
+                                                                        <p class="coupon_card-text2"><small class="text-muted">~2022.05.08 까지</small></p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                        </div>
+                                                    </div>    
+                                                </div>
+
+
+                                            </div>
+                                            <div class="modal-footer">
+                                                <div class="col text-center">
+                                            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button> -->
+                                            <button type="button" class="btn btn-primary btn-lg btn-block">쿠폰선택</button>
+                                            <!-- <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button> -->
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
                             </form>
                         </div>
                     </div>
