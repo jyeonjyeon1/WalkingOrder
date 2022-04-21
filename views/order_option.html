@@ -31,266 +31,157 @@
     <!-- header import -->
     <!-- <%@ include file="/WEB-INF/views/user/inc/header.jsp" %> -->
       <div id="headers"></div>
-    <!-- Shoping Cart Section Begin -->
-    <section class="shoping-cart spad" style="padding:0;">
-        <div class="container" style="padding:25px 15px;background-color: white;">
-            <div class="row">
-                <label class="ml-3 mb-3">
-                    <h5>장바구니</h5>
-                </label>
-                <div class="col-lg-12">
 
-                    <div class="shoping__cart__table">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="shoping__product">상품정보</th>
-                                    <th>옵션</th>
-                                    <th>가격</th>
-                                    <th>수량</th>
-                                    <th>합계</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="shoping__cart__item">
-                                        <img class="d-lg-inline-block d-md-inline-block d-none"
-                                            src="resources/assets/images/jaewoo/latte.jpg" alt="">
-                                        <label>아이스아메리카노</label>
-
-                                    </td>
-                                    <td class="shoping__cart__price">
-                                        ICE
-                                    </td>
-                                    <td class="shoping__cart__price">
-                                        2,000
-                                    </td>
-                                    <td class="shoping__cart__quantity">
-                                        <!-- <div class="quantity">
-                                            <div class="pro-qty">
-                                                <input type="text" value="1">
-                                            </div>
-                                        </div> -->
-                                        <input class="qtybtn__" type='button' onclick='count("minus")' value='-' />
-                                        <div class="qtyqty">
-                                            <div id='result' style="display: inline;">1</div>
-                                        </div>
-                                        <input class="qtybtn__" type='button' onclick='count("plus")' value='+' />
-                                    </td>
-                                    <td class="shoping__cart__total">
-                                        2,000
-                                    </td>
-                                    <td class="shoping__cart__item__close">
-                                        <a href="" style="color: gray;"><i class="fa fa-close"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="shoping__cart__item">
-                                        <img src="resources/assets/images/jaewoo/latte.jpg" alt="">
-                                        <h5>라떼는말야</h5>
-                                    </td>
-                                    <td class="shoping__cart__price">
-                                        ICE
-                                    </td>
-                                    <td class="shoping__cart__price">
-                                        2,000
-                                    </td>
-                                    <td class="shoping__cart__quantity">
-                                        <div class="quantity">
-                                            <div class="pro-qty">
-                                                <input type="text" value="1">
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="shoping__cart__total">
-                                        2,000
-                                    </td>
-                                    <td class="shoping__cart__item__close">
-                                        <span class="icon_close"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="shoping__cart__item">
-                                        <img src="resources/assets/images/jaewoo/latte.jpg" alt="">
-                                        <h5>이렇게하면바나나</h5>
-                                    </td>
-                                    <td class="shoping__cart__price">
-                                        ICE
-                                    </td>
-                                    <td class="shoping__cart__price">
-                                        2,000
-                                    </td>
-                                    <td class="shoping__cart__quantity">
-                                        <div class="quantity">
-                                            <div class="pro-qty">
-                                                <input type="text" value="1">
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="shoping__cart__total">
-                                        2,000
-                                    </td>
-                                    <td class="shoping__cart__item__close">
-                                        <span class="icon_close"></span>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+      <section class="shoping-cart spad" style="padding:0;">
+        <div class="container" style="padding:20px; background-color: white;">
+            
+            <div class="row" style="text-align: center;">
+            <label>
+                <h3 style="font-size: 40px; margin-bottom: 10px;" >옵션 선택</h3>
+            </label>
             </div>
-            <div class="row">
 
-                <div class="col-lg-6">
-                    <div class="shoping__continue">
-                        <div class="shoping__discount">
-                            <h5>쿠폰</h5>
-                            <form action="#">
-                                <input type="text" placeholder="쿠폰번호를 입력해주세요.">
-                                <!-- <button type="submit" class="site-btn">쿠폰검색</button> -->
-                                <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">쿠폰검색</button>
-                                
-                                    <!-- Modal -->
-                                    <div class="modal fade coupon_modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="min-width: 800px;" >
-                                        <div class="modal-content" >
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="staticBackdropLabel" style="text-align: center;">사용 가능한 쿠폰</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <!-- <div>
-                                                    쿠폰이름
-                                                    쿠폰 발행일 ~ 쿠폰마감일
-                                                    할인율
-                                                    할인금액
-                                                    사용 가능여부
-
-                                                </div> -->
-                                                    <!-- 사용가능한 쿠폰 -->
-                                                    
-                                                    <div class="coupon-check">
-                                                        
-                                                        <div class="coupon-box" >
-                                                            <div class="row" >
-                                                              <div class="col-md-3" style="margin-top: 80px;">
-                                                            <input class="coupon-check-input" type="checkbox" value="" id="defaultCheck1">
-                                                            </div> 
-                                                            <div class="col-md-9">
-                                                            <label class="coupon-check-label" for="defaultCheck1" >
-                                                                <div class="coupon_card mb-3" style="max-width: 540px;">
-                                                                    <div class="row g-0">
-                                                                    <div class="col-md-4 col-sm-12">
-                                                                        <img src="resources/assets/images/categories/cat-1.jpg" class="img-fluid rounded-start" alt="...">
-                                                                    </div>
-                                                                    <div class="col-md-8">
-                                                                        <div class="coupon_card-body">
-                                                                        <a class="coupon_card-title">[친구초대] 공짜리카노쿠폰</a>
-                                                                        <p class="coupon_card-text1">1500원 할인</p>
-                                                                        <p class="coupon_card-text2"><small class="text-muted">~2022.05.08 까지</small></p>
-                                                                        </div>
-                                                                    </div>
-                                                                    </div>
-                                                                </div>
-                                                            </label>
-                                                        </div>
-                                                            </div>
-                                                        </div>    
-                                                    </div>
-                                                     <!-- 사용가능한 쿠폰 -->
-                                                    
-                                                     <div class="coupon-check">
-                                                        
-                                                        <div class="coupon-box" >
-                                                            <div class="row" >
-                                                              <div class="col-md-3" style="margin-top: 80px;">
-                                                            <input class="coupon-check-input" type="checkbox" value="" id="defaultCheck2">
-                                                            </div> 
-                                                            <div class="col-md-9">
-                                                            <label class="coupon-check-label" for="defaultCheck2" >
-                                                                <div class="coupon_card mb-3" style="max-width: 540px;">
-                                                                    <div class="row g-0">
-                                                                    <div class="col-md-4 col-sm-12">
-                                                                        <img src="resources/assets/images/categories/cat-2.jpg" class="img-fluid rounded-start" alt="...">                                                                    </div>
-                                                                    <div class="col-md-8">
-                                                                        <div class="coupon_card-body">
-                                                                        <a class="coupon_card-title">[첫주문할인] 100원 쿠폰</a>
-                                                                        <p class="coupon_card-text1">아메리카노 100원</p>
-                                                                        <p class="coupon_card-text2"><small class="text-muted">~2022.05.08 까지</small></p>
-                                                                        </div>
-                                                                    </div>
-                                                                    </div>
-                                                                </div>
-                                                            </label>
-                                                        </div>
-                                                            </div>
-                                                        </div>    
-                                                    </div>
-
-                                                   <!-- 사용가능한 쿠폰 -->
-                                                    
-                                                   <div class="coupon-check">
-                                                        
-                                                    <div class="coupon-box" >
-                                                        <div class="row" >
-                                                          <div class="col-md-3" style="margin-top: 80px;">
-                                                        <input class="coupon-check-input" type="checkbox" value="" id="defaultCheck3" disabled>
-                                                            </div> 
-                                                        <div class="col-md-9">
-                                                        <label class="coupon-check-label" for="defaultCheck3" >
-                                                            <div class="coupon_card mb-3" style="max-width: 540px;">
-                                                                <div class="row g-0">
-                                                                    <div class="col-md-4 col-sm-12">
-                                                                        <img src="resources/assets/images/categories/cat-3.jpg" class="img-fluid rounded-start" alt="...">                                                                </div>
-                                                                    <div class="col-md-8">
-                                                                        <div class="coupon_card-body">
-                                                                        <a class="coupon_card-title">[민초단할인] 30%할인쿠폰</a>
-                                                                        <p class="coupon_card-text1">제주말차프라푸치노 30% 할인</p>
-                                                                        <p class="coupon_card-text2"><small class="text-muted">~2022.05.08 까지</small></p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </label>
-                                                    </div>
-                                                        </div>
-                                                    </div>    
-                                                </div>
-
-
-                                            </div>
-                                            <div class="modal-footer">
-                                                <div class="col text-center">
-                                            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button> -->
-                                            <button type="button" class="btn btn-primary btn-lg btn-block">쿠폰선택</button>
-                                            <!-- <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button> -->
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        </div>
-                                    </div>
-                            </form>
-                        </div>
+            
+                <div class="order_option_top" style="padding: 30px; margin: 20px 100px 0 100px; border: 1px solid rgba(218, 176, 39, 0.514); border-radius: 5px;" >
+                  <div class="row" >
+                <div class="col-lg-6 col-md-12 col-sm-12" >
+                  
+                    <img src="resources/assets/images/categories/cat-1.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12" style="margin-top:10px;" >
+                    <h3 style="line-height: 60px;">아메리카노</h3>
+                    <h5 style="line-height: 60px; color: rgba(0, 0, 0, 0.692);" >2,500 원</h5>
+                    <div class="order_optionNum">
+                      
+                    <input class="qtybtn__" type='button' onclick='count("minus")' value='-' style="font-size: 30px; padding: 0px 25px 0px 15px; border-radius: 30px;" />
+                     <div class="qtyqty">
+                    <div id='result' style="display: inline; font-size: 40px; margin: 15px;">1</div>
+                    </div>
+                      <input class="qtybtn__" type='button' onclick='count("plus")' value='+' style="font-size: 30px; padding: 0px 25px 0px 15px; border-radius: 30px;" /> 
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="shoping__checkout">
-                        <h5>합계금액</h5>
-                        <ul>
-                            <li>주문하신금액 <span>6,000</span></li>
-                            <li>합계금액 <span>6,000</span></li>
-                        </ul>
-                        <a href="#" class="primary-btn">주문확인</a>
-                    </div>
-                </div>
+              </div>
             </div>
+      <div class="col-lg-12">
+      <div class="shoping__checkout" style="padding-bottom: 3px;">
+          <h5>온도/사이즈 <필수></h5>
+          <ul>
+              <li>
+          <div class="form-check">
+              <label class="form-check-label" for="flexRadioDefault1">
+               (HOT) ML
+               <p style="color: rgba(255, 2, 2, 0.658);">+0원</p>
+              </label>
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            </div>
+          </li>
+          <li>
+            <div class="form-check">
+              
+              <label class="form-check-label" for="flexRadioDefault2">
+               (ICE) ML
+               <p style="color: rgba(255, 2, 2, 0.658);">+0원</p>
+              </label>
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+            </div>
+          </li>
+          <li>
+              <div class="form-check">
+                
+               <label class="form-check-label" for="flexRadioDefault2">(ICE) L <p style="color: rgba(255, 2, 2, 0.658);">+3000원</p></label> 
+                
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              </div>
+            </li>
+          </ul>
+         
+         
+          
+      </div>
+  </div>
+  <div class="col-lg-12">
+    <div class="shoping__checkout" style="padding-bottom: 3px;">
+        <h5>샷추가 <선택></h5>
+        <ul>
+            <li>
+        <div class="form-check">
+            <label class="form-check-label" for="flexRadioDefault1">
+             +1 샷추가
+             <p style="color: rgba(255, 2, 2, 0.658);">+500원</p>
+            </label>
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          </div>
+        </li>
+        <li>
+          <div class="form-check">
+            
+            <label class="form-check-label" for="flexRadioDefault2">
+             +2 샷추가
+             <p style="color: rgba(255, 2, 2, 0.658);">+1000원</p>
+            </label>
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+          </div>
+        </li>
+        <li>
+            <div class="form-check">
+              
+             <label class="form-check-label" for="flexRadioDefault2">
+               +3 샷추가 
+               <p style="color: rgba(255, 2, 2, 0.658);">+1500원</p></label> 
+              
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            </div>
+          </li>
+        </ul>
+       
+       
+        
+    </div>
+</div>
+<div class="col-lg-12">
+  <div class="shoping__checkout" style="padding-bottom: 3px;">
+      <h5>시럽추가 <선택></h5>
+      <ul>
+          <li>
+      <div class="form-check">
+          <label class="form-check-label" for="flexRadioDefault1">
+           헤이즐넛시럽 추가
+           <p style="color: rgba(255, 2, 2, 0.658);">+600원</p>
+          </label>
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
         </div>
-    </section>
-    <!-- Shoping Cart Section End -->
+      </li>
+      <li>
+        <div class="form-check">
+          
+          <label class="form-check-label" for="flexRadioDefault2">
+           바닐라시럽추가
+           <p style="color: rgba(255, 2, 2, 0.658);">+600원</p>
+          </label>
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+        </div>
+      </li>
+      
+      </ul>
+     
+     
+      
+  </div>
+</div>
 
+
+
+
+<div class="col-lg-12">
+  
+    <div class="col-lg-12" style="text-align: center;">
+      <h3 style="margin-top: 20px;">총 결제금액 : 5800원 </h3>
+    <a href="#" class="primary-btn" style="height: 60px; width: 60%; font-size: 20px; border-radius: 10px; margin-top: 15px;"><i class="lni lni-cart"></i>
+       장바구니 담기 </a>
+  </div>
+</div>
+</div>
+</section>
 
 
     <!-- footer import -->
