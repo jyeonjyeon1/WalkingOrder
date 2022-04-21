@@ -42,7 +42,8 @@
 
 
   <!-- header import -->
-  <%@ include file="/WEB-INF/views/user/inc/header.jsp" %>
+  <!-- <%@ include file="/WEB-INF/views/user/inc/header.jsp" %> -->
+      <div id="headers"></div>
 
   <!--mypage_main_jihyeon body 시작-->
   <section class="product spad">
@@ -54,19 +55,19 @@
             <h4>My Page</h4>
             <ul>
 
-              <li class="active"><a class="mypage_side_hover" href="mypage_mycoupon.html"><i class="lni lni-ticket">
+              <li class="active"><a class="mypage_side_hover" href="mypage_myCoupon.html"><i class="lni lni-ticket">
                     My쿠폰</i></a></li>
               <li><a class="mypage_side_hover" href="mypage_mypoint.html"><i class="lni lni-database"> My포인트</i></a>
               </li>
-              <li><a class="mypage_side_hover" href="mypage_myreview.html"><i class="lni lni-pencil-alt"> My리뷰</i></a>
+              <li><a class="mypage_side_hover" href="mypage_myReviewList.html"><i class="lni lni-pencil-alt"> My리뷰</i></a>
               </li>
               <div class="sidebar_line">
-                <li><a class="mypage_side_hover" href="mypage_orderlist.html"><i class="lni lni-radio-button">
+                <li><a class="mypage_side_hover" href="order_myOrderList.html"><i class="lni lni-radio-button">
                       주문내역</i></a></li>
               </div>
               <li><a class="mypage_side_hover" href="mypage_myWishList.html"><i class="lni lni-heart"> 위시리스트</i></a>
               </li>
-              <li><a class="mypage_side_hover" href="mypage_myBasket.html"><i class="lni lni-cart"> 장바구니</i></a></li>
+              <li><a class="mypage_side_hover" href="order_cart.html"><i class="lni lni-cart"> 장바구니</i></a></li>
 
               <div class="sidebar_line">
                 <li><a class="mypage_side_hover" href="#"><i class="lni lni-user"> 회원정보변경/탈퇴</i></a></li>
@@ -83,7 +84,7 @@
         <div class="col-lg-9 col-md-7">
           <div class="row">
             <div class="col-lg-12 col-md-">
-              <div class="mypage_mycoupon">
+              <div class="mypage_myCoupon">
 
                 <a href="#"><i class="lni lni-ticket"> 쿠폰등록하기</i></a>
                 <h1>쿠폰함을 확인해보세요.</h1>
@@ -93,7 +94,7 @@
             </div>
 
 
-            <div class="mypage_mycoupon_sort">
+            <div class="mypage_myCoupon_sort">
 
               <ul class="nav coupon_tab" id="myTab" role="tablist">
 
@@ -180,7 +181,8 @@
 
   <!--mypage_main body 끝-->
   <!-- footer import -->
-  <%@ include file="/WEB-INF/views/user/inc/footer.jsp" %>
+  <!-- <%@ include file="/WEB-INF/views/user/inc/footer.jsp" %> -->
+      <div id="footers"></div>
 
 </body>
 
