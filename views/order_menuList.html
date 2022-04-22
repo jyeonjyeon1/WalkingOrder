@@ -10,10 +10,17 @@
         <link href="resources/assets/images/logo/logo_only.svg" rel="icon"/>
 
         <!-- ========================= CSS here ========================= -->
-        <link rel="stylesheet" href="resources/assets/css/font-awesome.min.css" type="text/css">
+        <link
+            rel="stylesheet"
+            href="resources/assets/css/font-awesome.min.css"
+            type="text/css">
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="//t1.daumcdn.net/kakaomapweb/place/jscss/pc.b5a88cb5.css">
         <!-- ========================= JS here ========================= -->
         <script src="resources/assets/js/jquery-3.6.0.js"></script>
-        
+
         <script type="text/javascript">
             jQuery(document).ready(function () {
                 $('#headers').load("header.html");
@@ -21,12 +28,13 @@
             });
             //========= Hero Slider
         </script>
+
     </head>
 
     <body>
         <!-- header import -->
         <!-- <%@ include file="/WEB-INF/views/user/inc/header.jsp" %> -->
-      <div id="headers"></div>
+        <div id="headers"></div>
 
         <!-- 매장소개 -->
         <section style="margin: 40px;">
@@ -34,7 +42,10 @@
                 <div class="row">
                     <div class="col-lg-5 col-md-5 col-sm-12 col-12">
                         <div class="kio_img_bg">
-                            <img src="resources/assets/images/cafe/no-image-cafe.png" alt="cafe" class="kio_img">
+                            <img
+                                src="resources/assets/images/cafe/no-image-cafe.png"
+                                alt="cafe"
+                                class="kio_img"> 
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-12" style="margin-left:20px">
@@ -51,9 +62,11 @@
                             <p style="margin-bottom: 20px">Mauris blandit aliquet elit, eget tincidunt nibh
                                 pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
                                 dui. Sed porttitor lectus nibh.</p>
-                            <button type="button" class="btn btn-warning btn-sm">리뷰 바로가기</button>&nbsp&nbsp&nbsp&nbsp&nbsp
+                            <button type="button" class="btn btn-warning btn-sm"><b>리뷰 바로가기</b></button>&nbsp&nbsp&nbsp&nbsp&nbsp
                             <!-- 간격띄우기 -->
-                            <button type="button" class="btn btn-warning btn-sm">찾아오시는 길</button>
+                            <button type="button" class="btn btn-warning btn-sm"><b>찾아오시는 길</b></button>
+                           <!-- Example single danger button -->
+
                             <ul style="margin: 30px 0 0; padding: 30px 0 0">
                                 <li>
                                     <b>전화번호</b>
@@ -80,8 +93,8 @@
         </section>
 
         <!-- 키오스크 -->
-        <div class="container" style="padding-bottom: 30px; background-color: white;">
-            <div class="col-lg-12">
+        <div class="container">
+            <div class="cont_findway">
                 <input class="tabinput" id="tab1" type="radio" name="tabs" checked="checked">
                 <!--디폴트 메뉴-->
                 <label class="tablabel_k" for="tab1">신메뉴</label>
@@ -115,7 +128,9 @@
                         <div class="row">
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/new_menu.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/new_menu.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button" data-toggle="modal" data-target=".bs-example-modal-lg">
                                                 <a href="order_myCart.html" class="btn">
@@ -131,190 +146,156 @@
                                         <h5>$30.00</h5>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4">
+                                <div class="product__item">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/new_menu.jpg">
+                                        <ul class="product__item__pic__hover">
+                                            <div class="button" data-toggle="modal" data-target=".bs-example-modal-lg">
+                                                <a href="order_myCart.html" class="btn">
+                                                    <i class="lni lni-cart"></i>
+                                                    주문하기</a>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <h6>
+                                            <a href="#">Crab Pool Security</a>
+                                        </h6>
+                                        <h5>$30.00</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4">
+                                <div class="product__item">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/new_menu.jpg">
+                                        <ul class="product__item__pic__hover">
+                                            <div class="button" data-toggle="modal" data-target=".bs-example-modal-lg">
+                                                <a href="order_myCart.html" class="btn">
+                                                    <i class="lni lni-cart"></i>
+                                                    주문하기</a>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <h6>
+                                            <a href="#">Crab Pool Security</a>
+                                        </h6>
+                                        <h5>$30.00</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4">
+                                <div class="product__item">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/new_menu.jpg">
+                                        <ul class="product__item__pic__hover">
+                                            <div class="button" data-toggle="modal" data-target=".bs-example-modal-lg">
+                                                <a href="order_myCart.html" class="btn">
+                                                    <i class="lni lni-cart"></i>
+                                                    주문하기</a>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <h6>
+                                            <a href="#">Crab Pool Security</a>
+                                        </h6>
+                                        <h5>$30.00</h5>
+                                    </div>
+                                </div>
+                            </div>
 
-                                <div
-                                    class="modal fade bs-example-modal-lg"
-                                    tabindex="-1"
-                                    role="dialog"
-                                    aria-labelledby="mySmallModalLabel"
-                                    aria-hidden="true">
-                                    <div class="modal-dialog modal-sm">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                              <h4 class="modal-title" id="gridSystemModalLabel">Modal title</h4>
+                            <div class="col-lg-3 col-md-4 col-sm-4">
+                                <div class="product__item">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/new_menu.jpg">
+                                        <ul class="product__item__pic__hover">
+                                            <div class="button">
+                                                <a href="product-details.html" class="btn">
+                                                    <i class="lni lni-cart"></i>
+                                                    주문하기</a>
                                             </div>
-                                            <div class="modal-body">
-                                              <div class="container-fluid">
-                                                <div class="row">
-                                                  <div class="col-md-4">.col-md-4</div>
-                                                  <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
-                                                </div>
-                                                <div class="row">
-                                                  <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
-                                                  <div class="col-md-2 col-md-offset-4">.col-md-2 .col-md-offset-4</div>
-                                                </div>
-                                                <div class="row">
-                                                  <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
-                                                </div>
-                                                <div class="row">
-                                                  <div class="col-sm-9">
-                                                    Level 1: .col-sm-9
-                                                    <div class="row">
-                                                      <div class="col-xs-8 col-sm-6">
-                                                        Level 2: .col-xs-8 .col-sm-6
-                                                      </div>
-                                                      <div class="col-xs-4 col-sm-6">
-                                                        Level 2: .col-xs-4 .col-sm-6
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
+                                        </ul>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <h6>
+                                            <a href="#">Crab Pool Security</a>
+                                        </h6>
+                                        <h5>$30.00</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4">
+                                <div class="product__item">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/new_menu.jpg">
+                                        <ul class="product__item__pic__hover">
+                                            <div class="button">
+                                                <a href="product-details.html" class="btn">
+                                                    <i class="lni lni-cart"></i>
+                                                    주문하기</a>
                                             </div>
-                                            <div class="modal-footer">
-                                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                              <button type="button" class="btn btn-primary">Save changes</button>
+                                        </ul>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <h6>
+                                            <a href="#">Crab Pool Security</a>
+                                        </h6>
+                                        <h5>$30.00</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4">
+                                <div class="product__item">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/new_menu.jpg">
+                                        <ul class="product__item__pic__hover">
+                                            <div class="button">
+                                                <a href="product-details.html" class="btn">
+                                                    <i class="lni lni-cart"></i>
+                                                    주문하기</a>
                                             </div>
-                                          </div><!-- /.modal-content -->
-                                        </div><!-- /.modal-dialog -->
+                                        </ul>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <h6>
+                                            <a href="#">Crab Pool Security</a>
+                                        </h6>
+                                        <h5>$30.00</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4">
+                                <div class="product__item">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/new_menu.jpg">
+                                        <ul class="product__item__pic__hover">
+                                            <div class="button">
+                                                <a href="product-details.html" class="btn">
+                                                    <i class="lni lni-cart"></i>
+                                                    주문하기</a>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <h6>
+                                            <a href="#">Crab Pool Security</a>
+                                        </h6>
+                                        <h5>$30.00</h5>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 col-md-4 col-sm-4">
-                                <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/new_menu.jpg">
-                                        <ul class="product__item__pic__hover">
-                                            <div class="button">
-                                                <a href="product-details.html" class="btn">
-                                                    <i class="lni lni-cart"></i>
-                                                    주문하기</a>
-                                            </div>
-                                        </ul>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <h6>
-                                            <a href="#">Crab Pool Security</a>
-                                        </h6>
-                                        <h5>$30.00</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-4">
-                                <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/new_menu.jpg">
-                                        <ul class="product__item__pic__hover">
-                                            <div class="button">
-                                                <a href="product-details.html" class="btn">
-                                                    <i class="lni lni-cart"></i>
-                                                    주문하기</a>
-                                            </div>
-                                        </ul>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <h6>
-                                            <a href="#">Crab Pool Security</a>
-                                        </h6>
-                                        <h5>$30.00</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-4">
-                                <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/new_menu.jpg">
-                                        <ul class="product__item__pic__hover">
-                                            <div class="button">
-                                                <a href="product-details.html" class="btn">
-                                                    <i class="lni lni-cart"></i>
-                                                    주문하기</a>
-                                            </div>
-                                        </ul>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <h6>
-                                            <a href="#">Crab Pool Security</a>
-                                        </h6>
-                                        <h5>$30.00</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-4">
-                                <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/new_menu.jpg">
-                                        <ul class="product__item__pic__hover">
-                                            <div class="button">
-                                                <a href="product-details.html" class="btn">
-                                                    <i class="lni lni-cart"></i>
-                                                    주문하기</a>
-                                            </div>
-                                        </ul>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <h6>
-                                            <a href="#">Crab Pool Security</a>
-                                        </h6>
-                                        <h5>$30.00</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-4">
-                                <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/new_menu.jpg">
-                                        <ul class="product__item__pic__hover">
-                                            <div class="button">
-                                                <a href="product-details.html" class="btn">
-                                                    <i class="lni lni-cart"></i>
-                                                    주문하기</a>
-                                            </div>
-                                        </ul>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <h6>
-                                            <a href="#">Crab Pool Security</a>
-                                        </h6>
-                                        <h5>$30.00</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-4">
-                                <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/new_menu.jpg">
-                                        <ul class="product__item__pic__hover">
-                                            <div class="button">
-                                                <a href="product-details.html" class="btn">
-                                                    <i class="lni lni-cart"></i>
-                                                    주문하기</a>
-                                            </div>
-                                        </ul>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <h6>
-                                            <a href="#">Crab Pool Security</a>
-                                        </h6>
-                                        <h5>$30.00</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-4 col-sm-4">
-                                <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/new_menu.jpg">
-                                        <ul class="product__item__pic__hover">
-                                            <div class="button">
-                                                <a href="product-details.html" class="btn">
-                                                    <i class="lni lni-cart"></i>
-                                                    주문하기</a>
-                                            </div>
-                                        </ul>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <h6>
-                                            <a href="#">Crab Pool Security</a>
-                                        </h6>
-                                        <h5>$30.00</h5>
-                                    </div>
-                                </div>
-                            </div>
                             <div style="text-align: center;">
 
                                 <div style="display:inline-block; margin-bottom: 50px;">
@@ -337,7 +318,9 @@
                         <div class="row">
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/spring_menu.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/spring_menu.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -356,7 +339,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/spring_menu.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/spring_menu.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -375,7 +360,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/spring_menu.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/spring_menu.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -394,7 +381,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/spring_menu.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/spring_menu.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -413,7 +402,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/spring_menu.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/spring_menu.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -432,7 +423,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/spring_menu.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/spring_menu.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -451,7 +444,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/spring_menu.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/spring_menu.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -470,7 +465,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/spring_menu.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/spring_menu.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -511,7 +508,9 @@
                         <div class="row">
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/coffee.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/coffee.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -530,7 +529,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/coffee.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/coffee.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -549,7 +550,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/coffee.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/coffee.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -568,7 +571,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/coffee.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/coffee.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -587,7 +592,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/coffee.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/coffee.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -606,7 +613,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/coffee.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/coffee.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -625,7 +634,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/coffee.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/coffee.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -644,7 +655,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/coffee.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/coffee.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -684,7 +697,9 @@
                         <div class="row">
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/latte.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/latte.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -703,7 +718,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/latte.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/latte.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -722,7 +739,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/latte.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/latte.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -741,7 +760,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/latte.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/latte.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -760,7 +781,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/latte.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/latte.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -779,7 +802,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/latte.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/latte.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -798,7 +823,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/latte.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/latte.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -817,7 +844,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/latte.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/latte.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -857,7 +886,9 @@
                         <div class="row">
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/coldbrew.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/coldbrew.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -876,7 +907,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/coldbrew.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/coldbrew.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -895,7 +928,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/coldbrew.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/coldbrew.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -914,7 +949,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/coldbrew.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/coldbrew.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -933,7 +970,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/coldbrew.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/coldbrew.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -952,7 +991,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/coldbrew.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/coldbrew.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -971,7 +1012,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/coldbrew.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/coldbrew.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -990,7 +1033,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/coldbrew.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/coldbrew.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -1030,7 +1075,9 @@
                         <div class="row">
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/smoothe.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/smoothe.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -1049,7 +1096,10 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/smoothe.jpg" ">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/smoothe.jpg"
+                                        ">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -1068,7 +1118,10 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/smoothe.jpg" ">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/smoothe.jpg"
+                                        ">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -1087,7 +1140,10 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/smoothe.jpg" ">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/smoothe.jpg"
+                                        ">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -1106,7 +1162,10 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/smoothe.jpg" ">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/smoothe.jpg"
+                                        ">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -1125,7 +1184,10 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/smoothe.jpg" ">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/smoothe.jpg"
+                                        ">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -1144,7 +1206,10 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/smoothe.jpg" ">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/smoothe.jpg"
+                                        ">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -1163,7 +1228,10 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/smoothe.jpg" ">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/smoothe.jpg"
+                                        ">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -1203,7 +1271,9 @@
                         <div class="row">
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/ade.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/ade.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -1222,7 +1292,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/ade.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/ade.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -1241,7 +1313,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/ade.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/ade.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -1260,7 +1334,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/ade.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/ade.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -1279,7 +1355,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/ade.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/ade.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -1298,7 +1376,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/ade.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/ade.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -1317,7 +1397,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/ade.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/ade.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -1336,7 +1418,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/ade.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/ade.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -1376,7 +1460,9 @@
                         <div class="row">
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/juice.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/juice.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -1395,7 +1481,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/juice.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/juice.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -1414,7 +1502,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/juice.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/juice.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -1433,7 +1523,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/juice.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/juice.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -1452,7 +1544,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/juice.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/juice.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -1471,7 +1565,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/juice.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/juice.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -1490,7 +1586,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/juice.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/juice.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -1509,7 +1607,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/juice.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/juice.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -1549,7 +1649,10 @@
                         <div class="row">
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/cake.jpg" style="object-fit: contain;">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/cake.jpg"
+                                        style="object-fit: contain;">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -1568,7 +1671,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/cake.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/cake.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -1587,7 +1692,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/cake.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/cake.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -1606,7 +1713,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/cake.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/cake.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -1625,7 +1734,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/cake.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/cake.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -1644,7 +1755,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/cake.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/cake.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -1663,7 +1776,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/cake.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/cake.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -1682,7 +1797,9 @@
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="resources/assets/images/jaewoo/cake.jpg">
+                                    <div
+                                        class="product__item__pic set-bg"
+                                        data-setbg="resources/assets/images/jaewoo/cake.jpg">
                                         <ul class="product__item__pic__hover">
                                             <div class="button">
                                                 <a href="product-details.html" class="btn">
@@ -1718,11 +1835,12 @@
                 </div>
             </div>
         </div >
+        <!-- 리뷰시작 -->
         <section >
-            <div class="container" style="padding: 40px; background-color: white;">
-                <div class="product__details__text">
-                    <h3>우리매장 Reviews</h3>
-                    <div class="product__details__rating">
+            <div class="container">
+                <div class="cont_findway">
+                    <h3 style="margin-bottom: 15px;">우리매장 Reviews</h3>
+                    <div class="product__details__rating" style="margin-bottom: 15px;">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -1730,15 +1848,15 @@
                         <i class="fa fa-star-half-o"></i>
                         <span>(3 reviews)</span>
                     </div>
-                    
 
                     <!-- 리뷰한개 -->
                     <div style="text-align: center;">
-                        <div
-                            class="col-lg-11 kio_review">
+                        <div class="col-lg-11 kio_review">
                             <div class="kio_review_img_bg">
-                                <img src="resources/assets/images/jaewoo/starbucks_img.jpg" alt="cafe"
-                                                    class="search_big_img">
+                                <img
+                                    src="resources/assets/images/jaewoo/starbucks_img.jpg"
+                                    alt="cafe"
+                                    class="search_big_img">
 
                             </div>
                             <div class="kio_review_center">
@@ -1761,25 +1879,15 @@
                     </div>
                     <!-- 리뷰한개 -->
                     <div style="text-align: center;">
-                        <div
-                            class="col-lg-11"
-                            style="float: none;   display:inline-block; text-align:
-             center; background-color:white; padding: 0px;
-             border-radius: 10px; padding: auto; margin:auto; margin-bottom: 10px; margin-top: 10px; display:inline-block;  border: 1px solid gray; box-shadow: 0 2px 2px gray; ">
-
-                            <div style="width: 30%; height:150px; float: left; ">
+                        <div class="col-lg-11 kio_review">
+                            <div class="kio_review_img_bg">
                                 <img
                                     src="resources/assets/images/jaewoo/starbucks_img.jpg"
                                     alt="cafe"
-                                    style="width:130px;height: 130px; margin: 10px 0 0 10px; border-radius: 10px;  ">
-                                <img
-                                    src="resources/assets/images/jaewoo/latte.jpg"
-                                    alt="cafe"
-                                    style="width:130px;height: 130px; margin: 10px 0 0 10px; border-radius: 10px;  ">
+                                    class="search_big_img">
 
                             </div>
-                            <div
-                                style="width: 15%; height:100px; float: left; margin-left: 20px; margin-top: 20px; text-align: left">
+                            <div class="kio_review_center">
                                 <h5 >김재우</h5>
                                 <h6 >아이스아메리카노</h6>
                                 <i class="fa fa-star"></i>
@@ -1789,112 +1897,540 @@
                                 <i class="fa fa-star-half-o"></i>
                                 <div>2020.04.08</div>
                             </div>
-                            <div
-                                style="width: 40%; height:100px; float: left; text-align: left; margin-top: 18px;">
+                            <div class="kio_review_content">
                                 <h6 >아아존맛탱!!!</h6>
                                 <p style="margin-bottom: 20px; margin-top: 5px;">Mauris blandit aliquet elit,
                                     eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula
                                     elementum sed sit amet dui. Sed porttitor lectus nibh.</p>
                             </div>
                         </div>
-                        <!-- 리뷰한개 -->
-                        <div style="text-align: center;">
-                            <div
-                                class="col-lg-11"
-                                style="float: none;   display:inline-block; text-align:
-             center; background-color:white; padding: 0px;
-             border-radius: 10px; padding: auto; margin:auto; margin-bottom: 10px; margin-top: 10px; display:inline-block;  border: 1px solid gray; box-shadow: 0 2px 2px gray; ">
+                    </div>
+                    <!-- 리뷰한개 -->
+                    <div style="text-align: center;">
+                        <div class="col-lg-11 kio_review">
+                            <div class="kio_review_img_bg">
+                                <img
+                                    src="resources/assets/images/jaewoo/starbucks_img.jpg"
+                                    alt="cafe"
+                                    class="search_big_img">
 
-                                <div style="width: 30%; height:150px; float: left; ">
-                                    <img
-                                        src="resources/assets/images/jaewoo/starbucks_img.jpg"
-                                        alt="cafe"
-                                        style="width:130px;height: 130px; margin: 10px 0 0 10px; border-radius: 10px;  ">
-                                    <img
-                                        src="resources/assets/images/jaewoo/latte.jpg"
-                                        alt="cafe"
-                                        style="width:130px;height: 130px; margin: 10px 0 0 10px; border-radius: 10px;  ">
-
-                                </div>
-                                <div
-                                    style="width: 15%; height:100px; float: left; margin-left: 20px; margin-top: 20px; text-align: left">
-                                    <h5 >김재우</h5>
-                                    <h6 >아이스아메리카노</h6>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-o"></i>
-                                    <div>2020.04.08</div>
-                                </div>
-                                <div
-                                    style="width: 40%; height:100px; float: left; text-align: left; margin-top: 18px;">
-                                    <h6 >아아존맛탱!!!</h6>
-                                    <p style="margin-bottom: 20px; margin-top: 5px;">Mauris blandit aliquet elit,
-                                        eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula
-                                        elementum sed sit amet dui. Sed porttitor lectus nibh.</p>
-                                </div>
+                            </div>
+                            <div class="kio_review_center">
+                                <h5 >김재우</h5>
+                                <h6 >아이스아메리카노</h6>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <div>2020.04.08</div>
+                            </div>
+                            <div class="kio_review_content">
+                                <h6 >아아존맛탱!!!</h6>
+                                <p style="margin-bottom: 20px; margin-top: 5px;">Mauris blandit aliquet elit,
+                                    eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula
+                                    elementum sed sit amet dui. Sed porttitor lectus nibh.</p>
                             </div>
                         </div>
-                        <div style="text-align: center; margin-bottom: 50px;">
+                    </div>
 
-                            <div style="display:inline-block ">
-                                <div class="product__pagination" style="margin:auto;">
-                                    <a href="#">1</a>
-                                    <a href="#">2</a>
-                                    <a href="#">3</a>
-                                    <a href="#">
-                                        <i class="fa fa-long-arrow-right"></i>
-                                    </a>
-                                </div>
+                    <div style="text-align: center; margin-bottom: 50px;">
+
+                        <div style="display:inline-block ">
+                            <div class="product__pagination" style="margin:auto;">
+                                <a href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">
+                                    <i class="fa fa-long-arrow-right"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- 리뷰끝 -->
-            <!-- 찾아오는길 -->
+            </div>
+        </section>
+        <!-- 리뷰끝 -->
 
-            <section >
-                <div class="container" style="padding: 00px 0px 100px 20px; background-color: white;">
-                    <div class="row col-lg-12">
-                        <div class="product__details__text ">
-                            <h3>우리매장 찾아오는길</h3>
+        <!-- 찾아오는길 -->
 
-                            <!-- * 카카오맵 - 지도퍼가기 -->
-                            <!-- 1. 지도 노드 -->
-                            <div style="text-align: center; margin-bottom: 30px;">
-                                <div
-                                    id="daumRoughmapContainer1649530534824"
-                                    class="root_daum_roughmap root_daum_roughmap_landing" style="margin: 0;width: 100%;"
-                                    ></div>
+        <section >
+            <div class="container">
 
-                                <!-- 2. 설치 스크립트 * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다. -->
-                                <script
-                                    charset="UTF-8"
-                                    class="daum_roughmap_loader_script"
-                                    src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+                <div
+                    data-viewid="findway"
+                    data-root=""
+                    class="cont_findway"
+                    style="margin-bottom: 30px;">
+                    <h3>찾아가는 길</h3>
+                    <div class="findway_map">
 
-                                <!-- 3. 실행 스크립트 -->
-                                <script charset="UTF-8">
-                                    new daum
-                                        .roughmap
-                                        .Lander({"timestamp": "1649530534824", "key": "29s83", "mapWidth": "100%", "mapHeight": "360"})
-                                        .render();
-                                </script>
-                            </div>
+                        <!-- * 카카오맵 - 지도퍼가기 -->
+                        <!-- 1. 지도 노드 -->
+                        <div
+                            id="daumRoughmapContainer1650605887497"
+                            class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+                        <!-- 2. 설치 스크립트 * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다. -->
+                        <script
+                            charset="UTF-8"
+                            class="daum_roughmap_loader_script"
+                            src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                        <!-- 3. 실행 스크립트 -->
+                        <script charset="UTF-8">
+                            new daum
+                                .roughmap
+                                .Lander({"timestamp": "1650605887497", "key": "29xco", "mapWidth": "640", "mapHeight": "360"})
+                                .render();
+                        </script>
+
+                    </div>
+                    <div class="station_wayout">
+                        <h5 class="tit_findway">지하철역</h5>
+                        <ul class="list_wayout">
+                            <li>
+                                <em class="txt_station">
+                                    <a
+                                        href="https://map.kakao.com?subwayId=SES2535"
+                                        target="_blank"
+                                        class="link_station"
+                                        data-logtarget=""
+                                        data-logevent="waytogo,subway">종로3가역</a>
+                                </em>
+                                <span class="ico_traffic seoul_line5_small">5호선</span>
+                                <!-- 호선별 대체 텍스트 부탁 드립니다. -->
+                                <span class="ico_traffic seoul_line1_small">1호선</span>
+                                <!-- 호선별 대체 텍스트 부탁 드립니다. -->
+                                <span class="ico_traffic seoul_line3_small">3호선</span>
+                                <!-- 호선별 대체 텍스트 부탁 드립니다. -->
+                                <span class="bg_bar">|</span>
+                                <span class="txt_wayout"><span class="num_wayout">2-1</span>번 출구
+                                    <span class="num_wayout txt_walk">도보 1분</span></span>
+                            </li>
+                            <li>
+                                <em class="txt_station">
+                                    <a
+                                        href="https://map.kakao.com?subwayId=SES0203"
+                                        target="_blank"
+                                        class="link_station"
+                                        data-logtarget=""
+                                        data-logevent="waytogo,subway">을지로3가역</a>
+                                </em>
+                                <span class="ico_traffic seoul_line2_small">2호선</span>
+                                <!-- 호선별 대체 텍스트 부탁 드립니다. -->
+                                <span class="ico_traffic seoul_line3_small">3호선</span>
+                                <!-- 호선별 대체 텍스트 부탁 드립니다. -->
+                                <span class="bg_bar">|</span>
+                                <span class="txt_wayout"><span class="num_wayout">4</span>번 출구
+                                    <span class="num_wayout txt_walk">도보 8분</span></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="station_ride check_list">
+                        <h5 class="tit_findway">버스정류장</h5>
+                        <div class="ride_wayout">
+                            <!-- 지도에서 일치하는 정류장에 마우스 오버 했을 때 클래스 ride_on 추가 -->
+                            <strong class="tit_wayout">
+                                <a
+                                    href="https://map.kakao.com?busStopId=BS116562"
+                                    class="link_wayout"
+                                    target="_blank"
+                                    data-logtarget=""
+                                    data-logevent="waytogo,busstop">
+                                    <span class="txt_busstop">종로3가.1.3.5호선</span>
+                                    <span class="txt_number"><span class="screen_out">정류장 번호:
+                                        </span>(01550)
+                                        <span class="bg_bar">|</span>
+                                        <span class="screen_out">거리:
+                                        </span>
+                                        64m</span>
+                                </a>
+                            </strong>
+                            <ul class="list_ride">
+                                <li>
+                                    <em class="ico_traffic bus_town">마을</em>
+                                    <!-- 버스 선별로 대체 텍스트 부탁 드립니다. -->
+                                    <div class="bus_ride">
+                                        <span class="num_ride">종로12</span>
+                                        <a
+                                            href="https://map.kakao.com?busStopId=BS116562"
+                                            target="_blank"
+                                            class="btn_more hide"
+                                            data-logtarget=""
+                                            data-logevent="waytogo,busstop_more">
+                                            <span class="ico_comm ico_more">더보기</span></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ride_wayout">
+                            <!-- 지도에서 일치하는 정류장에 마우스 오버 했을 때 클래스 ride_on 추가 -->
+                            <strong class="tit_wayout">
+                                <a
+                                    href="https://map.kakao.com?busStopId=BS455626"
+                                    class="link_wayout"
+                                    target="_blank"
+                                    data-logtarget=""
+                                    data-logevent="waytogo,busstop">
+                                    <span class="txt_busstop">종묘.세운상가</span>
+                                    <span class="txt_number"><span class="screen_out">정류장 번호:
+                                        </span>(01914)
+                                        <span class="bg_bar">|</span>
+                                        <span class="screen_out">거리:
+                                        </span>
+                                        170m</span>
+                                </a>
+                            </strong>
+                            <ul class="list_ride">
+                                <li>
+                                    <em class="ico_traffic bus_circle">순환</em>
+                                    <!-- 버스 선별로 대체 텍스트 부탁 드립니다. -->
+                                    <div class="bus_ride">
+                                        <span class="num_ride">TOUR11</span>
+                                        <a
+                                            href="https://map.kakao.com?busStopId=BS455626"
+                                            target="_blank"
+                                            class="btn_more hide"
+                                            data-logtarget=""
+                                            data-logevent="waytogo,busstop_more">
+                                            <span class="ico_comm ico_more">더보기</span></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ride_wayout">
+                            <!-- 지도에서 일치하는 정류장에 마우스 오버 했을 때 클래스 ride_on 추가 -->
+                            <strong class="tit_wayout">
+                                <a
+                                    href="https://map.kakao.com?busStopId=BS404754"
+                                    class="link_wayout"
+                                    target="_blank"
+                                    data-logtarget=""
+                                    data-logevent="waytogo,busstop">
+                                    <span class="txt_busstop">종로3가.탑골공원(중)</span>
+                                    <span class="txt_number"><span class="screen_out">정류장 번호:
+                                        </span>(01016)
+                                        <span class="bg_bar">|</span>
+                                        <span class="screen_out">거리:
+                                        </span>
+                                        182m</span>
+                                </a>
+                            </strong>
+                            <ul class="list_ride">
+                                <li>
+                                    <em class="ico_traffic bus_blue">간선</em>
+                                    <!-- 버스 선별로 대체 텍스트 부탁 드립니다. -->
+                                    <div class="bus_ride">
+                                        <span class="num_ride">101<span class="bg_bar">|</span>103<span class="bg_bar">|</span>143<span class="bg_bar">|</span>150<span class="bg_bar">|</span>160<span class="bg_bar">|</span>201<span class="bg_bar">|</span>260<span class="bg_bar">|</span>262<span class="bg_bar">|</span>270<span class="bg_bar">|</span>271<span class="bg_bar">|</span>273<span class="bg_bar">|</span>370<span class="bg_bar">|</span>601<span class="bg_bar">|</span>720<span class="bg_bar">|</span>721<span class="bg_bar">|</span>N15<span class="txt_bustype">(심야)</span><span class="bg_bar">|</span>N26<span class="txt_bustype">(심야)</span><span class="bg_bar">|</span>N62<span class="txt_bustype">(심야)</span></span>
+                                        <a
+                                            href="https://map.kakao.com?busStopId=BS404754"
+                                            target="_blank"
+                                            class="btn_more"
+                                            data-logtarget=""
+                                            data-logevent="waytogo,busstop_more">
+                                            <span class="ico_comm ico_more">더보기</span></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <em class="ico_traffic bus_green">지선</em>
+                                    <!-- 버스 선별로 대체 텍스트 부탁 드립니다. -->
+                                    <div class="bus_ride">
+                                        <span class="num_ride">7212</span>
+                                        <a
+                                            href="https://map.kakao.com?busStopId=BS404754"
+                                            target="_blank"
+                                            class="btn_more hide"
+                                            data-logtarget=""
+                                            data-logevent="waytogo,busstop_more">
+                                            <span class="ico_comm ico_more">더보기</span></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <em class="ico_traffic bus_direct">직행</em>
+                                    <!-- 버스 선별로 대체 텍스트 부탁 드립니다. -->
+                                    <div class="bus_ride">
+                                        <span class="num_ride">9301</span>
+                                        <a
+                                            href="https://map.kakao.com?busStopId=BS404754"
+                                            target="_blank"
+                                            class="btn_more hide"
+                                            data-logtarget=""
+                                            data-logevent="waytogo,busstop_more">
+                                            <span class="ico_comm ico_more">더보기</span></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ride_wayout">
+                            <!-- 지도에서 일치하는 정류장에 마우스 오버 했을 때 클래스 ride_on 추가 -->
+                            <strong class="tit_wayout">
+                                <a
+                                    href="https://map.kakao.com?busStopId=BS404748"
+                                    class="link_wayout"
+                                    target="_blank"
+                                    data-logtarget=""
+                                    data-logevent="waytogo,busstop">
+                                    <span class="txt_busstop">종로4가.종묘(중)</span>
+                                    <span class="txt_number"><span class="screen_out">정류장 번호:
+                                        </span>(01017)
+                                        <span class="bg_bar">|</span>
+                                        <span class="screen_out">거리:
+                                        </span>
+                                        241m</span>
+                                </a>
+                            </strong>
+                            <ul class="list_ride">
+                                <li>
+                                    <em class="ico_traffic bus_blue">간선</em>
+                                    <!-- 버스 선별로 대체 텍스트 부탁 드립니다. -->
+                                    <div class="bus_ride">
+                                        <span class="num_ride">101<span class="bg_bar">|</span>103<span class="bg_bar">|</span>140<span class="bg_bar">|</span>143<span class="bg_bar">|</span>150<span class="bg_bar">|</span>160<span class="bg_bar">|</span>201<span class="bg_bar">|</span>260<span class="bg_bar">|</span>262<span class="bg_bar">|</span>270<span class="bg_bar">|</span>271<span class="bg_bar">|</span>273<span class="bg_bar">|</span>370<span class="bg_bar">|</span>720<span class="bg_bar">|</span>721<span class="bg_bar">|</span>N15<span class="txt_bustype">(심야)</span><span class="bg_bar">|</span>N26<span class="txt_bustype">(심야)</span><span class="bg_bar">|</span>N62<span class="txt_bustype">(심야)</span></span>
+                                        <a
+                                            href="https://map.kakao.com?busStopId=BS404748"
+                                            target="_blank"
+                                            class="btn_more"
+                                            data-logtarget=""
+                                            data-logevent="waytogo,busstop_more">
+                                            <span class="ico_comm ico_more">더보기</span></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <em class="ico_traffic bus_green">지선</em>
+                                    <!-- 버스 선별로 대체 텍스트 부탁 드립니다. -->
+                                    <div class="bus_ride">
+                                        <span class="num_ride">7212</span>
+                                        <a
+                                            href="https://map.kakao.com?busStopId=BS404748"
+                                            target="_blank"
+                                            class="btn_more hide"
+                                            data-logtarget=""
+                                            data-logevent="waytogo,busstop_more">
+                                            <span class="ico_comm ico_more">더보기</span></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <em class="ico_traffic bus_circle">순환</em>
+                                    <!-- 버스 선별로 대체 텍스트 부탁 드립니다. -->
+                                    <div class="bus_ride">
+                                        <span class="num_ride">04</span>
+                                        <a
+                                            href="https://map.kakao.com?busStopId=BS404748"
+                                            target="_blank"
+                                            class="btn_more hide"
+                                            data-logtarget=""
+                                            data-logevent="waytogo,busstop_more">
+                                            <span class="ico_comm ico_more">더보기</span></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <em class="ico_traffic bus_direct">직행</em>
+                                    <!-- 버스 선별로 대체 텍스트 부탁 드립니다. -->
+                                    <div class="bus_ride">
+                                        <span class="num_ride">9301</span>
+                                        <a
+                                            href="https://map.kakao.com?busStopId=BS404748"
+                                            target="_blank"
+                                            class="btn_more hide"
+                                            data-logtarget=""
+                                            data-logevent="waytogo,busstop_more">
+                                            <span class="ico_comm ico_more">더보기</span></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ride_wayout">
+                            <!-- 지도에서 일치하는 정류장에 마우스 오버 했을 때 클래스 ride_on 추가 -->
+                            <strong class="tit_wayout">
+                                <a
+                                    href="https://map.kakao.com?busStopId=BS404747"
+                                    class="link_wayout"
+                                    target="_blank"
+                                    data-logtarget=""
+                                    data-logevent="waytogo,busstop">
+                                    <span class="txt_busstop">종로3가.탑골공원(중)</span>
+                                    <span class="txt_number"><span class="screen_out">정류장 번호:
+                                        </span>(01015)
+                                        <span class="bg_bar">|</span>
+                                        <span class="screen_out">거리:
+                                        </span>
+                                        255m</span>
+                                </a>
+                            </strong>
+                            <ul class="list_ride">
+                                <li>
+                                    <em class="ico_traffic bus_blue">간선</em>
+                                    <!-- 버스 선별로 대체 텍스트 부탁 드립니다. -->
+                                    <div class="bus_ride">
+                                        <span class="num_ride">101<span class="bg_bar">|</span>103<span class="bg_bar">|</span>140<span class="bg_bar">|</span>143<span class="bg_bar">|</span>150<span class="bg_bar">|</span>160<span class="bg_bar">|</span>201<span class="bg_bar">|</span>260<span class="bg_bar">|</span>262<span class="bg_bar">|</span>270<span class="bg_bar">|</span>271<span class="bg_bar">|</span>273<span class="bg_bar">|</span>370<span class="bg_bar">|</span>720<span class="bg_bar">|</span>721<span class="bg_bar">|</span>N15<span class="txt_bustype">(심야)</span><span class="bg_bar">|</span>N26<span class="txt_bustype">(심야)</span><span class="bg_bar">|</span>N62<span class="txt_bustype">(심야)</span></span>
+                                        <a
+                                            href="https://map.kakao.com?busStopId=BS404747"
+                                            target="_blank"
+                                            class="btn_more"
+                                            data-logtarget=""
+                                            data-logevent="waytogo,busstop_more">
+                                            <span class="ico_comm ico_more">더보기</span></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <em class="ico_traffic bus_green">지선</em>
+                                    <!-- 버스 선별로 대체 텍스트 부탁 드립니다. -->
+                                    <div class="bus_ride">
+                                        <span class="num_ride">7212</span>
+                                        <a
+                                            href="https://map.kakao.com?busStopId=BS404747"
+                                            target="_blank"
+                                            class="btn_more hide"
+                                            data-logtarget=""
+                                            data-logevent="waytogo,busstop_more">
+                                            <span class="ico_comm ico_more">더보기</span></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <em class="ico_traffic bus_circle">순환</em>
+                                    <!-- 버스 선별로 대체 텍스트 부탁 드립니다. -->
+                                    <div class="bus_ride">
+                                        <span class="num_ride">04</span>
+                                        <a
+                                            href="https://map.kakao.com?busStopId=BS404747"
+                                            target="_blank"
+                                            class="btn_more hide"
+                                            data-logtarget=""
+                                            data-logevent="waytogo,busstop_more">
+                                            <span class="ico_comm ico_more">더보기</span></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <em class="ico_traffic bus_direct">직행</em>
+                                    <!-- 버스 선별로 대체 텍스트 부탁 드립니다. -->
+                                    <div class="bus_ride">
+                                        <span class="num_ride">9301</span>
+                                        <a
+                                            href="https://map.kakao.com?busStopId=BS404747"
+                                            target="_blank"
+                                            class="btn_more hide"
+                                            data-logtarget=""
+                                            data-logevent="waytogo,busstop_more">
+                                            <span class="ico_comm ico_more">더보기</span></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ride_wayout">
+                            <!-- 지도에서 일치하는 정류장에 마우스 오버 했을 때 클래스 ride_on 추가 -->
+                            <strong class="tit_wayout">
+                                <a
+                                    href="https://map.kakao.com?busStopId=BS455625"
+                                    class="link_wayout"
+                                    target="_blank"
+                                    data-logtarget=""
+                                    data-logevent="waytogo,busstop">
+                                    <span class="txt_busstop">인사동.탑골공원</span>
+                                    <span class="txt_number"><span class="screen_out">정류장 번호:
+                                        </span>(01913)
+                                        <span class="bg_bar">|</span>
+                                        <span class="screen_out">거리:
+                                        </span>
+                                        257m</span>
+                                </a>
+                            </strong>
+                            <ul class="list_ride">
+                                <li>
+                                    <em class="ico_traffic bus_circle">순환</em>
+                                    <!-- 버스 선별로 대체 텍스트 부탁 드립니다. -->
+                                    <div class="bus_ride">
+                                        <span class="num_ride">TOUR11</span>
+                                        <a
+                                            href="https://map.kakao.com?busStopId=BS455625"
+                                            target="_blank"
+                                            class="btn_more hide"
+                                            data-logtarget=""
+                                            data-logevent="waytogo,busstop_more">
+                                            <span class="ico_comm ico_more">더보기</span></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ride_wayout">
+                            <!-- 지도에서 일치하는 정류장에 마우스 오버 했을 때 클래스 ride_on 추가 -->
+                            <strong class="tit_wayout">
+                                <a
+                                    href="https://map.kakao.com?busStopId=BS116584"
+                                    class="link_wayout"
+                                    target="_blank"
+                                    data-logtarget=""
+                                    data-logevent="waytogo,busstop">
+                                    <span class="txt_busstop">종로4가.종묘공원</span>
+                                    <span class="txt_number"><span class="screen_out">정류장 번호:
+                                        </span>(01539)
+                                        <span class="bg_bar">|</span>
+                                        <span class="screen_out">거리:
+                                        </span>
+                                        277m</span>
+                                </a>
+                            </strong>
+                            <ul class="list_ride">
+                                <li>
+                                    <em class="ico_traffic bus_town">마을</em>
+                                    <!-- 버스 선별로 대체 텍스트 부탁 드립니다. -->
+                                    <div class="bus_ride">
+                                        <span class="num_ride">종로12</span>
+                                        <a
+                                            href="https://map.kakao.com?busStopId=BS116584"
+                                            target="_blank"
+                                            class="btn_more hide"
+                                            data-logtarget=""
+                                            data-logevent="waytogo,busstop_more">
+                                            <span class="ico_comm ico_more">더보기</span></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ride_wayout">
+                            <!-- 지도에서 일치하는 정류장에 마우스 오버 했을 때 클래스 ride_on 추가 -->
+                            <strong class="tit_wayout">
+                                <a
+                                    href="https://map.kakao.com?busStopId=BS12042"
+                                    class="link_wayout"
+                                    target="_blank"
+                                    data-logtarget=""
+                                    data-logevent="waytogo,busstop">
+                                    <span class="txt_busstop">청계2가.수표교</span>
+                                    <span class="txt_number"><span class="screen_out">정류장 번호:
+                                        </span>(01175)
+                                        <span class="bg_bar">|</span>
+                                        <span class="screen_out">거리:
+                                        </span>
+                                        279m</span>
+                                </a>
+                            </strong>
+                            <ul class="list_ride">
+                                <li>
+                                    <em class="ico_traffic bus_blue">간선</em>
+                                    <!-- 버스 선별로 대체 텍스트 부탁 드립니다. -->
+                                    <div class="bus_ride">
+                                        <span class="num_ride">173</span>
+                                        <a
+                                            href="https://map.kakao.com?busStopId=BS12042"
+                                            target="_blank"
+                                            class="btn_more hide"
+                                            data-logtarget=""
+                                            data-logevent="waytogo,busstop_more">
+                                            <span class="ico_comm ico_more">더보기</span></a>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <p style="margin-bottom: 20px; margin-top: 5px;">Mauris blandit aliquet elit,
-                        eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula
-                        elementum sed sit amet dui. Sed porttitor lectus nibh.</p>
                 </div>
-            </section>
-            <!-- 찾아오는길끝 -->
-            <!-- footer import -->
-            <!-- <%@ include file="/WEB-INF/views/user/inc/footer.jsp" %> -->
-      <div id="footers"></div>
-            <!-- Js Plugins -->
-        </body>
 
-    </html>
+            </div>
+        </section>
+        <!-- 찾아오는길끝 -->
+        <!-- footer import -->
+        <!-- <%@ include file="/WEB-INF/views/user/inc/footer.jsp" %> -->
+        <div id="footers"></div>
+        <!-- Js Plugins -->
+    </body>
+
+</html>
