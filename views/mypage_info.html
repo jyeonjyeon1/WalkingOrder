@@ -30,10 +30,89 @@
 <!-- header import -->
 <!-- <%@ include file="/WEB-INF/views/user/inc/header.jsp" %> -->
       <div id="headers"></div>
-<div style="text-align: center; height:1000px;">
-    <h1>바디 부탁해요~★</h1>
-    <br>
-</div>
+      <div class="container" style="margin: 30PX auto 50px; max-width: 600px;">
+        <h3 class="text-center mt-60 mb-60" style="color:#6f6f6f">회원정보수정</h3>
+        <form>
+            <div class="row">
+                <div class="col-sm-4"><label class="regis_label" >아이디</label></div>
+                <h5 class="col-sm-4"><label style="color:#6f6f6f">rlawodn0510</h5>
+            </div>
+            <br>
+            <div class="row" style="margin-bottom: 10px;">
+                <div class="col-sm-4"><label class="regis_label">현재 비밀번호</label></div>
+                <div class="col-sm-6"><input type="password" placeholder="현재 비밀번호" class="form-control"></div>
+
+            </div>
+            <div class="row">
+                <div class="col-sm-4"><label class="regis_label">새 비밀번호</label></div>
+                <div class="col-sm-6"><input type="password" placeholder="새 비밀번호" class="form-control"></div>
+
+            </div>
+            <div class="row">
+                <div class="col-sm-4 mt-15"><label class="regis_label">새 비밀번호 확인</label></div>
+                <div class="col-sm-6 mt-10"><input type="password" placeholder="새 비밀번호 확인" class="form-control"></div>
+
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-4"><label class="regis_label">전화번호</label></div>
+                <div class="col-sm-2">
+                    <select class="form-control">
+                        <option value="all">010</option>
+                        <option value="id">011</option>
+                        <option value="name">012</option>
+                        <option value="nick">016</option>
+                    </select>
+                </div>
+                <div class="col-sm-2"><input type="text" class="form-control"></div>
+                <div class="col-sm-2"> <input type="text" class="form-control"></div>
+
+
+
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-4"><label class="regis_label">생년월일</label></div>
+                <div class="col-sm-4" >
+                    <input class="form-control round-form" type="date" value="1999-06-30">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-4 mt-10"><label class="regis_label">SMS 수신 동의</label></div>
+                <div class="col-sm-6" style="margin-top: 15px; ">
+                    <label class="radio-inline">
+                        <input type="radio" name="inRad" id="inlineRadio1" value="option1" checked> 동의
+                    </label>
+                    <label class="radio-inline" style="padding-left:20px">
+                        <input type="radio" name="inRad" id="inlineRadio2" value="option2"> 비동의
+                    </label>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-4"><label class="regis_label">Email 동의</label></div>
+                <div class="col-sm-6" style="margin-top: 5px; ">
+                    <label class="radio-inline">
+                        <input type="radio" name="inRad1" id="inlineRadio1" value="option1" checked> 동의
+                    </label>
+                    <label class="radio-inline" style="padding-left:20px">
+                        <input type="radio" name="inRad1" id="inlineRadio2" value="option2"> 비동의
+                    </label>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <button type="submit" class="btn btn-outline-warning" style="margin:auto; width: 60%;"> 수정완료
+                    &nbsp;</button>
+            </div>
+
+
+
+
+        </form>
+    </div>
+
 
 
 
