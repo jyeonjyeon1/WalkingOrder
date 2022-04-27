@@ -19,6 +19,8 @@
             $('#footers').load("footer.html");
         });
          //========= Hero Slider
+
+         
     </script>
 </head>
 
@@ -37,7 +39,38 @@
             <button type="submit" class="btn btn-outline-warning" style="width: 100%;"><i class="fa fa-lock"></i> 로그인 &nbsp;</button>
             <h4 class="text-center mt-40 mb-30" style="color:#6f6f6f">소셜 로그인</h4>
             <div class="row" style="max-width: 400px;margin: auto;">
-                <button class="kaka_login" type="button"></button>
+                <button class="kaka_login" onClick="javascript:kakaoLogin();" type="button"></button>
+      
+
+                <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+                <script>
+
+                    window.Kakao.init("afa33a5b39df9de72171ff16aabcb982");
+
+                    function kakaoLogin() {
+                        window.Kakao.Auth.login({
+                            scope:'	profile_nickname, account_email, gender, birthday',
+                            success: function(authObj) {
+
+                                var accessToken = Kakao.Auth.getAccessToken();
+                                Kakao.Auth.setAccessToken(accessToken);
+
+                                console.log(authObj);
+                                window.Kakao.API.request({
+                                    url:'/v2/user/me',
+                                    success: res => {
+                                        const kakao_account = res.kakao_account;
+                                        console.log(Kakao.Auth.getAccessToken());
+                                        console.log(kakao_account);
+                                        window.location.href='/login_register2.html'
+                                    }
+                                })
+                            }
+
+                        })
+                    }
+
+                </script>
                 <button class="naver_login" type="button"></button>
                 <button class="google_login" type="button"></button>
             </div>
