@@ -23,6 +23,48 @@
          });
          //========= Hero Slider 
      </script>
+     <style>
+    .card-body a:hover {
+        
+        background-color: bisque;
+        border-radius: 10px;
+    }
+
+    .wishStore_closed {
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+   
+    border-radius: .25rem;
+    margin-top: 25px;
+    pointer-events: none;
+    opacity: 0.65;
+
+    }
+
+
+    .wishStore_open {
+
+        position: relative;
+       
+        flex-direction: column;
+        min-width: 0;
+       
+        background-color: #fff;
+        background-clip: border-box;
+
+        border-radius: .25rem;
+        margin-top: 25px;
+        
+       
+
+}
+</style>
     
 </head>
 
@@ -32,19 +74,14 @@
       <div id="headers"></div>
 
 <!--mypage_main_jihyeon body 시작-->
-<section class="product spad">
-    <div class="container">
+<section class="product spad" >
+    <div class="container" >
         <div class="row">
 
-                <div class="row">
+                <div class="row" >
                 <h3>My Wish List <i class="lni lni-heart-filled"></i></h3>
                 </div>
-                
-
-
-
-                <div>
-                    
+                <div class="wishStore_open" style="margin-top: 20px;">
                         <div class="card mb-3" style="margin: 20px;">
                             <div class="row g-0">
                               <div class="col-md-2">
@@ -68,9 +105,57 @@
                               </div>
                             </div>
                           </div>
-                
-                </div>
-                
+                          </div>
+                          <div class="wishStore_open">
+                          <div class="card mb-3" style="margin: 20px;" >
+                            <div class="row g-0">
+                              <div class="col-md-2">
+                                <img src="resources/assets/images/jaewoo/starbucks_img.jpg" class="img-fluid rounded-start" alt="cafe">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <a href=""><h5 class="card-title">스타벅스 종로5가점</h5></a>
+                                  <div class="product__details__rating" style="color: rgb(255, 208, 0);">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                    <span style="color:rgb(255, 0, 0)">(18 reviews)</span>
+
+                                    
+                                </div>
+                                <h3 style="font-size: 16px; color: rgba(255, 102, 0, 0.938);"><i class="lni lni-timer"></i>5분후 수령 가능</h3>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+                          <div class="wishStore_closed">
+                          <div class="card mb-3" style="margin: 20px;">
+                            <div class="row g-0">
+                              <div class="col-md-2">
+                                <img src="resources/assets/images/jaewoo/starbucks_img.jpg" class="img-fluid rounded-start" alt="cafe">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <a href=""><h5 class="card-title">스타벅스 종로5가점</h5></a>
+                                  <div class="product__details__rating" style="color: rgb(255, 208, 0);">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                    <span style="color:rgb(255, 0, 0)">(18 reviews)</span>
+
+                                    
+                                </div>
+                                <h3 style="font-size: 16px; color: rgba(255, 102, 0, 0.938);"><i class="lni lni-cross-circle"></i> 준비중</h3>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          </div>
             </div>
 
 

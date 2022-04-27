@@ -1,0 +1,1897 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Dashboard">
+  <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+  <title>워킹오더 관리자 페이지</title>
+
+  <!-- Favicons -->
+  <link href="../resources/assets/images/admin/logo/logo_only.svg" rel="icon">
+  <link href="../resources/assets/images/admin/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap core CSS -->
+  <link href="../resources/assets/js/admin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!--external css-->
+  <link href="../resources/assets/js/admin/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="../resources/assets/css/admin/style.css" rel="stylesheet">
+  <link href="../resources/assets/css/admin/style-responsive.css" rel="stylesheet">
+  <!-- 테이블용 css -->
+  <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <section id="container">
+    <!-- **********************************************************************************************************************************************************
+        TOP BAR CONTENT & NOTIFICATIONS
+        *********************************************************************************************************************************************************** -->
+    <!--header start-->
+    <header class="header black-bg">
+      <div class="sidebar-toggle-box">
+        <div class="openup tooltips" data-placement="right" data-original-title="메뉴 여/닫기"></div>
+      </div>
+      <!--logo start-->
+      <a href="../index.html" class="logo"><b>walking<span>order</span></b></a>
+      <!--logo end-->
+      <div class="nav notify-row" id="top_menu">
+
+      </div>
+      <div class="top-menu">
+        <ul class="nav pull-right top-menu">
+          <li><a class="logout" href="../login.html">Logout</a></li>
+        </ul>
+      </div>
+    </header>
+    <!--header end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN SIDEBAR MENU
+        *********************************************************************************************************************************************************** -->
+    <!--sidebar start-->
+    <aside>
+      <div id="sidebar" class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+          <p class="centered"><a><img src="../resources/assets/images/admin/doggy.jpg" class="img-circle" width="80"></a></p>
+          <h5 class="centered">김 버터</h5>
+          <p class="sidebar-title">설정</p>
+          <li class="sub-menu">
+            <a href="../index.html">
+              <i class="fa fa-h-square"></i>
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="sub-menu">
+            <a id="testid" class="dcjq-parent testjirong" href="javacript:;">
+              <i class="fa fa-navicon"></i>
+              <span>All Menu</span>
+            </a>
+          </li>
+          <p class="sidebar-title">마이 메뉴</p>
+          <li class="sub-menu">
+            <a id="user-manage" href="javascript:void(0);">
+              <i class="fa fa-user" style="font-size: 15px;""></i>
+              <span>&nbsp;회원 관리</span>
+              </a>
+            <ul class=" sub">
+          <li><a id="user-mng" href="../user/user_mng.html">회원 관리</a></li>
+          <li><a id="coupon-mng" href="../user/coupon_mng.html">쿠폰 관리</a></li>
+          <li><a id="point-mng" href="../user/point_mng.html">포인트 관리</a></li>
+          <li><a id="connect-hist" href="../user/connect_hist.html">접속 이력</a></li>
+        </ul>
+        </li>
+        <li class="sub-menu dcjq-parent-li">
+          <a id="store-manage" class="active dcjq-parent" href="javascript:;">
+            <i class="fa fa-group" style="font-size: 12px;"></i>
+            <span>매장 관리</span>
+          </a>
+          <ul class="sub">
+            <li><a id="store-mng" href="../store/store_mng.html">매장 관리</a></li>
+            <li class="active"><a id="store-menu" href="../store/store_menu.html">매장 메뉴 관리</a></li>
+            <li><a id="store-pending" href="../store/store_pending.html">승인 대기</a></li>
+            <li><a id="join-inq" href="../store/join_inq.html">입점 문의</a></li>
+          </ul>
+        </li>
+        <li class="sub-menu">
+          <a id="order-manage" href="javascript:;">
+            <i class="fa fa-shopping-cart"></i>
+            <span>주문 관리</span>
+          </a>
+          <ul class="sub">
+            <li><a id="total-order" href="../order/total_order.html">전체 주문 관리</a></li>
+            <li><a id="store-order" href="../order/store_order.html">매장별 주문 관리</a></li>
+            <li><a id="cancel-order" href="../order/cancel_order.html">취소 주문 관리</a></li>
+            <li><a id="refund-order" href="../order/refund_order.html">환불 주문 관리</a></li>
+          </ul>
+        </li>
+        <li class="sub-menu">
+          <a id="board-manage" href="javascript:;">
+            <i class="fa fa-pencil-square-o" style="font-size: 13px;"></i>
+            <span>보드 관리</span>
+          </a>
+          <ul class="sub">
+            <li><a id="notices" href="../board/notices.html">공지사항</a></li>
+            <li><a id="faq-mng" href="../board/faq_mng.html">FAQ 관리</a></li>
+
+            <li><a id="review-mng" href="../board/review_mng.html">리뷰 관리</a></li>
+            <li><a id="inquiry" href="../board/inquiry.html">1:1 문의</a></li>
+          </ul>
+        </li>
+        <li class="sub-menu">
+          <a id="page-manage" href="javascript:;">
+            <i class="fa fa-sticky-note"></i>
+            <span>페이지 관리</span>
+          </a>
+          <ul class="sub">
+            <li><a id="banner-mng" href="../page/banner_mng.html">배너 관리</a></li>
+              <li><a id="banner-mng" href="../page/drink_recom.html">오늘의 음료</a></li>
+              <li><a id="banner-mng" href="../page/searchbar_mng.html">검색어 관리</a></li>
+            <li><a id="terms-mng" href="../page/terms_mng.html">약관 관리</a></li>
+            <li><a id="policy-mng" href="../page/policy_mng.html">정책 관리</a></li>
+            <li><a id="doc-form" href="../page/doc_form.html">증빙서류</a></li>
+          </ul>
+        </li>
+        <li class="sub-menu">
+          <a id="mess" href="javascript:;">
+            <i class="fa fa-envelope-open-o" style="font-size: 13px;"></i>
+            <span>메세지 관리</span>
+          </a>
+          <ul class="sub">
+            <li><a id="ka-tmplt" href="../message/ka_tmplt.html">알림톡 템플릿</a></li>
+            <li><a id="ka-hist" href="../message/ka_hist.html">알림톡 전송이력</a></li>
+            <li><a id="mess-send" href="../message/mess_send.html">문자 전송</a></li>
+            <li><a id="mess-send-group" href="../message/mess_send_group.html">단체 문자 전송</a></li>
+            <li><a id="mess-hist" href="../message/mess_hist.html">문자 전송 이력</a></li>
+          </ul>
+        </li>
+        <li class="sub-menu">
+          <a id="settlement" href="javascript:;">
+            <i class=" fa fa-krw"></i>
+            <span>정산</span>
+          </a>
+          <ul class="sub">
+            <li><a id="pg-comm" href="../settlement/pg_comm.html">PG 수수료</a></li>
+            <li><a id="pg-stlmt" href="../settlement/pg_stlmt.html">PG 정산</a></li>
+            <li><a id="store-rev" href="../settlement/store_rev.html">매장별 수익</a></li>
+            <li><a id="store-stlmt" href="../settlement/store_stlmt.html">매장별 정산</a></li>
+            <li><a id="stlmt-hist" href="../settlement/stlmt_hist.html">정산 내역</a></li>
+          </ul>
+        </li>
+        <li class="sub-menu">
+          <a id="statistics" href="javascript:;">
+            <i class=" fa fa-bar-chart-o"></i>
+            <span>통계</span>
+          </a>
+          <ul class="sub">
+            <li><a id="order-period" href="../statistics/order_period.html">기간별 주문 통계</a></li>
+            <li><a id="store-sales" href="../statistics/store_sales.html">매장별 매출 통계</a></li>
+            <li><a id="user-sales" href="../statistics/user_sales.html">사용자별 매출 통계</a></li>
+            <li><a id="by-chart" href="../statistics/by_chart.html">표로 확인</a></li>
+            <li><a id="by-graph" href="../statistics/by_graph.html">그래프로 확인</a></li>
+          </ul>
+        </li>
+
+
+        </ul>
+        <!-- sidebar menu end-->
+      </div>
+    </aside>
+    <!--sidebar end-->
+
+
+
+    <!-- **********************************************************************************************************************************************************
+        MAIN CONTENT
+        *********************************************************************************************************************************************************** -->
+    <!--main content start-->
+    <section id="main-content">
+      <form class="allmenu-form">
+        <section class="allmenu site-min-height">
+          <form>
+            <span class="all"><b> All Menu</b></span>
+            <span class="reset_btn"><button type="reset">reset</button></span>
+            <span class="reset_btn"><button class="all_menu_save_btn" type="button">save</button>
+            </span>
+            <div class="row mt">
+              <div class="col-lg-3 col-md-6 col-12">
+                <ul class="all_menu">
+                  <li class="sub-menu">
+                    <a id="user-manage">
+                      <i class="fa fa-user" style="font-size: 12px;"></i>
+                      <span>&nbsp;회원 관리</span>
+                    </a>
+                    <ul class="sub">
+                      <li><input id="" type="checkbox"><span>회원 관리</span></li>
+                      <li><input id="" type="checkbox"><span>쿠폰 관리</span></li>
+                      <li><input id="" type="checkbox"><span>포인트 관리</span></li>
+                      <li><input id="" type="checkbox"><span>접속 이력</span></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <ul class="all_menu">
+                  <li class="sub-menu">
+                    <a id="user-manage">
+                      <i class="fa fa-group" style="font-size: 12px;"></i>
+                      <span>매장 관리</span>
+                    </a>
+                    <ul class="sub">
+                      <li><input id="" type="checkbox"><span>매장 관리</span></li>
+                      <li><input id="" type="checkbox"><span>매장 메뉴 관리</span></li>
+                      <li><input id="" type="checkbox"><span>승인 대기</span></li>
+                      <li><input id="" type="checkbox"><span>입점 문의</span></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-12">
+                <ul class="all_menu">
+                  <li class="sub-menu">
+                    <a id="user-manage">
+                      <i class="fa fa-shopping-cart"></i>
+                      <span>주문 관리</span>
+                    </a>
+                    <ul class="sub">
+                      <li><input id="" type="checkbox"><span>전체 주문 관리</span></li>
+                      <li><input id="" type="checkbox"><span>매장별 주문 관리</span></li>
+                      <li><input id="" type="checkbox"><span>취소 주문</span></li>
+                      <li><input id="" type="checkbox"><span>환불 주문</span></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <ul class="all_menu">
+                  <li class="sub-menu">
+                    <a id="user-manage">
+                      <i class="fa fa-pencil-square"></i>
+                      <span>보드 관리</span>
+                    </a>
+                    <ul class="sub">
+                      <li><input id="" type="checkbox"><span>공지사항</span></li>
+                      <li><input id="" type="checkbox"><span>FAQ 관리</span></li>
+
+                      <li><input id="" type="checkbox"><span>리뷰 관리</span></li>
+                      <li><input id="" type="checkbox"><span>1:1 문의</span></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="row mt">
+              <div class="col-lg-3 col-md-6 col-12">
+                <ul class="all_menu">
+                  <li class="sub-menu">
+                    <a id="user-manage">
+                      <i class="fa fa-sticky-note" style="font-size: 12px;"></i>
+                      <span>페이지 관리</span>
+                    </a>
+                    <ul class="sub">
+                      <li><input id="" type="checkbox"><span>배너 관리</span></li>
+                      <li><input id="" type="checkbox"><span>오늘의 음료</span></li>
+                      <li><input id="" type="checkbox"><span>검색어 관리</span></li>
+                      <li><input id="" type="checkbox"><span>약관/정책 관리</span></li>
+                      <li><input id="" type="checkbox"><span>증빙서류</span></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <ul class="all_menu">
+                  <li class="sub-menu">
+                    <a id="user-manage">
+                      <i class="fa fa-envelope-open-o" style="font-size: 13px;"></i>
+                      <span>메세지 관리</span>
+                    </a>
+                    <ul class="sub">
+                      <li><input id="" type="checkbox"><span>알림톡 템플릿</span></li>
+                      <li><input id="" type="checkbox"><span>알림톡 전송이력</span></li>
+                      <li><input id="" type="checkbox"><span>문자 전송</span></li>
+                      <li><input id="" type="checkbox"><span>단체 문자 전송</span></li>
+                      <li><input id="" type="checkbox"><span>문자 전송 이력</span></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-12">
+                <ul class="all_menu">
+                  <li class="sub-menu">
+                    <a id="user-manage">
+                      <i class=" fa fa-krw"></i>
+                      <span>정산</span>
+                    </a>
+                    <ul class="sub">
+                      <li><input id="" type="checkbox"><span>PG 수수료</span></li>
+                      <li><input id="" type="checkbox"><span>PG 정산 내역</span></li>
+                      <li><input id="" type="checkbox"><span>매장별 수익</span></li>
+                      <li><input id="" type="checkbox"><span>매장별 정산</span></li>
+                      <li><input id="" type="checkbox"><span>정산 내역</span></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <ul class="all_menu">
+                  <li class="sub-menu">
+                    <a id="user-manage">
+                      <i class=" fa fa-bar-chart-o"></i>
+                      <span>통계</span>
+                    </a>
+                    <ul class="sub">
+                      <li><input id="" type="checkbox"><span>기간별 주문 통계</span></li>
+                      <li><input id="" type="checkbox"><span>매장별 매출 통계</span></li>
+                      <li><input id="" type="checkbox"><span>사용자별 매출 통계</span></li>
+                      <li><input id="" type="checkbox"><span>차트로 확인</span></li>
+                      <li><input id="" type="checkbox"><span>그래프로 확인</span></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </section>
+      </form>
+      <section class="wrapper">
+        <h3 style="margin-bottom: 5px;"><i class="fa fa-angle-right"></i> {매장명} 메뉴 수정</h3>
+        <div class="row mt" style="margin-top: 5px;">
+          <!-- 영역 시작 -->
+
+          <div class="col-lg-12" style="min-width: 500px;">
+            <div class="card-header" style="font-size: 16px;">
+              <i class="fa fa-plus-circle" style="font-size: 14px;"></i>
+              메뉴 수정
+            </div>
+
+            <div class="form-panel" style="margin-top:0;  border-radius: 0 0 10px 10px;">
+              <form class="form-horizontal style-form" method="get">
+                <div class="row content-panel" style="border: none; box-shadow: none;padding: 0;margin:0 5px">
+                  <!-- 메뉴 관리 / 품절 관리 -->
+                  <div class="panel-heading col-lg-6 col-md-12 col-sm-12">
+                    <ul class="nav nav-tabs nav-justified">
+                      <li class="active">
+                        <a data-toggle="tab" href="#menu">메뉴 관리</a>
+                      </li>
+                      <li>
+                        <a data-toggle="tab" href="#sold_out">품절 설정</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- /panel-heading -->
+                  <div class="panel-body col-lg-12" style="padding: 0 11px 11px 11px;">
+                    <div class="tab-content">
+                      <!-- 메뉴관리 -->
+                      <div id="menu" class="tab-pane active no-padding">
+                        <div class="row content-panel" style="border: none; box-shadow: none;padding: 0;margin:0 5px">
+                          <!-- 메뉴편집 / 옵션편집 / 대표메뉴 / 메뉴모음컷 / 주문안내 -->
+                          <div class="panel-heading col-lg-12 col-md-12 col-sm-12 no-padding"
+                            style="margin-bottom: 5px;">
+                            <ul class="nav nav-tabs nav-justified">
+                              <li class="active">
+                                <a data-toggle="tab" href="#menu_111">메뉴편집</a>
+                              </li>
+                              <li>
+                                <a data-toggle="tab" href="#menu_222">옵션편집</a>
+                              </li>
+                              <li>
+                                <a data-toggle="tab" href="#menu_333">대표메뉴</a>
+                              </li>
+                              <li>
+                                <a data-toggle="tab" href="#menu_444">메뉴모음컷</a>
+                              </li>
+                              <li>
+                                <a data-toggle="tab" href="#menu_555">주문안내</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <!-- /panel-heading -->
+                          <div class="panel-body col-lg-12">
+                            <div class="tab-content">
+                              <!-- 메뉴편집 -->
+                              <div id="menu_111" class="tab-pane active">
+                                <div class="row">
+                                  <input type="button" id="add_menugroup_btn" value="메뉴그룹 추가" class="grey__button btn"
+                                    style="margin-right: 10px;">
+                                  <div class="add_menugroup col-md-3 " style="padding-left: 0;">
+                                    <input type="text" id="" value="" class="form-control round-form"
+                                      style="display: inline-block;height: 30px;;">
+
+                                    <!-- </div>
+                                  <div class="col-sm-1"> -->
+                                  </div>
+
+                                </div>
+
+                                <div class="row">
+                                  <div class="col-md-12 no-padding">
+                                    <div class="accordion" id="accordion11">
+                                      <!-- 열리기1 -->
+                                      <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                          <a class="accordion-toggle collapsed" style="border-top: 0;"
+                                            data-toggle="collapse" data-parent="#accordion11" href="#collapse111">
+                                            <em class="glyphicon glyphicon-chevron-right icon-fixed-width"></em>
+                                            (New) 시즌메뉴 1
+                                          </a>
+                                        </div>
+                                        <div id="collapse111" class="accordion-body collapse in">
+                                          <div class="accordion-inner">
+                                            <div class="row">
+                                              <div class="one_menu_">
+                                                <div class="col-md-2">
+                                                  <img src="../resources/assets/images/admin/friends/3.png" class="img-thumbnail"
+                                                    style="margin-bottom: 3px;">
+                                                  <input type="file" style="max-width: 100px;">
+                                                </div>
+                                                <div class="col-md-4">
+                                                  <div class="form-group">
+                                                    <label class="col-sm-4 col-sm-4 control-label"
+                                                      style="font-size: 12px;">메뉴이름</label>
+                                                    <div class="col-sm-8">
+                                                      <input class="form-control" type="text" placeholder="메뉴이름"
+                                                        style="height:25px;">
+                                                    </div>
+                                                  </div>
+                                                  <div class="form-group">
+                                                    <label class="col-sm-4 col-sm-4 control-label"
+                                                      style="font-size: 12px;">메뉴이름</label>
+                                                    <div class="col-sm-8">
+                                                      <input class="form-control" type="text" placeholder="메뉴이름"
+                                                        style="height:25px;">
+                                                    </div>
+                                                  </div>
+                                                  <div class="form-group">
+                                                    <label class="col-sm-4 col-sm-4 control-label"
+                                                      style="font-size: 12px;">메뉴이름</label>
+                                                    <div class="col-sm-8">
+                                                      <input class="form-control" type="text" placeholder="메뉴이름"
+                                                        style="height:25px;">
+                                                    </div>
+                                                  </div>
+                                                  <div class="form-group">
+                                                    <label class="col-sm-4 col-sm-4 control-label"
+                                                      style="font-size: 12px;">메뉴이름</label>
+                                                    <div class="col-sm-8">
+                                                      <input class="form-control" type="text" placeholder="메뉴이름"
+                                                        style="height:25px;">
+                                                    </div>
+                                                  </div>
+                                                  <div class="form-group">
+                                                    <label class="col-sm-4 col-sm-4 control-label"
+                                                      style="font-size: 12px;">메뉴이름</label>
+                                                    <div class="col-sm-8">
+                                                      <input class="form-control" type="text" placeholder="메뉴이름"
+                                                        style="height:25px;">
+                                                    </div>
+                                                  </div>
+                                                  <div class="form-group" style="margin-bottom: 25px; padding-bottom:8px; border-bottom: 1px solid grey;">
+                                                    <label class="col-sm-4 col-sm-4 control-label"
+                                                      style="font-size: 12px;">메뉴이름</label>
+                                                    <div class="col-sm-8">
+                                                      <input class="form-control" type="text" placeholder="메뉴이름"
+                                                        style="height:25px;">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>  
+                                              <div class="one_menu_">
+                                                <div class="col-md-2">
+                                                  <img src="../resources/assets/images/admin/friends/4444.png" class="img-thumbnail"
+                                                    style="margin-bottom: 3px;">
+                                                  <input type="file" style="max-width: 100px;">
+                                                </div>
+                                                <div class="col-md-4">
+                                                  <div class="form-group">
+                                                    <label class="col-sm-4 col-sm-4 control-label"
+                                                      style="font-size: 12px;">메뉴이름</label>
+                                                    <div class="col-sm-8">
+                                                      <input class="form-control" type="text" placeholder="메뉴이름"
+                                                        style="height:25px;">
+                                                    </div>
+                                                  </div>
+                                                  <div class="form-group">
+                                                    <label class="col-sm-4 col-sm-4 control-label"
+                                                      style="font-size: 12px;">메뉴이름</label>
+                                                    <div class="col-sm-8">
+                                                      <input class="form-control" type="text" placeholder="메뉴이름"
+                                                        style="height:25px;">
+                                                    </div>
+                                                  </div>
+                                                  <div class="form-group">
+                                                    <label class="col-sm-4 col-sm-4 control-label"
+                                                      style="font-size: 12px;">메뉴이름</label>
+                                                    <div class="col-sm-8">
+                                                      <input class="form-control" type="text" placeholder="메뉴이름"
+                                                        style="height:25px;">
+                                                    </div>
+                                                  </div>
+                                                  <div class="form-group">
+                                                    <label class="col-sm-4 col-sm-4 control-label"
+                                                      style="font-size: 12px;">메뉴이름</label>
+                                                    <div class="col-sm-8">
+                                                      <input class="form-control" type="text" placeholder="메뉴이름"
+                                                        style="height:25px;">
+                                                    </div>
+                                                  </div>
+                                                  <div class="form-group">
+                                                    <label class="col-sm-4 col-sm-4 control-label"
+                                                      style="font-size: 12px;">메뉴이름</label>
+                                                    <div class="col-sm-8">
+                                                      <input class="form-control" type="text" placeholder="메뉴이름"
+                                                        style="height:25px;">
+                                                    </div>
+                                                  </div>
+                                                  <div class="form-group" style="margin-bottom: 25px; padding-bottom:8px; border-bottom: 1px solid grey;">
+                                                    <label class="col-sm-4 col-sm-4 control-label"
+                                                      style="font-size: 12px;">메뉴이름</label>
+                                                    <div class="col-sm-8">
+                                                      <input class="form-control" type="text" placeholder="메뉴이름"
+                                                        style="height:25px;">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>  
+                                              <div class="one_menu_">
+                                                <div class="col-md-2">
+                                                  <img src="../resources/assets/images/admin/friends/1.png" class="img-thumbnail"
+                                                    style="margin-bottom: 3px;">
+                                                  <input type="file" style="max-width: 100px;">
+                                                </div>
+                                                <div class="col-md-4">
+                                                  <div class="form-group">
+                                                    <label class="col-sm-4 col-sm-4 control-label"
+                                                      style="font-size: 12px;">메뉴이름</label>
+                                                    <div class="col-sm-8">
+                                                      <input class="form-control" type="text" placeholder="메뉴이름"
+                                                        style="height:25px;">
+                                                    </div>
+                                                  </div>
+                                                  <div class="form-group">
+                                                    <label class="col-sm-4 col-sm-4 control-label"
+                                                      style="font-size: 12px;">메뉴이름</label>
+                                                    <div class="col-sm-8">
+                                                      <input class="form-control" type="text" placeholder="메뉴이름"
+                                                        style="height:25px;">
+                                                    </div>
+                                                  </div>
+                                                  <div class="form-group">
+                                                    <label class="col-sm-4 col-sm-4 control-label"
+                                                      style="font-size: 12px;">메뉴이름</label>
+                                                    <div class="col-sm-8">
+                                                      <input class="form-control" type="text" placeholder="메뉴이름"
+                                                        style="height:25px;">
+                                                    </div>
+                                                  </div>
+                                                  <div class="form-group">
+                                                    <label class="col-sm-4 col-sm-4 control-label"
+                                                      style="font-size: 12px;">메뉴이름</label>
+                                                    <div class="col-sm-8">
+                                                      <input class="form-control" type="text" placeholder="메뉴이름"
+                                                        style="height:25px;">
+                                                    </div>
+                                                  </div>
+                                                  <div class="form-group">
+                                                    <label class="col-sm-4 col-sm-4 control-label"
+                                                      style="font-size: 12px;">메뉴이름</label>
+                                                    <div class="col-sm-8">
+                                                      <input class="form-control" type="text" placeholder="메뉴이름"
+                                                        style="height:25px;">
+                                                    </div>
+                                                  </div>
+                                                  <div class="form-group" style="margin-bottom: 25px; padding-bottom:8px; border-bottom: 1px solid grey;">
+                                                    <label class="col-sm-4 col-sm-4 control-label"
+                                                      style="font-size: 12px;">메뉴이름</label>
+                                                    <div class="col-sm-8">
+                                                      <input class="form-control" type="text" placeholder="메뉴이름"
+                                                        style="height:25px;">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>  
+                                              <div class="one_menu_">
+                                                <div class="col-md-2">
+                                                  <img src="../resources/assets/images/admin/friends/2.png" class="img-thumbnail"
+                                                    style="margin-bottom: 3px;">
+                                                  <input type="file" style="max-width: 100px;">
+                                                </div>
+                                                <div class="col-md-4">
+                                                  <div class="form-group">
+                                                    <label class="col-sm-4 col-sm-4 control-label"
+                                                      style="font-size: 12px;">메뉴이름</label>
+                                                    <div class="col-sm-8">
+                                                      <input class="form-control" type="text" placeholder="메뉴이름"
+                                                        style="height:25px;">
+                                                    </div>
+                                                  </div>
+                                                  <div class="form-group">
+                                                    <label class="col-sm-4 col-sm-4 control-label"
+                                                      style="font-size: 12px;">메뉴이름</label>
+                                                    <div class="col-sm-8">
+                                                      <input class="form-control" type="text" placeholder="메뉴이름"
+                                                        style="height:25px;">
+                                                    </div>
+                                                  </div>
+                                                  <div class="form-group">
+                                                    <label class="col-sm-4 col-sm-4 control-label"
+                                                      style="font-size: 12px;">메뉴이름</label>
+                                                    <div class="col-sm-8">
+                                                      <input class="form-control" type="text" placeholder="메뉴이름"
+                                                        style="height:25px;">
+                                                    </div>
+                                                  </div>
+                                                  <div class="form-group">
+                                                    <label class="col-sm-4 col-sm-4 control-label"
+                                                      style="font-size: 12px;">메뉴이름</label>
+                                                    <div class="col-sm-8">
+                                                      <input class="form-control" type="text" placeholder="메뉴이름"
+                                                        style="height:25px;">
+                                                    </div>
+                                                  </div>
+                                                  <div class="form-group">
+                                                    <label class="col-sm-4 col-sm-4 control-label"
+                                                      style="font-size: 12px;">메뉴이름</label>
+                                                    <div class="col-sm-8">
+                                                      <input class="form-control" type="text" placeholder="메뉴이름"
+                                                        style="height:25px;">
+                                                    </div>
+                                                  </div>
+                                                  <div class="form-group" style="margin-bottom: 25px; padding-bottom:8px; border-bottom: 1px solid grey;">
+                                                    <label class="col-sm-4 col-sm-4 control-label"
+                                                      style="font-size: 12px;">메뉴이름</label>
+                                                    <div class="col-sm-8">
+                                                      <input class="form-control" type="text" placeholder="메뉴이름"
+                                                        style="height:25px;">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>  
+                                              
+                                             
+
+                                              
+
+                                              <!-- row 끝 -->
+                                            </div>
+
+
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <!-- 열리기2 -->
+                                      <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                          <a class="accordion-toggle collapsed" data-toggle="collapse"
+                                            data-parent="#accordion11" href="#collapse112">
+                                            <em class="glyphicon glyphicon-chevron-right icon-fixed-width"></em>
+                                            (New) 시즌메뉴 2
+                                          </a>
+                                        </div>
+                                        <div id="collapse112" class="accordion-body collapse">
+                                          <div class="accordion-inner">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                              industry. Lorem
+                                              Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                              when an
+                                              unknown printer took a galley of type and scrambled it to make a type
+                                              specimen book. It has survived not only five centuries, but also the leap
+                                              into
+                                              electronic typesetting, remaining essentially unchanged.</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- 열리기3 -->
+                                      <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                          <a class="accordion-toggle collapsed" data-toggle="collapse"
+                                            data-parent="#accordion11" href="#collapse113">
+                                            <em class="glyphicon glyphicon-chevron-right icon-fixed-width"></em>
+                                            (New) 시즌메뉴 3
+                                          </a>
+                                        </div>
+                                        <div id="collapse113" class="accordion-body collapse">
+                                          <div class="accordion-inner">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                              industry. Lorem
+                                              Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                              when an
+                                              unknown printer took a galley of type and scrambled it to make a type
+                                              specimen book. It has survived not only five centuries, but also the leap
+                                              into
+                                              electronic typesetting, remaining essentially unchanged.</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- 열리기4 -->
+                                      <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                          <a class="accordion-toggle collapsed" data-toggle="collapse"
+                                            data-parent="#accordion11" href="#collapse114">
+                                            <em class="glyphicon glyphicon-chevron-right icon-fixed-width"></em>
+                                            우리 스페셜 (ICE only)
+                                          </a>
+                                        </div>
+                                        <div id="collapse114" class="accordion-body collapse">
+                                          <div class="accordion-inner">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                              industry. Lorem
+                                              Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                              when an
+                                              unknown printer took a galley of type and scrambled it to make a type
+                                              specimen book. It has survived not only five centuries, but also the leap
+                                              into
+                                              electronic typesetting, remaining essentially unchanged.</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- 열리기5 -->
+                                      <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                          <a class="accordion-toggle collapsed" data-toggle="collapse"
+                                            data-parent="#accordion11" href="#collapse115">
+                                            <em class="glyphicon glyphicon-chevron-right icon-fixed-width"></em>
+                                            에스프레스
+                                          </a>
+                                        </div>
+                                        <div id="collapse115" class="accordion-body collapse">
+                                          <div class="accordion-inner">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                              industry. Lorem
+                                              Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                              when an
+                                              unknown printer took a galley of type and scrambled it to make a type
+                                              specimen book. It has survived not only five centuries, but also the leap
+                                              into
+                                              electronic typesetting, remaining essentially unchanged.</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- 열리기6 -->
+                                      <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                          <a class="accordion-toggle collapsed" data-toggle="collapse"
+                                            data-parent="#accordion11" href="#collapse116">
+                                            <em class="glyphicon glyphicon-chevron-right icon-fixed-width"></em>
+                                            얼음 갈린 음료
+                                          </a>
+                                        </div>
+                                        <div id="collapse116" class="accordion-body collapse">
+                                          <div class="accordion-inner">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                              industry. Lorem
+                                              Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                              when an
+                                              unknown printer took a galley of type and scrambled it to make a type
+                                              specimen book. It has survived not only five centuries, but also the leap
+                                              into
+                                              electronic typesetting, remaining essentially unchanged.</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- 열리기7 -->
+                                      <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                          <a class="accordion-toggle collapsed" data-toggle="collapse"
+                                            data-parent="#accordion11" href="#collapse117">
+                                            <em class="glyphicon glyphicon-chevron-right icon-fixed-width"></em>
+                                            TEA
+                                          </a>
+                                        </div>
+                                        <div id="collapse117" class="accordion-body collapse">
+                                          <div class="accordion-inner">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                              industry. Lorem
+                                              Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                              when an
+                                              unknown printer took a galley of type and scrambled it to make a type
+                                              specimen book. It has survived not only five centuries, but also the leap
+                                              into
+                                              electronic typesetting, remaining essentially unchanged.</p>
+                                          </div>
+                                        </div>
+                                      </div>
+
+
+
+
+                                    </div>
+                                    <!-- end accordion -->
+                                  </div>
+                                  <button type="button" onclick="window.history.back()" class="btn btn-theme"
+                                    style="float: right; margin: 0 10px;">뒤로</button>
+                                  <button type="button" onclick="location.href='store_menu.html'" class="btn btn-theme"
+                                    style="float: right;margin-left: 10px;">
+                                    저장
+                                  </button>
+                                  <button type="reset" class="btn btn-theme" style="float: right;">
+                                    초기화
+                                  </button>
+                                  <!-- /col-md-6 -->
+                                </div>
+                                <!-- /메뉴관리 -->
+                              </div>
+                              <!-- /tab-pane -->
+                              <!-- 옵션편집 -->
+                              <div id="menu_222" class="tab-pane">
+                                <div class="row">
+                                  <div class="col-md-12 no-padding">
+                                    <div class="accordion" id="accordion22">
+                                      <!-- 열리기1 -->
+                                      <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                          <a class="accordion-toggle collapsed"
+                                            style="padding:0;margin:5px 0; border-top: 0;background-color: beige;"
+                                            data-toggle="collapse" data-parent="#accordion22" href="#collapseOne2">
+                                            <em class="glyphicon glyphicon-chevron-right icon-fixed-width"></em> 메뉴 품절
+                                          </a>
+                                        </div>
+                                        <div id="collapseOne2" class="accordion-body collapse">
+                                          <div class="accordion-inner">
+                                            <div class="row" style="margin: 0;">
+                                              <!-- 메뉴그룹1 -->
+                                              <div class="menu_group col-md-12">
+                                                <span>(New) 시즌메뉴 1</span>
+                                              </div>
+                                              <!-- 하나의 메뉴 -->
+                                              <div class="col-md-4 menu_gulp">
+
+                                                <div class="menu_name">
+                                                  연유귀리라떼
+                                                </div>
+                                                <div class="menu_option">
+                                                  <ul>
+                                                    <li>ICE 리터: 6000 원</li>
+                                                    <li>ICE 벤티: 5000 원</li>
+                                                    <li>HOT 벤티: 5000 원</li>
+                                                  </ul>
+                                                </div>
+                                                <input id="menu__1" type="button" class="sold_out_btn active"
+                                                  value="품절">
+                                              </div>
+                                              <!-- /하나의메뉴 끝 -->
+
+                                              <!-- 하나의 메뉴 -->
+                                              <div class="col-md-4 menu_gulp">
+                                                <div class="menu_name">
+                                                  햇쌀귀리라떼
+                                                </div>
+                                                <div class="menu_option">
+                                                  <ul>
+                                                    <li>ICE 리터: 6000 원</li>
+                                                    <li>ICE 벤티: 5000 원</li>
+                                                    <li>HOT 벤티: 5000 원</li>
+                                                  </ul>
+                                                </div>
+                                                <input id="menu__2" type="button" class="sold_out_btn" value="품절">
+                                              </div>
+                                              <!-- /하나의메뉴 끝 -->
+
+                                              <!-- 하나의 메뉴 -->
+                                              <div class="col-md-4 menu_gulp">
+                                                <div class="menu_name">
+                                                  민트귀리라떼
+                                                </div>
+                                                <div class="menu_option">
+                                                  <ul>
+                                                    <li>ICE 리터: 6000 원</li>
+                                                    <li>ICE 벤티: 5000 원</li>
+                                                    <li>HOT 벤티: 5000 원</li>
+                                                  </ul>
+                                                </div>
+                                                <input id="menu__3" type="button" class="sold_out_btn" value="품절">
+                                              </div>
+                                              <!-- /하나의메뉴 끝 -->
+
+
+
+                                              <!-- end row -->
+                                            </div>
+                                            <!-- row 끝 -->
+                                            <div class="row" style="margin: 0;">
+                                              <!-- 메뉴그룹2 -->
+                                              <div class="menu_group col-md-12">
+                                                <span>(New) 시즌메뉴 2</span>
+                                              </div>
+                                              <!-- 하나의 메뉴 -->
+                                              <div class="col-md-4 menu_gulp">
+
+                                                <div class="menu_name">
+                                                  콜라겐 THE하기
+                                                </div>
+                                                <div class="menu_option">
+                                                  <ul>
+                                                    <li>ICE 리터: 6000 원</li>
+                                                    <li>ICE 벤티: 5000 원</li>
+                                                    <li>HOT 벤티: 5000 원</li>
+                                                  </ul>
+                                                </div>
+                                                <input id="menu__4" type="button" class="sold_out_btn" value="품절">
+                                              </div>
+                                              <!-- /하나의메뉴 끝 -->
+
+                                              <!-- 하나의 메뉴 -->
+                                              <div class="col-md-4 menu_gulp">
+                                                <div class="menu_name">
+                                                  콜라겐 MINUS하기
+                                                </div>
+                                                <div class="menu_option">
+                                                  <ul>
+                                                    <li>ICE 리터: 6000 원</li>
+                                                    <li>ICE 벤티: 5000 원</li>
+                                                    <li>HOT 벤티: 5000 원</li>
+                                                  </ul>
+                                                </div>
+                                                <input id="menu__5" type="button" class="sold_out_btn active"
+                                                  value="품절">
+                                              </div>
+                                              <!-- /하나의메뉴 끝 -->
+
+                                              <!-- 하나의 메뉴 -->
+                                              <div class="col-md-4 menu_gulp">
+                                                <div class="menu_name">
+                                                  콜라겐 DIVIDE하기
+                                                </div>
+                                                <div class="menu_option">
+                                                  <ul>
+                                                    <li>ICE 리터: 6000 원</li>
+                                                    <li>ICE 벤티: 5000 원</li>
+                                                    <li>HOT 벤티: 5000 원</li>
+                                                  </ul>
+                                                </div>
+                                                <input id="menu__6" type="button" class="sold_out_btn" value="품절">
+                                              </div>
+                                              <!-- /하나의메뉴 끝 -->
+
+
+
+                                              <!-- end row -->
+                                            </div>
+
+
+
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <!-- 열리기2 -->
+                                      <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                          <a class="accordion-toggle collapsed"
+                                            style="padding:0;margin:5px 0;background-color: beige;"
+                                            data-toggle="collapse" data-parent="#accordion22" href="#collapseTwo2">
+                                            <em class="glyphicon glyphicon-chevron-right icon-fixed-width"></em> 옵션 품절
+                                          </a>
+                                        </div>
+                                        <div id="collapseTwo2" class="accordion-body collapse">
+                                          <div class="accordion-inner">
+                                            <div class="row" style="margin: 0;">
+                                              <!-- 메뉴그룹1 -->
+                                              <div class="menu_group col-md-12">
+                                                <span>(New) 시즌메뉴 1</span>
+                                              </div>
+                                              <!-- 하나의 메뉴 -->
+                                              <div class="col-md-4 menu_gulp">
+
+                                                <div class="menu_name">
+                                                  연유귀리라떼
+                                                </div>
+                                                <div class="menu_option">
+                                                  <ul>
+                                                    <li>ICE 리터: 6000 원<input id="menu__1" type="button"
+                                                        class="sold_out_option_btn active" value="품절"></li>
+                                                    <li>ICE 벤티: 5000 원<input id="menu__1" type="button"
+                                                        class="sold_out_option_btn" value="품절"></li>
+                                                    <li>HOT 벤티: 5000 원<input id="menu__1" type="button"
+                                                        class="sold_out_option_btn" value="품절"></li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                              <!-- /하나의메뉴 끝 -->
+
+                                              <!-- 하나의 메뉴 -->
+                                              <div class="col-md-4 menu_gulp">
+                                                <div class="menu_name">
+                                                  햇쌀귀리라떼
+                                                </div>
+                                                <div class="menu_option">
+                                                  <ul>
+                                                    <li>ICE 리터: 6000 원<input id="menu__1" type="button"
+                                                        class="sold_out_option_btn" value="품절"></li>
+                                                    <li>ICE 벤티: 5000 원<input id="menu__1" type="button"
+                                                        class="sold_out_option_btn" value="품절"></li>
+                                                    <li>HOT 벤티: 5000 원<input id="menu__1" type="button"
+                                                        class="sold_out_option_btn active" value="품절"></li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                              <!-- /하나의메뉴 끝 -->
+
+                                              <!-- 하나의 메뉴 -->
+                                              <div class="col-md-4 menu_gulp">
+                                                <div class="menu_name">
+                                                  민트귀리라떼
+                                                </div>
+                                                <div class="menu_option">
+                                                  <ul>
+                                                    <li>ICE 리터: 6000 원<input id="menu__1" type="button"
+                                                        class="sold_out_option_btn" value="품절"></li>
+                                                    <li>ICE 벤티: 5000 원<input id="menu__1" type="button"
+                                                        class="sold_out_option_btn" value="품절"></li>
+                                                    <li>HOT 벤티: 5000 원<input id="menu__1" type="button"
+                                                        class="sold_out_option_btn" value="품절"></li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                              <!-- /하나의메뉴 끝 -->
+
+
+
+                                              <!-- end row -->
+                                            </div>
+                                            <!-- row 끝 -->
+                                            <div class="row" style="margin: 0;">
+                                              <!-- 메뉴그룹2 -->
+                                              <div class="menu_group col-md-12">
+                                                <span>(New) 시즌메뉴 2</span>
+                                              </div>
+                                              <!-- 하나의 메뉴 -->
+                                              <div class="col-md-4 menu_gulp">
+
+                                                <div class="menu_name">
+                                                  콜라겐 THE하기
+                                                </div>
+                                                <div class="menu_option">
+                                                  <ul>
+                                                    <li>ICE 리터: 6000 원<input id="menu__1" type="button"
+                                                        class="sold_out_option_btn " value="품절"></li>
+                                                    <li>ICE 벤티: 5000 원<input id="menu__1" type="button"
+                                                        class="sold_out_option_btn active" value="품절"></li>
+                                                    <li>HOT 벤티: 5000 원<input id="menu__1" type="button"
+                                                        class="sold_out_option_btn" value="품절"></li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                              <!-- /하나의메뉴 끝 -->
+
+                                              <!-- 하나의 메뉴 -->
+                                              <div class="col-md-4 menu_gulp">
+                                                <div class="menu_name">
+                                                  콜라겐 MINUS하기
+                                                </div>
+                                                <div class="menu_option">
+                                                  <ul>
+                                                    <li>ICE 리터: 6000 원<input id="menu__1" type="button"
+                                                        class="sold_out_option_btn" value="품절"></li>
+                                                    <li>ICE 벤티: 5000 원<input id="menu__1" type="button"
+                                                        class="sold_out_option_btn" value="품절"></li>
+                                                    <li>HOT 벤티: 5000 원<input id="menu__1" type="button"
+                                                        class="sold_out_option_btn" value="품절"></li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                              <!-- /하나의메뉴 끝 -->
+
+                                              <!-- 하나의 메뉴 -->
+                                              <div class="col-md-4 menu_gulp">
+                                                <div class="menu_name">
+                                                  콜라겐 DIVIDE하기
+                                                </div>
+                                                <div class="menu_option">
+                                                  <ul>
+                                                    <li>ICE 리터: 6000 원<input id="menu__1" type="button"
+                                                        class="sold_out_option_btn" value="품절"></li>
+                                                    <li>ICE 벤티: 5000 원<input id="menu__1" type="button"
+                                                        class="sold_out_option_btn" value="품절"></li>
+                                                    <li>HOT 벤티: 5000 원<input id="menu__1" type="button"
+                                                        class="sold_out_option_btn active" value="품절"></li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                              <!-- /하나의메뉴 끝 -->
+
+
+
+                                              <!-- end row -->
+                                            </div>
+
+
+
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                    </div>
+                                    <!-- end accordion -->
+                                  </div>
+                                  <button type="button" onclick="window.history.back()" class="btn btn-theme"
+                                    style="float: right; margin: 0 10px;">뒤로</button>
+                                  <button type="button" onclick="location.href='store_menu.html'" class="btn btn-theme"
+                                    style="float: right;margin-left: 10px;">
+                                    저장
+                                  </button>
+                                  <button type="button" class="no_soldout btn btn-theme" style="float: right;">
+                                    초기화
+                                  </button>
+                                  <!-- /col-md-6 -->
+                                </div>
+                                <!-- /row -->
+                              </div>
+                              <!-- /tab-pane -->
+                              <!-- 대표메뉴 -->
+                              <div id="menu_333" class="tab-pane">
+                                <div class="row">
+                                  <div class="col-md-12 no-padding">
+                                    <div class="accordion" id="accordion13">
+                                      <!-- 열리기1 -->
+                                      <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                          <a class="accordion-toggle collapsed" style="border-top: 0;"
+                                            data-toggle="collapse" data-parent="#accordion13" href="#collapse131">
+                                            <em class="glyphicon glyphicon-chevron-right icon-fixed-width"></em>How to
+                                            purchase
+                                            this template?
+                                          </a>
+                                        </div>
+                                        <div id="collapse131" class="accordion-body collapse">
+                                          <div class="accordion-inner">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                              industry. Lorem
+                                              Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                              when an
+                                              unknown printer took a galley of type and scrambled it to make a type
+                                              specimen book. It has survived not only five centuries, but also the leap
+                                              into
+                                              electronic typesetting, remaining essentially unchanged.</p>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <!-- 열리기2 -->
+                                      <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                          <a class="accordion-toggle collapsed" data-toggle="collapse"
+                                            data-parent="#accordion13" href="#collapse132">
+                                            <em class="glyphicon glyphicon-chevron-right icon-fixed-width"></em>How can
+                                            I
+                                            install my server?
+                                          </a>
+                                        </div>
+                                        <div id="collapse132" class="accordion-body collapse">
+                                          <div class="accordion-inner">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                              industry. Lorem
+                                              Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                              when an
+                                              unknown printer took a galley of type and scrambled it to make a type
+                                              specimen book. It has survived not only five centuries, but also the leap
+                                              into
+                                              electronic typesetting, remaining essentially unchanged.</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- 열리기3 -->
+                                      <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                          <a class="accordion-toggle collapsed" data-toggle="collapse"
+                                            data-parent="#accordion13" href="#collapse133">
+                                            <em class="glyphicon glyphicon-chevron-right icon-fixed-width"></em>How to
+                                            change
+                                            color schemes?
+                                          </a>
+                                        </div>
+                                        <div id="collapse133" class="accordion-body collapse">
+                                          <div class="accordion-inner">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                              industry. Lorem
+                                              Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                              when an
+                                              unknown printer took a galley of type and scrambled it to make a type
+                                              specimen book. It has survived not only five centuries, but also the leap
+                                              into
+                                              electronic typesetting, remaining essentially unchanged.</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- 열리기4 -->
+                                      <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                          <a class="accordion-toggle collapsed" data-toggle="collapse"
+                                            data-parent="#accordion13" href="#collapse134">
+                                            <em class="glyphicon glyphicon-chevron-right icon-fixed-width"></em>How to
+                                            integrate
+                                            Revolution Slider?
+                                          </a>
+                                        </div>
+                                        <div id="collapse134" class="accordion-body collapse">
+                                          <div class="accordion-inner">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                              industry. Lorem
+                                              Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                              when an
+                                              unknown printer took a galley of type and scrambled it to make a type
+                                              specimen book. It has survived not only five centuries, but also the leap
+                                              into
+                                              electronic typesetting, remaining essentially unchanged.</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- 열리기5 -->
+                                      <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                          <a class="accordion-toggle collapsed" data-toggle="collapse"
+                                            data-parent="#accordion13" href="#collapse135">
+                                            <em class="glyphicon glyphicon-chevron-right icon-fixed-width"></em>How Can
+                                            I get
+                                            Support?
+                                          </a>
+                                        </div>
+                                        <div id="collapse135" class="accordion-body collapse">
+                                          <div class="accordion-inner">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                              industry. Lorem
+                                              Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                              when an
+                                              unknown printer took a galley of type and scrambled it to make a type
+                                              specimen book. It has survived not only five centuries, but also the leap
+                                              into
+                                              electronic typesetting, remaining essentially unchanged.</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!-- end accordion -->
+                                  </div>
+                                  <button type="button" onclick="window.history.back()" class="btn btn-theme"
+                                    style="float: right; margin: 0 10px;">뒤로</button>
+                                  <button type="button" onclick="location.href='store_menu.html'" class="btn btn-theme"
+                                    style="float: right;margin-left: 10px;">
+                                    저장
+                                  </button>
+                                  <button type="reset" class="btn btn-theme" style="float: right;">
+                                    초기화
+                                  </button>
+                                  <!-- /col-md-6 -->
+                                </div>
+                                <!-- /메뉴관리 -->
+                              </div>
+                              <!-- /tab-pane -->
+                              <!-- 메뉴모음컷 -->
+                              <div id="menu_444" class="tab-pane">
+                                <div class="row">
+                                  <div class="col-md-12 no-padding">
+                                    <div class="accordion" id="accordion14">
+                                      <!-- 열리기1 -->
+                                      <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                          <a class="accordion-toggle collapsed" style="border-top: 0;"
+                                            data-toggle="collapse" data-parent="#accordion14" href="#collapse141">
+                                            <em class="glyphicon glyphicon-chevron-right icon-fixed-width"></em>How to
+                                            purchase
+                                            this template?
+                                          </a>
+                                        </div>
+                                        <div id="collapse141" class="accordion-body collapse">
+                                          <div class="accordion-inner">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                              industry. Lorem
+                                              Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                              when an
+                                              unknown printer took a galley of type and scrambled it to make a type
+                                              specimen book. It has survived not only five centuries, but also the leap
+                                              into
+                                              electronic typesetting, remaining essentially unchanged.</p>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <!-- 열리기2 -->
+                                      <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                          <a class="accordion-toggle collapsed" data-toggle="collapse"
+                                            data-parent="#accordion14" href="#collapse142">
+                                            <em class="glyphicon glyphicon-chevron-right icon-fixed-width"></em>How can
+                                            I
+                                            install my server?
+                                          </a>
+                                        </div>
+                                        <div id="collapse142" class="accordion-body collapse">
+                                          <div class="accordion-inner">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                              industry. Lorem
+                                              Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                              when an
+                                              unknown printer took a galley of type and scrambled it to make a type
+                                              specimen book. It has survived not only five centuries, but also the leap
+                                              into
+                                              electronic typesetting, remaining essentially unchanged.</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- 열리기3 -->
+                                      <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                          <a class="accordion-toggle collapsed" data-toggle="collapse"
+                                            data-parent="#accordion14" href="#collapse143">
+                                            <em class="glyphicon glyphicon-chevron-right icon-fixed-width"></em>How to
+                                            change
+                                            color schemes?
+                                          </a>
+                                        </div>
+                                        <div id="collapse143" class="accordion-body collapse">
+                                          <div class="accordion-inner">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                              industry. Lorem
+                                              Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                              when an
+                                              unknown printer took a galley of type and scrambled it to make a type
+                                              specimen book. It has survived not only five centuries, but also the leap
+                                              into
+                                              electronic typesetting, remaining essentially unchanged.</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- 열리기4 -->
+                                      <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                          <a class="accordion-toggle collapsed" data-toggle="collapse"
+                                            data-parent="#accordion14" href="#collapse144">
+                                            <em class="glyphicon glyphicon-chevron-right icon-fixed-width"></em>How to
+                                            integrate
+                                            Revolution Slider?
+                                          </a>
+                                        </div>
+                                        <div id="collapse144" class="accordion-body collapse">
+                                          <div class="accordion-inner">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                              industry. Lorem
+                                              Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                              when an
+                                              unknown printer took a galley of type and scrambled it to make a type
+                                              specimen book. It has survived not only five centuries, but also the leap
+                                              into
+                                              electronic typesetting, remaining essentially unchanged.</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- 열리기5 -->
+                                      <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                          <a class="accordion-toggle collapsed" data-toggle="collapse"
+                                            data-parent="#accordion14" href="#collapse145">
+                                            <em class="glyphicon glyphicon-chevron-right icon-fixed-width"></em>How Can
+                                            I get
+                                            Support?
+                                          </a>
+                                        </div>
+                                        <div id="collapse145" class="accordion-body collapse">
+                                          <div class="accordion-inner">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                              industry. Lorem
+                                              Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                              when an
+                                              unknown printer took a galley of type and scrambled it to make a type
+                                              specimen book. It has survived not only five centuries, but also the leap
+                                              into
+                                              electronic typesetting, remaining essentially unchanged.</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!-- end accordion -->
+                                  </div>
+                                  <button type="button" onclick="window.history.back()" class="btn btn-theme"
+                                    style="float: right; margin: 0 10px;">뒤로</button>
+                                  <button type="button" onclick="location.href='store_menu.html'" class="btn btn-theme"
+                                    style="float: right;margin-left: 10px;">
+                                    저장
+                                  </button>
+                                  <button type="reset" class="btn btn-theme" style="float: right;">
+                                    초기화
+                                  </button>
+                                  <!-- /col-md-6 -->
+                                </div>
+                                <!-- /메뉴관리 -->
+                              </div>
+                              <!-- /tab-pane -->
+                              <!-- 옵션편집 -->
+                              <div id="menu_555" class="tab-pane">
+                                <div class="row">
+                                  <div class="col-md-12 no-padding">
+                                    <div class="accordion" id="accordion15">
+                                      <!-- 열리기1 -->
+                                      <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                          <a class="accordion-toggle collapsed" style="border-top: 0;"
+                                            data-toggle="collapse" data-parent="#accordion15" href="#collapse151">
+                                            <em class="glyphicon glyphicon-chevron-right icon-fixed-width"></em>How to
+                                            purchase
+                                            this template?
+                                          </a>
+                                        </div>
+                                        <div id="collapse151" class="accordion-body collapse">
+                                          <div class="accordion-inner">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                              industry. Lorem
+                                              Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                              when an
+                                              unknown printer took a galley of type and scrambled it to make a type
+                                              specimen book. It has survived not only five centuries, but also the leap
+                                              into
+                                              electronic typesetting, remaining essentially unchanged.</p>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <!-- 열리기2 -->
+                                      <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                          <a class="accordion-toggle collapsed" data-toggle="collapse"
+                                            data-parent="#accordion15" href="#collapse152">
+                                            <em class="glyphicon glyphicon-chevron-right icon-fixed-width"></em>How can
+                                            I
+                                            install my server?
+                                          </a>
+                                        </div>
+                                        <div id="collapse152" class="accordion-body collapse">
+                                          <div class="accordion-inner">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                              industry. Lorem
+                                              Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                              when an
+                                              unknown printer took a galley of type and scrambled it to make a type
+                                              specimen book. It has survived not only five centuries, but also the leap
+                                              into
+                                              electronic typesetting, remaining essentially unchanged.</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- 열리기3 -->
+                                      <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                          <a class="accordion-toggle collapsed" data-toggle="collapse"
+                                            data-parent="#accordion15" href="#collapse153">
+                                            <em class="glyphicon glyphicon-chevron-right icon-fixed-width"></em>How to
+                                            change
+                                            color schemes?
+                                          </a>
+                                        </div>
+                                        <div id="collapse153" class="accordion-body collapse">
+                                          <div class="accordion-inner">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                              industry. Lorem
+                                              Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                              when an
+                                              unknown printer took a galley of type and scrambled it to make a type
+                                              specimen book. It has survived not only five centuries, but also the leap
+                                              into
+                                              electronic typesetting, remaining essentially unchanged.</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- 열리기4 -->
+                                      <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                          <a class="accordion-toggle collapsed" data-toggle="collapse"
+                                            data-parent="#accordion15" href="#collapse154">
+                                            <em class="glyphicon glyphicon-chevron-right icon-fixed-width"></em>How to
+                                            integrate
+                                            Revolution Slider?
+                                          </a>
+                                        </div>
+                                        <div id="collapse154" class="accordion-body collapse">
+                                          <div class="accordion-inner">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                              industry. Lorem
+                                              Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                              when an
+                                              unknown printer took a galley of type and scrambled it to make a type
+                                              specimen book. It has survived not only five centuries, but also the leap
+                                              into
+                                              electronic typesetting, remaining essentially unchanged.</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- 열리기5 -->
+                                      <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                          <a class="accordion-toggle collapsed" data-toggle="collapse"
+                                            data-parent="#accordion15" href="#collapse155">
+                                            <em class="glyphicon glyphicon-chevron-right icon-fixed-width"></em>How Can
+                                            I get
+                                            Support?
+                                          </a>
+                                        </div>
+                                        <div id="collapse155" class="accordion-body collapse">
+                                          <div class="accordion-inner">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                              industry. Lorem
+                                              Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                              when an
+                                              unknown printer took a galley of type and scrambled it to make a type
+                                              specimen book. It has survived not only five centuries, but also the leap
+                                              into
+                                              electronic typesetting, remaining essentially unchanged.</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!-- end accordion -->
+                                  </div>
+                                  <button type="button" onclick="window.history.back()" class="btn btn-theme"
+                                    style="float: right; margin: 0 10px;">뒤로</button>
+                                  <button type="button" onclick="location.href='store_menu.html'" class="btn btn-theme"
+                                    style="float: right;margin-left: 10px;">
+                                    저장
+                                  </button>
+                                  <button type="reset" class="btn btn-theme" style="float: right;">
+                                    초기화
+                                  </button>
+                                  <!-- /col-md-6 -->
+                                </div>
+                                <!-- /메뉴관리 -->
+                              </div>
+                              <!-- /tab-pane -->
+                            </div>
+                            <!-- /tab-content -->
+                          </div>
+                        </div>
+
+                        <!-- /메뉴관리 -->
+                      </div>
+                      <!-- /tab-pane -->
+                      <!-- 품절설정 -->
+                      <div id="sold_out" class="tab-pane">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="accordion" id="accordion22">
+                              <!-- 열리기1 -->
+                              <div class="accordion-group">
+                                <div class="accordion-heading">
+                                  <a class="accordion-toggle collapsed"
+                                    style="padding:0;margin:5px 0; border-top: 0;background-color: beige;"
+                                    data-toggle="collapse" data-parent="#accordion22" href="#collapse21">
+                                    <em class="glyphicon glyphicon-chevron-right icon-fixed-width"></em> 메뉴 품절
+                                  </a>
+                                </div>
+                                <div id="collapse21" class="accordion-body collapse">
+                                  <div class="accordion-inner">
+                                    <div class="row" style="margin: 0;">
+                                      <!-- 메뉴그룹1 -->
+                                      <div class="menu_group col-md-12">
+                                        <span>(New) 시즌메뉴 1</span>
+                                      </div>
+                                      <!-- 하나의 메뉴 -->
+                                      <div class="col-md-4 menu_gulp">
+
+                                        <div class="menu_name">
+                                          연유귀리라떼
+                                        </div>
+                                        <div class="menu_option">
+                                          <ul>
+                                            <li>ICE 리터: 6000 원</li>
+                                            <li>ICE 벤티: 5000 원</li>
+                                            <li>HOT 벤티: 5000 원</li>
+                                          </ul>
+                                        </div>
+                                        <input id="menu__1" type="button" class="sold_out_btn active" value="품절">
+                                      </div>
+                                      <!-- /하나의메뉴 끝 -->
+
+                                      <!-- 하나의 메뉴 -->
+                                      <div class="col-md-4 menu_gulp">
+                                        <div class="menu_name">
+                                          햇쌀귀리라떼
+                                        </div>
+                                        <div class="menu_option">
+                                          <ul>
+                                            <li>ICE 리터: 6000 원</li>
+                                            <li>ICE 벤티: 5000 원</li>
+                                            <li>HOT 벤티: 5000 원</li>
+                                          </ul>
+                                        </div>
+                                        <input id="menu__2" type="button" class="sold_out_btn" value="품절">
+                                      </div>
+                                      <!-- /하나의메뉴 끝 -->
+
+                                      <!-- 하나의 메뉴 -->
+                                      <div class="col-md-4 menu_gulp">
+                                        <div class="menu_name">
+                                          민트귀리라떼
+                                        </div>
+                                        <div class="menu_option">
+                                          <ul>
+                                            <li>ICE 리터: 6000 원</li>
+                                            <li>ICE 벤티: 5000 원</li>
+                                            <li>HOT 벤티: 5000 원</li>
+                                          </ul>
+                                        </div>
+                                        <input id="menu__3" type="button" class="sold_out_btn" value="품절">
+                                      </div>
+                                      <!-- /하나의메뉴 끝 -->
+
+
+
+                                      <!-- end row -->
+                                    </div>
+                                    <!-- row 끝 -->
+                                    <div class="row" style="margin: 0;">
+                                      <!-- 메뉴그룹2 -->
+                                      <div class="menu_group col-md-12">
+                                        <span>(New) 시즌메뉴 2</span>
+                                      </div>
+                                      <!-- 하나의 메뉴 -->
+                                      <div class="col-md-4 menu_gulp">
+
+                                        <div class="menu_name">
+                                          콜라겐 THE하기
+                                        </div>
+                                        <div class="menu_option">
+                                          <ul>
+                                            <li>ICE 리터: 6000 원</li>
+                                            <li>ICE 벤티: 5000 원</li>
+                                            <li>HOT 벤티: 5000 원</li>
+                                          </ul>
+                                        </div>
+                                        <input id="menu__4" type="button" class="sold_out_btn" value="품절">
+                                      </div>
+                                      <!-- /하나의메뉴 끝 -->
+
+                                      <!-- 하나의 메뉴 -->
+                                      <div class="col-md-4 menu_gulp">
+                                        <div class="menu_name">
+                                          콜라겐 MINUS하기
+                                        </div>
+                                        <div class="menu_option">
+                                          <ul>
+                                            <li>ICE 리터: 6000 원</li>
+                                            <li>ICE 벤티: 5000 원</li>
+                                            <li>HOT 벤티: 5000 원</li>
+                                          </ul>
+                                        </div>
+                                        <input id="menu__5" type="button" class="sold_out_btn active" value="품절">
+                                      </div>
+                                      <!-- /하나의메뉴 끝 -->
+
+                                      <!-- 하나의 메뉴 -->
+                                      <div class="col-md-4 menu_gulp">
+                                        <div class="menu_name">
+                                          콜라겐 DIVIDE하기
+                                        </div>
+                                        <div class="menu_option">
+                                          <ul>
+                                            <li>ICE 리터: 6000 원</li>
+                                            <li>ICE 벤티: 5000 원</li>
+                                            <li>HOT 벤티: 5000 원</li>
+                                          </ul>
+                                        </div>
+                                        <input id="menu__6" type="button" class="sold_out_btn" value="품절">
+                                      </div>
+                                      <!-- /하나의메뉴 끝 -->
+                                      <!-- end row -->
+                                    </div>
+
+
+
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- 열리기2 -->
+                              <div class="accordion-group">
+                                <div class="accordion-heading">
+                                  <a class="accordion-toggle collapsed"
+                                    style="padding:0;margin:5px 0;background-color: beige;" data-toggle="collapse"
+                                    data-parent="#accordion22" href="#collapse22">
+                                    <em class="glyphicon glyphicon-chevron-right icon-fixed-width"></em> 옵션 품절
+                                  </a>
+                                </div>
+                                <div id="collapse22" class="accordion-body collapse">
+                                  <div class="accordion-inner">
+                                    <div class="row" style="margin: 0;">
+                                      <!-- 메뉴그룹1 -->
+                                      <div class="menu_group col-md-12">
+                                        <span>(New) 시즌메뉴 1</span>
+                                      </div>
+                                      <!-- 하나의 메뉴 -->
+                                      <div class="col-md-4 menu_gulp">
+
+                                        <div class="menu_name">
+                                          연유귀리라떼
+                                        </div>
+                                        <div class="menu_option">
+                                          <ul>
+                                            <li>ICE 리터: 6000 원<input id="menu__1" type="button"
+                                                class="sold_out_option_btn active" value="품절"></li>
+                                            <li>ICE 벤티: 5000 원<input id="menu__1" type="button"
+                                                class="sold_out_option_btn" value="품절"></li>
+                                            <li>HOT 벤티: 5000 원<input id="menu__1" type="button"
+                                                class="sold_out_option_btn" value="품절"></li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                      <!-- /하나의메뉴 끝 -->
+
+                                      <!-- 하나의 메뉴 -->
+                                      <div class="col-md-4 menu_gulp">
+                                        <div class="menu_name">
+                                          햇쌀귀리라떼
+                                        </div>
+                                        <div class="menu_option">
+                                          <ul>
+                                            <li>ICE 리터: 6000 원<input id="menu__1" type="button"
+                                                class="sold_out_option_btn" value="품절"></li>
+                                            <li>ICE 벤티: 5000 원<input id="menu__1" type="button"
+                                                class="sold_out_option_btn" value="품절"></li>
+                                            <li>HOT 벤티: 5000 원<input id="menu__1" type="button"
+                                                class="sold_out_option_btn active" value="품절"></li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                      <!-- /하나의메뉴 끝 -->
+
+                                      <!-- 하나의 메뉴 -->
+                                      <div class="col-md-4 menu_gulp">
+                                        <div class="menu_name">
+                                          민트귀리라떼
+                                        </div>
+                                        <div class="menu_option">
+                                          <ul>
+                                            <li>ICE 리터: 6000 원<input id="menu__1" type="button"
+                                                class="sold_out_option_btn" value="품절"></li>
+                                            <li>ICE 벤티: 5000 원<input id="menu__1" type="button"
+                                                class="sold_out_option_btn" value="품절"></li>
+                                            <li>HOT 벤티: 5000 원<input id="menu__1" type="button"
+                                                class="sold_out_option_btn" value="품절"></li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                      <!-- /하나의메뉴 끝 -->
+
+
+
+                                      <!-- end row -->
+                                    </div>
+                                    <!-- row 끝 -->
+                                    <div class="row" style="margin: 0;">
+                                      <!-- 메뉴그룹2 -->
+                                      <div class="menu_group col-md-12">
+                                        <span>(New) 시즌메뉴 2</span>
+                                      </div>
+                                      <!-- 하나의 메뉴 -->
+                                      <div class="col-md-4 menu_gulp">
+
+                                        <div class="menu_name">
+                                          콜라겐 THE하기
+                                        </div>
+                                        <div class="menu_option">
+                                          <ul>
+                                            <li>ICE 리터: 6000 원<input id="menu__1" type="button"
+                                                class="sold_out_option_btn " value="품절"></li>
+                                            <li>ICE 벤티: 5000 원<input id="menu__1" type="button"
+                                                class="sold_out_option_btn active" value="품절"></li>
+                                            <li>HOT 벤티: 5000 원<input id="menu__1" type="button"
+                                                class="sold_out_option_btn" value="품절"></li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                      <!-- /하나의메뉴 끝 -->
+
+                                      <!-- 하나의 메뉴 -->
+                                      <div class="col-md-4 menu_gulp">
+                                        <div class="menu_name">
+                                          콜라겐 MINUS하기
+                                        </div>
+                                        <div class="menu_option">
+                                          <ul>
+                                            <li>ICE 리터: 6000 원<input id="menu__1" type="button"
+                                                class="sold_out_option_btn" value="품절"></li>
+                                            <li>ICE 벤티: 5000 원<input id="menu__1" type="button"
+                                                class="sold_out_option_btn" value="품절"></li>
+                                            <li>HOT 벤티: 5000 원<input id="menu__1" type="button"
+                                                class="sold_out_option_btn" value="품절"></li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                      <!-- /하나의메뉴 끝 -->
+
+                                      <!-- 하나의 메뉴 -->
+                                      <div class="col-md-4 menu_gulp">
+                                        <div class="menu_name">
+                                          콜라겐 DIVIDE하기
+                                        </div>
+                                        <div class="menu_option">
+                                          <ul>
+                                            <li>ICE 리터: 6000 원<input id="menu__1" type="button"
+                                                class="sold_out_option_btn" value="품절"></li>
+                                            <li>ICE 벤티: 5000 원<input id="menu__1" type="button"
+                                                class="sold_out_option_btn" value="품절"></li>
+                                            <li>HOT 벤티: 5000 원<input id="menu__1" type="button"
+                                                class="sold_out_option_btn active" value="품절"></li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                      <!-- /하나의메뉴 끝 -->
+
+
+
+                                      <!-- end row -->
+                                    </div>
+
+
+
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+                            <!-- end accordion -->
+                          </div>
+                          <button type="button" onclick="window.history.back()" class="btn btn-theme"
+                            style="float: right; margin: 0 10px;">뒤로</button>
+                          <button type="button" onclick="location.href='store_menu.html'" class="btn btn-theme"
+                            style="float: right;margin-left: 10px;">
+                            저장
+                          </button>
+                          <button type="button" class="no_soldout btn btn-theme" style="float: right;">
+                            초기화
+                          </button>
+                          <!-- /col-md-6 -->
+                        </div>
+                        <!-- /row -->
+                      </div>
+                      <!-- /tab-pane -->
+                    </div>
+                    <!-- /tab-content -->
+                  </div>
+                </div>
+
+
+              </form>
+            </div>
+          </div>
+          <!-- /row -->
+        </div>
+      </section>
+      <!-- /wrapper -->
+    </section>
+    <!-- /MAIN CONTENT -->
+    <!--main content end-->
+
+
+
+    <!--footer start-->
+    <footer class="site-footer">
+      <div class="text-center">
+        <p>
+          &copy; Copyrights <strong>WalkingOrder</strong>. All Rights Reserved
+        </p>
+        <a href="../../index.html#" class="go-top">
+          <i class="fa fa-angle-up"></i>
+        </a>
+      </div>
+    </footer>
+    <!--footer end-->
+  </section>
+  <!-- js placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="../resources/assets/js/admin/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../resources/assets/js/admin/jquery-ui-1.9.2.custom.min.js"></script>
+  <script src="../resources/assets/js/admin/jquery.ui.touch-punch.min.js"></script>
+  <script class="include" type="text/javascript" src="../resources/assets/js/admin/jquery.dcjqaccordion.2.7.js"></script>
+  <script src="../resources/assets/js/admin/jquery.scrollTo.min.js"></script>
+  <script src="../resources/assets/js/admin/jquery.nicescroll.js" type="text/javascript"></script>
+  <!--common script for all pages-->
+  <script src="../resources/assets/js/admin/common-scripts.js"></script>
+  <!--script for this page-->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script src="../resources/assets/js/admin/datatable/datatable-modified.js" crossorigin="anonymous"></script>
+  <script src="../resources/assets/js/admin/datatable/datatables-simple-demo.js"></script>
+</body>
+
+</html>

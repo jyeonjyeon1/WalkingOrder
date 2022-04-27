@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Dashboard">
+  <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+  <title>워킹오더 관리자 페이지</title>
+
+  <!-- Favicons -->
+  <link href="resources/assets/images/admin/logo/logo_only.svg" rel="icon">
+  <link href="resources/assets/images/admin/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap core CSS -->
+  <link href="resources/assets/js/admin/admin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!--external css-->
+  <link href="resources/assets/js/admin/admin/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="resources/assets/css/admin/admin/style.css" rel="stylesheet">
+  <link href="resources/assets/css/admin/admin/style-responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <section id="container">
+    
+    <!-- **********************************************************************************************************************************************************
+        MAIN SIDEBAR MENU
+        *********************************************************************************************************************************************************** -->
+    <!--sidebar start-->
+    <aside>
+      <div id="sidebar" class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+          <p class="centered"><a><img src="resources/assets/images/admin/doggy.jpg" class="img-circle" width="80"></a></p>
+          <h5 class="centered">김 버터</h5>
+          <p class="sidebar-title" >설정</p>
+          <li class="sub-menu">
+            <a href="index.admin">
+              <i class="fa fa-h-square"></i>
+              <span>Home</span>
+              </a>
+          </li>
+          <li class="sub-menu">
+            <a href="blank.admin">
+              <i class="fa fa-navicon"></i>
+              <span>All Menu</span>
+              </a>
+          </li>
+          <p class="sidebar-title" >마이 메뉴</p>
+          <li class="sub-menu">
+            <a id="user-manage" href="javascript:void(0);">
+              <i class="fa fa-user" style="font-size: 15px;""></i>
+              <span>&nbsp;회원 관리</span>
+              </a>
+            <ul class="sub">
+              <li><a id="user-mng" href="user_mng.admin">회원 관리</a></li>
+              <li><a id="coupon-mng" href="coupon_mng.admin">쿠폰 관리</a></li>
+              <li><a id="point-mng" href="point_mng.admin">포인트 관리</a></li>
+              <li><a id="connect-hist" href="connect_hist.do">접속 이력</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a id="store-manage" href="javascript:;">
+              <i class="fa fa-group" style="font-size: 12px;"></i>
+              <span>매장 관리</span>
+              </a>
+            <ul class="sub">
+              <li><a id="store-mng" href="store_mng.admin>매장 관리</a></li>
+              <li><a id="store-menu" href="store/store_menu.admin">매장 메뉴 관리</a></li>
+              <li><a id="store-pending" href="store/store_pending.admin">승인 대기</a></li>
+              <li><a id="join-inq" href="store/join_inq.admin">입점 문의</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a id="order-manage" href="javascript:;">
+              <i class="fa fa-shopping-cart"></i>
+              <span>주문 관리</span>
+              </a>
+            <ul class="sub">
+              <li><a id="total-order" href="order/total_order.admin">전체 주문 관리</a></li>
+              <li><a id="store-order" href="order/store_order.admin">매장별 주문 관리</a></li>
+              <li><a id="cancel-order" href="order/cancel_order.admin">취소 주문 관리</a></li>
+              <li><a id="refund-order" href="order/refund_order.admin">환불 주문 관리</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a id="board-manage" href="javascript:;">
+              <i class="fa fa-pencil-square-o" style="font-size: 13px;"></i>
+              <span>보드 관리</span>
+              </a>
+            <ul class="sub">
+              <li><a id="notices" href="board/notices.admin">공지사항</a></li>
+              <li><a id="faq-mng" href="board/faq_mng.admin">FAQ 관리</a></li>
+              <li><a id="board-mng" href="board/board_mng.admin">게시판 관리</a></li>
+              <li><a id="review-mng" href="board/review_mng.admin">리뷰 관리</a></li>
+              <li><a id="inquiry" href="board/inquiry.admin">1:1 문의</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a id="page-manage" href="javascript:;">
+              <i class="fa fa-sticky-note"></i>
+              <span>페이지 관리</span>
+              </a>
+            <ul class="sub">
+              <li><a id="banner-mng" href="page/banner_mng.admin">배너 관리</a></li>
+              <li><a id="terms-mng" href="page/terms_mng.admin">약관 관리</a></li>
+              <li><a id="policy-mng" href="page/policy_mng.admin">정책 관리</a></li>
+              <li><a id="doc-form" href="page/doc_form.admin">증빙서류</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a id="mess" href="javascript:;">
+              <i class="fa fa-envelope-open-o" style="font-size: 13px;"></i>
+              <span>메세지 관리</span>
+              </a>
+            <ul class="sub">
+              <li><a id="ka-tmplt" href="message/ka_tmplt.admin">알림톡 템플릿</a></li>
+              <li><a id="ka-hist" href="message/ka_hist.admin">알림톡 전송이력</a></li>
+              <li><a id="mess-send" href="mess_send.admin">문자 전송</a></li>
+              <li><a id="mess-send-group" href="mess_send_group.admin">단체 문자 전송</a></li>
+              <li><a id="mess-hist" href="mess_hist.admin">문자 전송 이력</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a id="settlement" href="javascript:;">
+              <i class=" fa fa-krw"></i>
+              <span>정산</span>
+              </a>
+            <ul class="sub">
+              <li><a id="pg-comm" href="settlement/pg_comm.admin">PG 수수료</a></li>
+              <li><a id="pg-stlmt" href="settlement/pg_stlmt.admin">PG 정산</a></li>
+              <li><a id="store-rev" href="settlement/store_rev.admin">매장별 수익</a></li>
+              <li><a id="store-stlmt" href="settlement/store_stlmt.admin">매장별 정산</a></li>
+              <li><a id="stlmt-hist" href="settlement/stlmt_hist.admin">정산 내역</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a id="statistics" href="javascript:;">
+              <i class=" fa fa-bar-chart-o"></i>
+              <span>통계</span>
+              </a>
+            <ul class="sub">
+              <li><a id="order-period" href="statistics/order_period.admin">기간별 주문 통계</a></li>
+              <li><a id="store-sales" href="statistics/store_sales.admin">매장별 매출 통계</a></li>
+              <li><a id="user-sales" href="statistics/user_sales.admin">사용자별 매출 통계</a></li>
+              <li><a id="by-chart" href="statistics/by_chart.admin">표로 확인</a></li>
+              <li><a id="by-graph" href="statistics/by_graph.admin">그래프로 확인</a></li>
+            </ul>
+          </li>
+          
+          
+        </ul>
+        <!-- sidebar menu end-->
+      </div>
+    </aside>
+    
+  </section>
+  <!-- js placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="resources/assets/js/admin/admin/bootstrap/js/bootstrap.min.js"></script>
+  <script src="resources/assets/js/admin/admin/jquery-ui-1.9.2.custom.min.js"></script>
+  <script src="resources/assets/js/admin/admin/jquery.ui.touch-punch.min.js"></script>
+  <script class="include" type="text/javascript" src="resources/assets/js/admin/admin/jquery.dcjqaccordion.2.7.js"></script>
+  <script src="resources/assets/js/admin/admin/jquery.scrollTo.min.js"></script>
+  <script src="resources/assets/js/admin/admin/jquery.nicescroll.js" type="text/javascript"></script>
+  <!--common script for all pages-->
+  <script src="resources/assets/js/admin/admin/common-scripts.js"></script>
+  <!--script for this page-->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ 
+</body>
+
+</html>

@@ -21,14 +21,62 @@
         <!-- ========================= JS here ========================= -->
         <script src="resources/assets/js/jquery-3.6.0.js"></script>
 
-        <script type="text/javascript">
-            jQuery(document).ready(function () {
-                $('#headers').load("header.html");
-                $('#footers').load("footer.html");
-            });
-            //========= Hero Slider
-        </script>
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        $('#headers').load("header.html");
+        $('#footers').load("footer.html");
+    });
+    //========= Hero Slider
 
+    $(function () {
+        $("i").click(function () {
+            $("i,span").toggleClass("press", 1000);
+        });
+    });
+</script>
+    <style>
+.hdiv {
+  position: relative;
+}
+
+.hi {
+  cursor:pointer;
+  padding:10px 12px 8px;
+  border-radius:50%;
+  display:inline-block;
+  margin:0 0 15px;
+  color:#aaa;
+  transition:.2s;
+}
+
+.hi:hover {
+  color:#666;
+}
+
+.hi:before {
+  font-family:fontawesome;
+  content:'\f004';
+  font-style:normal;
+}
+
+.hi.press {
+  animation: size .4s;
+  color:#e23b3b;
+}
+
+@keyframes fade {
+  0% {color:#transparent;}
+  50% {color:#e23b3b;}
+  100% {color:#transparent;}
+}
+
+@keyframes size {
+  0% {padding:10px 12px 8px;}
+  50% {padding:14px 16px 12px;  
+    margin-top:-4px;}
+  100% {padding:10px 12px 8px;}
+}
+    </style>
     </head>
 
     <body>
@@ -64,9 +112,12 @@
                                 dui. Sed porttitor lectus nibh.</p>
                             <button type="button" class="btn btn-warning btn-sm"><b>리뷰 바로가기</b></button>&nbsp&nbsp&nbsp&nbsp&nbsp
                             <!-- 간격띄우기 -->
-                            <button type="button" class="btn btn-warning btn-sm"><b>찾아오시는 길</b></button>
-                           <!-- Example single danger button -->
-
+                            <button type="button" class="btn btn-warning btn-sm"><b>찾아오시는 길</b></button>&nbsp&nbsp&nbsp&nbsp&nbsp
+                            <!-- 간격띄우기 -->
+                            <div class="hdiv">
+                                즐겨찾기
+                                <i class="hi"></i>
+                              </div>
                             <ul style="margin: 30px 0 0; padding: 30px 0 0">
                                 <li>
                                     <b>전화번호</b>
