@@ -7505,6 +7505,7 @@ mypage_menubar
 
 .product__item {
   margin-bottom: 50px;
+  margin-right: 20px;
 }
 
 .product__item:hover .product__item__pic .product__item__pic__hover {
@@ -7513,7 +7514,6 @@ mypage_menubar
 
 .product__item__pic {
   height: 250px;
-  margin-left: 20px;
   aspect-ratio: 1/1;
   position: relative;
   overflow: hidden;
@@ -7838,17 +7838,17 @@ mypage_menubar
   padding: 0;
 }
 
-.product__details__tab .product__details__tab__desc {
+.menuList_contents {
   padding-top: 44px;
 }
 
-.product__details__tab .product__details__tab__desc h6 {
+.menuList_contents h6 {
   font-weight: 700;
   color: #333333;
   margin-bottom: 26px;
 }
 
-.product__details__tab .product__details__tab__desc p {
+.menuList_contents p {
   color: #666666;
 }
 
