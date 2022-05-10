@@ -220,6 +220,58 @@
       }
     }
     /*최소주문시간 설정 end*/
+
+    /*order카드 css*/
+    .order_card {
+      width: auto;
+      height: 300px;
+      background-color: #dadad2;
+      border-radius: 5px;
+    }
+
+    .order_status {
+      width: auto;
+      background-color: #ed5565;
+      font-size: 17px;
+      border: 1px solid #eb4657;
+      color: rgb(255, 255, 255);
+      padding: 5px;
+      margin: 10px 0 0 25px ;
+      border-radius: 10px;
+    }
+
+    .info_user {
+     margin: 10px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.418);
+    }
+
+    .info_menu {
+      margin-left:30px;
+    }
+
+    .order_detail {
+      background-color: transparent; 
+      border: 1px solid rgba(0, 0, 0, 0.342);
+
+    }
+
+    .order_detail:hover {
+      background-color: #c4c4bf;
+    }
+
+    .order_recieveBtn {
+      width: 250px;
+      height: 60px;
+      background-color: #ed5565;
+      font-size: 20px;
+      border: 1px solid #eb4657;
+      color: rgb(255, 255, 255);
+      padding: 5px;
+      margin-top: 10px;
+      border-radius: 10px;
+    }
+
+
           </style>
 <script>
 
@@ -293,10 +345,14 @@ window.onload = function(){
               </a>
           </li>
           <li class="sub-menu">
-            <a href="order/lastOrder.html">
-              <i class="fa fa-h-square"></i>
-              <span>지난주문</span>
+            <a id="store-manage" href="javascript:;">
+              <i class="fa fa-group" style="font-size: 12px;"></i>
+              <span>지난 주문</span>
               </a>
+            <ul class="sub">
+              <li><a id="store-mng" href="/views_store/order/lastOrder_oneday.html">당일주문</a></li>
+              <li><a id="store-menu" href="/views_store/order/lastOrder_period.html">기간주문</a></li>
+            </ul>
           </li>
           
           <p class="sidebar-title" >Self Service</p>
@@ -337,9 +393,9 @@ window.onload = function(){
               <span>정산</span>
               </a>
             <ul class="sub">
-              <li><a id="pg-comm" href="calculate/calculate_today.html">오늘 매출</a></li>
-              <li><a id="pg-stlmt" href="calculate/calculate_period.html">기간 매출 정산</a></li>
-              <li><a id="store-rev" href="calculate/calculate_product.html">상품 매출 정산</a></li>
+              <li><a id="pg-comm" href="/views_store/calculate/calculate_today.html">오늘 매출</a></li>
+              <li><a id="pg-stlmt" href="/views_store/calculate/calculate_period.html">기간 매출 정산</a></li>
+             
             </ul>
           </li>
           
@@ -406,62 +462,159 @@ window.onload = function(){
         </div>
         <!--주문창 start-->
         <div class="row" style="margin: 10px;">
-          <div class="col-lg-3">
-            <div class="product-panel-2 pn">
-              <div class="badge badge-hot">접수대기</div>
-              <img src="resources/assets/images/admin/product.jpg" width="200" alt="">
-              <h5 class="mt">Flat Pack Heritage</h5>
-              <h6>TOTAL SALES: 1388</h6>
-              <button class="btn btn-small btn-theme04">FULL REPORT</button>
-            </div>
-            </div>
-            <div class="col-lg-3">
-              <div class="product-panel-2 pn">
-                <div class="badge badge-hot">HOT</div>
-                <img src="resources/assets/images/admin/product.jpg" width="200" alt="">
-                <h5 class="mt">Flat Pack Heritage</h5>
-                <h6>TOTAL SALES: 1388</h6>
-                <button class="btn btn-small btn-theme04">FULL REPORT</button>
-              </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="product-panel-2 pn">
-                  <div class="badge badge-hot">HOT</div>
-                  <img src="resources/assets/images/admin/product.jpg" width="200" alt="">
-                  <h5 class="mt">Flat Pack Heritage</h5>
-                  <h6>TOTAL SALES: 1388</h6>
-                  <button class="btn btn-small btn-theme04">FULL REPORT</button>
+          <!--주문1-->
+          
+          
+          <div class="col-lg-3" >
+           
+           <div class="order_card">
+              <div class="row"><label class="order_status">접수대기</label></div>
+              
+                <div class="info_user">
+                  <table style=" margin-left: 30px;" >
+                    
+                    <tr>
+                      <td rowspan="2" style="font-size: 50px; padding-right:15px; color: black; font-weight: bolder; ">4</td>
+                      <td style="font-size: 20px; color: #000; padding: 0;">Takeout</td>
+                      <td rowspan="2" style="padding-left: 20px;"><button class="order_detail">상세보기</button></td>
+                    </tr>
+                    <tr>
+                      <td style="padding-bottom: 15px;">배고프젼</td>
+                    </tr>
+                    
+
+                  </table>
+
                 </div>
+                <div class="info_menu">
+                    <h4 style="color: black;">카페라떼(2)</h4>
+                    <h4 style="color: black;">아메리카노(1)</h4>
+                    <h5>오후 03:10</h5>
                 </div>
-                <div class="col-lg-3">
-                  <div class="product-panel-2 pn">
-                    <div class="badge badge-hot">HOT</div>
-                    <img src="resources/assets/images/admin/product.jpg" width="200" alt="">
-                    <h5 class="mt">Flat Pack Heritage</h5>
-                    <h6>TOTAL SALES: 1388</h6>
-                    <button class="btn btn-small btn-theme04">FULL REPORT</button>
-                  </div>
-                  </div>
-          <div class="col-lg-3" style="margin-top: 30px;">
-            <div class="container_order" style="border:10px solid;">
-            주문1
+                <div class="row" style="text-align: center;">
+                
+                  <button class="order_recieveBtn">주문접수하기</button>
+                
+              </div>
+
+           </div>
+            
           </div>
-        </div>
-        <div class="col-lg-3" style="margin-top: 30px;">
-          <div class="container_order" style="border:10px solid;">
-          주문2
-        </div>
-      </div>
-      <div class="col-lg-3" style="margin-top: 30px;">
-        <div class="container_order" style="border:10px solid;">
-        주문3
-      </div>
-    </div>
-    <div class="col-lg-3" style="margin-top: 30px;">
-      <div class="container_order" style="border:10px solid;">
-      주문4
-    </div>
-    </div>
+
+          <div class="col-lg-3" >
+           
+            <div class="order_card">
+               <div class="row"><label class="order_status">접수대기</label></div>
+               
+                 <div class="info_user">
+                   <table style=" margin-left: 30px;" >
+                     
+                     <tr>
+                       <td rowspan="2" style="font-size: 50px; padding-right:15px; color: black; font-weight: bolder; ">4</td>
+                       <td style="font-size: 20px; color: #000; padding: 0;">Takeout</td>
+                       <td rowspan="2" style="padding-left: 20px;"><button class="order_detail">상세보기</button></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-bottom: 15px;">배고프젼</td>
+                     </tr>
+                     
+ 
+                   </table>
+ 
+                 </div>
+                 <div class="info_menu">
+                     <h4 style="color: black;">카페라떼(2)</h4>
+                     <h4 style="color: black;">아메리카노(1)</h4>
+                     <h5>오후 03:10</h5>
+                 </div>
+                 <div class="row" style="text-align: center;">
+                 
+                   <button class="order_recieveBtn">주문접수하기</button>
+                 
+               </div>
+ 
+            </div>
+             
+           </div>
+
+           <div class="col-lg-3" >
+           
+            <div class="order_card">
+               <div class="row"><label class="order_status">접수대기</label></div>
+               
+                 <div class="info_user">
+                   <table style=" margin-left: 30px;" >
+                     
+                     <tr>
+                       <td rowspan="2" style="font-size: 50px; padding-right:15px; color: black; font-weight: bolder; ">4</td>
+                       <td style="font-size: 20px; color: #000; padding: 0;">Takeout</td>
+                       <td rowspan="2" style="padding-left: 20px;"><button class="order_detail">상세보기</button></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-bottom: 15px;">배고프젼</td>
+                     </tr>
+                     
+ 
+                   </table>
+ 
+                 </div>
+                 <div class="info_menu">
+                     <h4 style="color: black;">카페라떼(2)</h4>
+                     <h4 style="color: black;">아메리카노(1)</h4>
+                     <h5>오후 03:10</h5>
+                 </div>
+                 <div class="row" style="text-align: center;">
+                 
+                   <button class="order_recieveBtn">주문접수하기</button>
+                 
+               </div>
+ 
+            </div>
+             
+           </div>
+
+           <div class="col-lg-3" >
+           
+            <div class="order_card">
+               <div class="row"><label class="order_status">접수대기</label></div>
+               
+                 <div class="info_user">
+                   <table style=" margin-left: 30px;" >
+                     
+                     <tr>
+                       <td rowspan="2" style="font-size: 50px; padding-right:15px; color: black; font-weight: bolder; ">4</td>
+                       <td style="font-size: 20px; color: #000; padding: 0;">Takeout</td>
+                       <td rowspan="2" style="padding-left: 20px;"><button class="order_detail">상세보기</button></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-bottom: 15px;">배고프젼</td>
+                     </tr>
+                     
+ 
+                   </table>
+ 
+                 </div>
+                 <div class="info_menu">
+                     <h4 style="color: black;">카페라떼(2)</h4>
+                     <h4 style="color: black;">아메리카노(1)</h4>
+                     <h5>오후 03:10</h5>
+                 </div>
+                 <div class="row" style="text-align: center;">
+                 
+                   <button class="order_recieveBtn">주문접수하기</button>
+                 
+               </div>
+ 
+            </div>
+             
+           </div>
+
+          
+          
+
+          
+          
+
         </div>
         <!--/주문창 end-->
       </section>
